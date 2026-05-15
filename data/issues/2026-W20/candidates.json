@@ -142,5 +142,41 @@
     "so_what": "The most immediately actionable written reference for a finance team ready to start without a formal implementation project.",
     "source_url": "https://finstoryai.substack.com/p/anthropic-just-released-10-finance",
     "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "total": 24 }
+  },
+  {
+    "id": "tips_005",
+    "category": "tips",
+    "headline": "YouTube: SAP Sapphire 2026 keynote -- autonomous finance workflows in SAP Business AI (3 days ago)",
+    "what": "SAP's Sapphire 2026 keynote (May 12, ~20 min) demonstrates the Autonomous Enterprise vision: AI agents running AP, order-to-cash, and financial close natively inside SAP Business Suite, with live demos of agents chaining tasks across FI, MM, and SD modules without human handoffs.",
+    "so_what": "Port operators running SAP can see exactly which finance workflows will be agent-ready in the next two releases and assess readiness for their own upgrade cycle.",
+    "source_url": "https://www.youtube.com/watch?v=-ub18UvXR2s",
+    "scores": { "relevance": 8, "novelty": 9, "materiality": 8, "total": 25 }
+  },
+  {
+    "id": "tips_006",
+    "category": "tips",
+    "headline": "YouTube: Oracle Cloud ERP Payables AI Agent demo -- end-to-end invoice processing (Jan 2026)",
+    "what": "Oracle's official demo (January 7, 2026, ~8 min) shows the Payables AI Agent in Oracle Fusion Cloud ERP processing invoices across diverse supplier formats, running compliance and tax verification, and routing exceptions, entirely within the existing ERP interface.",
+    "so_what": "Oracle ERP users can see exactly what agent-driven AP looks like in production and evaluate whether the native Oracle agent meets their needs before considering third-party tools.",
+    "source_url": "https://www.youtube.com/watch?v=RNvZh1Dm6ak",
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 8, "total": 22 }
+  },
+  {
+    "id": "tips_007",
+    "category": "tips",
+    "headline": "YouTube: Build a 6-month cash flow forecast with AI in 15 minutes (March 2026)",
+    "what": "A step-by-step tutorial (March 2026, ~15 min) demonstrates building a rolling 6-month cash flow forecast using AI: uploading actuals, prompting for scenario analysis, and generating a board-ready variance commentary -- no spreadsheet formulas required.",
+    "so_what": "Group treasurers can replicate this workflow with any major AI model; the technique is tool-agnostic and applicable to multi-currency port treasury operations.",
+    "source_url": "https://www.youtube.com/watch?v=Fvyg0Zu6Bz4",
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "total": 23 }
+  },
+  {
+    "id": "tips_008",
+    "category": "tips",
+    "headline": "YouTube: Microsoft 365 Copilot Finance Agent -- reconciliation demo in Excel (Feb 2026)",
+    "what": "Microsoft's official demo (February 3, 2026, ~6 min) shows the Copilot Finance Agent running a full reconciliation workflow inside Excel: ingesting two data sets, flagging mismatches, generating an exceptions report, and drafting resolution notes in natural language.",
+    "so_what": "Teams already on Microsoft 365 can activate this with no additional tooling; the demo is the fastest path to a running AI reconciliation workflow for Excel-centric finance teams.",
+    "source_url": "https://www.youtube.com/watch?v=eaKMnJtUj4s",
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "total": 23 }
   }
 ]
