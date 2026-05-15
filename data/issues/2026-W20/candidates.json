@@ -3,7 +3,7 @@
     "id": "finance_001",
     "category": "finance",
     "headline": "Anthropic launched 10 ready-to-deploy finance agent templates",
-    "what": "On May 5, Anthropic released 10 pre-built agent templates for financial services: pitch builder, earnings reviewer, model builder, general ledger reconciler, month-end closer, statement auditor, KYC screener, and more. Each ships as a plugin for Claude Cowork and Claude Code, with Microsoft 365 integration across Excel, Word, and PowerPoint.",
+    "what": "On May 5, Anthropic released 10 pre-built agent templates for financial services: pitch builder, earnings reviewer, GL reconciler, month-end closer, statement auditor, KYC screener, and more. Each ships as a plugin for Claude Cowork and Claude Code, with Microsoft 365 integration across Excel, Word, and PowerPoint.",
     "so_what": "A port CFO's team can deploy a GL reconciler or month-end closer in days, not months, without a custom build.",
     "source_url": "https://www.anthropic.com/news/finance-agents",
     "scores": { "relevance": 10, "novelty": 9, "materiality": 10, "total": 29 }
@@ -11,20 +11,20 @@
   {
     "id": "finance_002",
     "category": "finance",
+    "headline": "Anthropic partnered with Goldman and Blackstone on a $1.5B enterprise AI firm",
+    "what": "Anthropic announced on May 4 a $1.5 billion joint venture with Goldman Sachs, Blackstone, and Hellman & Friedman to embed AI engineers inside PE-owned portfolio companies and redesign their core workflows around Claude. Additional backers include GIC, General Atlantic, and Sequoia, giving the venture a built-in pipeline across hundreds of portfolio companies.",
+    "so_what": "Port operators backed by any of these PE firms should expect AI transformation proposals from this venture within the next 12 months; CFOs need a readiness position before it arrives.",
+    "source_url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+    "scores": { "relevance": 9, "novelty": 9, "materiality": 10, "total": 28 }
+  },
+  {
+    "id": "finance_003",
+    "category": "finance",
     "headline": "KPMG survey found 93% of firms will deploy AI in finance within 18 months",
     "what": "KPMG's May 12 global AI-in-finance survey of 2,700 finance leaders finds 93% of US companies will deploy or scale AI in finance within 18 months, with half planning multi-agent systems. Firms using agentic AI outperform peers by 32 percentage points on forecast accuracy and ROI, but 64% cite lack of role-specific use cases as the top barrier.",
     "so_what": "The gap between AI-enabled and traditional finance functions is quantified and growing; a documented use-case roadmap is now a board-level expectation.",
     "source_url": "https://kpmg.com/us/en/media/news/ai-in-finance-2026.html",
     "scores": { "relevance": 9, "novelty": 8, "materiality": 9, "total": 26 }
-  },
-  {
-    "id": "finance_003",
-    "category": "finance",
-    "headline": "Coupa launched AI agent studio for procurement and spend management",
-    "what": "Coupa Compose, launched May 12 at Inspire 2026, provides a no-code agent builder (Navi Agent Studio) and 20+ pre-built agents covering sourcing, bid comparison, sanctions risk, and autonomous spend orchestration, with outcome-based pricing and Agent-to-Agent connectivity across third-party systems.",
-    "so_what": "Port operators using Coupa for procurement can now configure AI agents for sourcing events and sanctions screening without a development project.",
-    "source_url": "https://www.coupa.com/newsroom/coupa-launches-coupa-compose-and-catalyst-to-accelerate-agentic-ai-value-and-delivery-at-inspire-2026/",
-    "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "total": 24 }
   },
   {
     "id": "finance_004",
@@ -36,10 +36,28 @@
     "scores": { "relevance": 9, "novelty": 8, "materiality": 9, "total": 26 }
   },
   {
+    "id": "finance_005",
+    "category": "finance",
+    "headline": "EU AI Act Chapter III enforces high-risk AI rules on August 2, 2026",
+    "what": "Chapter III of the EU AI Act becomes enforceable August 2, 2026, classifying credit scoring, AML risk profiling, and fraud detection as high-risk AI systems requiring conformity assessments, immutable audit logs, and human override on consequential decisions. Penalties reach €15 million or 3% of global annual turnover, and deployer liability does not transfer to the vendor.",
+    "so_what": "CFOs have 11 weeks to complete an AI system inventory, assign SM&CR accountability, and ensure third-party contracts include audit rights and technical documentation clauses.",
+    "source_url": "https://www.finextra.com/blogposting/31653/the-eu-ai-acts-august-2026-deadline-what-financial-services-firms-must-do-now",
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 9, "total": 24 }
+  },
+  {
+    "id": "finance_006",
+    "category": "finance",
+    "headline": "Coupa launched a no-code AI agent studio for procurement and spend management",
+    "what": "Coupa Compose, launched May 12 at Inspire 2026, provides Navi Agent Studio (no-code agent builder) and 20+ pre-built agents covering sourcing, bid comparison, sanctions risk, and autonomous spend orchestration, with outcome-based pricing and Agent-to-Agent connectivity across third-party systems.",
+    "so_what": "Port operators using Coupa for procurement can now configure AI agents for sourcing events and sanctions screening without a development project.",
+    "source_url": "https://www.coupa.com/newsroom/coupa-launches-coupa-compose-and-catalyst-to-accelerate-agentic-ai-value-and-delivery-at-inspire-2026/",
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "total": 24 }
+  },
+  {
     "id": "agents_001",
     "category": "agents",
     "headline": "Microsoft launched Agent 365 to govern AI agents across cloud platforms",
-    "what": "Microsoft made Agent 365 generally available, providing a unified control plane to discover, govern, and secure AI agents running across Microsoft, AWS, and Google Cloud environments, directly addressing the 'shadow AI' problem where agents operate without enterprise visibility or audit trails.",
+    "what": "Microsoft made Agent 365 generally available, providing a unified control plane to discover, govern, and secure AI agents running across Microsoft, AWS, and Google Cloud environments, directly addressing the shadow AI problem where agents operate without enterprise visibility or audit trails.",
     "so_what": "Finance and IT teams deploying agents across multiple cloud platforms now have a vendor-supported governance layer; this should feature in any enterprise AI agent procurement evaluation.",
     "source_url": "https://futurumgroup.com/insights/microsoft-agent-365-turns-shadow-ai-into-a-governed-asset-class/",
     "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "total": 24 }
@@ -47,11 +65,11 @@
   {
     "id": "agents_002",
     "category": "agents",
-    "headline": "Broadridge deployed production AI agents for post-trade exception resolution",
-    "what": "Broadridge announced on May 13 that its agentic AI capabilities are production-ready, chaining data, context, and workflows to autonomously resolve exceptions across post-trade processing and client services, with human escalation built into the workflow.",
-    "so_what": "Post-trade automation at Broadridge scale signals that financial operations AI agents are now production-hardened; port operators with trade finance exposure should monitor adoption by their banking counterparties.",
-    "source_url": "https://siliconangle.com/2026/05/11/agentic-ai-deployment-enters-production-reality-aiagentconference/",
-    "scores": { "relevance": 7, "novelty": 7, "materiality": 7, "total": 21 }
+    "headline": "Salesforce launched Agentforce Operations to automate back-office workflows",
+    "what": "Salesforce launched Agentforce Operations on April 29, extending its AI agent platform from customer-facing to back-office processes: compliance verification, approvals routing, data reconciliation, and process coordination. The product is built on Regrello technology and claims 70% faster cycle times and 80% reduction in manual data entry.",
+    "so_what": "Enterprises running Salesforce for finance operations now have a native agent layer for back-office automation; port operators should evaluate against existing RPA and BPM investments.",
+    "source_url": "https://www.salesforce.com/news/stories/agentforce-operations-announcement/",
+    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "total": 22 }
   },
   {
     "id": "physical_001",
@@ -65,16 +83,16 @@
   {
     "id": "physical_002",
     "category": "physical",
-    "headline": "Singapore committed SGD 100m to autonomous port and smart ship research",
-    "what": "Singapore's MPA and Singapore Maritime Institute launched the 2026 Maritime Technology Roadmap with SGD 100m over five years, prioritising autonomous port operations, smart ships, and AI-driven port services, and issued an Expression of Interest for autonomous inter-gateway container feeder vessels between terminals.",
-    "so_what": "Singapore is accelerating autonomous port infrastructure at the state level; operators in the region should factor this into competitive positioning and capex planning.",
-    "source_url": "https://smartmaritimenetwork.com/2026/04/22/singapore-ramps-up-investment-in-digital-maritime-initiatives/",
+    "headline": "IMO adopted the non-mandatory MASS Code for autonomous ships at MSC 111",
+    "what": "The IMO's Maritime Safety Committee adopted the non-mandatory MASS Code at its 111th session (May 13-22, 2026), defining four degrees of vessel autonomy and setting the road map to a mandatory code by 2032. The code establishes a goal-based framework covering safety, navigation, and crewing standards for autonomous surface ships.",
+    "so_what": "Port operators now have a regulatory baseline for planning autonomous vessel infrastructure; the 2032 mandatory timeline should enter capex and berth design planning cycles.",
+    "source_url": "https://www.westpandi.com/news-and-resources/news/may-2026/maritime-autonomous-surface-ships-(mass)-clarifyin/",
     "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "total": 24 }
   },
   {
     "id": "foundation_001",
     "category": "foundation",
-    "headline": "Anthropic released Claude Opus 4.7 with top Finance Agent benchmark score",
+    "headline": "Anthropic released Claude Opus 4.7 with the highest Finance Agent benchmark score",
     "what": "Claude Opus 4.7 (GA April 16) scores 87.6% on SWE-bench Verified vs 80.8% for Opus 4.6, and 64.4% on the Finance Agent benchmark, the highest of any model. Vision accuracy jumped from 54.5% to 98.5%. Priced identically at $5/$25 per million tokens.",
     "so_what": "A materially more capable model at the same price strengthens the ROI case for finance workflows built on Claude; teams should retest automations that previously fell below reliability thresholds.",
     "source_url": "https://www.anthropic.com/news/claude-opus-4-7",
@@ -83,18 +101,9 @@
   {
     "id": "foundation_002",
     "category": "foundation",
-    "headline": "Open-weight Chinese models matched Western frontier at one-tenth the cost",
-    "what": "Four Chinese labs (Z.ai, MiniMax, Moonshot, DeepSeek) released open-weight models within 12 days in May, all reaching comparable capability to GPT-5.5 on agentic engineering benchmarks at roughly 1/10th the inference cost. Open-weight models now handle 38% of enterprise AI token volume.",
-    "so_what": "The make-vs-buy decision for internal AI tooling has shifted; finance teams should pressure-test vendor pricing against open-weight alternatives at next contract renewal.",
-    "source_url": "https://whatllm.org/blog/new-ai-models-may-2026",
-    "scores": { "relevance": 7, "novelty": 8, "materiality": 8, "total": 23 }
-  },
-  {
-    "id": "foundation_003",
-    "category": "foundation",
-    "headline": "Ramp data: Anthropic overtook OpenAI in enterprise AI adoption for first time",
-    "what": "Ramp's May 2026 AI Index shows Anthropic reached 34.4% of business customers vs OpenAI's 32.3%, the first time Anthropic has led. Anthropic quadrupled business adoption year-on-year, driven largely by Claude Code; OpenAI grew only 0.3% over the same period.",
-    "so_what": "Platform concentration risk has shifted: CFOs building on Claude now have evidence of accelerating enterprise network effects, but the same data flags concentration in a single vendor approaching half of business AI spend.",
+    "headline": "Ramp data shows Anthropic overtook OpenAI in enterprise AI adoption",
+    "what": "Ramp's May 2026 AI Index shows Anthropic reached 34.4% of business customers vs OpenAI's 32.3%, the first time Anthropic has led, driven by a quadrupling of adoption year-on-year largely through Claude Code. OpenAI grew only 0.3% over the same period.",
+    "so_what": "Platform concentration risk has shifted: CFOs building on Claude now have evidence of enterprise network effects, but the same data flags single-vendor concentration approaching half of business AI spend.",
     "source_url": "https://ramp.com/leading-indicators/ai-index-may-2026",
     "scores": { "relevance": 7, "novelty": 9, "materiality": 8, "total": 24 }
   },
