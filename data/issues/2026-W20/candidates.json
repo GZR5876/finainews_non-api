@@ -110,10 +110,37 @@
   {
     "id": "tips_001",
     "category": "tips",
-    "headline": "YouTube: How to deploy Anthropic's 10 finance agent templates in Claude Cowork",
-    "what": "Anthropic's official walkthrough (May 8, 2026, ~12 min) demonstrates deploying the 10 finance agent templates end-to-end inside Claude Cowork: GL reconciler, month-end closer, KYC screener, and earnings reviewer, with live demo of Microsoft 365 hand-off to Excel.",
-    "so_what": "Finance teams can follow this video to go from zero to a running month-end closer in a single session, without a developer.",
+    "headline": "YouTube: Deploy Anthropic's 10 finance agent templates in Claude Cowork (12 min)",
+    "what": "Anthropic's official video walkthrough (May 8, 2026) demonstrates deploying the 10 finance agent templates end-to-end inside Claude Cowork: GL reconciler, month-end closer, KYC screener, and earnings reviewer, with a live Microsoft 365 hand-off to Excel.",
+    "so_what": "A finance team member can watch this and have a running month-end closer deployed the same day, without a developer.",
     "source_url": "https://www.youtube.com/watch?v=foxeK2AXfHQ",
     "scores": { "relevance": 9, "novelty": 8, "materiality": 9, "total": 26 }
+  },
+  {
+    "id": "tips_002",
+    "category": "tips",
+    "headline": "Webinar: Anthropic's live demo of Claude agents on real financial services workflows",
+    "what": "Anthropic's recorded webinar 'Claude for Financial Services: Putting agents to work' covers deploying agents for KYC screening, earnings review, and valuation workflows, with governance controls, audit trail setup, and a Q&A segment covering enterprise rollout questions.",
+    "so_what": "More comprehensive than the YouTube clip: covers governance and rollout questions that a CFO team will face before deploying in a regulated environment.",
+    "source_url": "https://www.anthropic.com/webinars/claude-for-financial-services-putting-agents-to-work",
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 9, "total": 26 }
+  },
+  {
+    "id": "tips_003",
+    "category": "tips",
+    "headline": "Webinar: Three live month-end close workflows using Claude and Kognitos MCP (May 6)",
+    "what": "Kognitos' May 6 webinar demonstrates three production-ready close workflows governed by Claude via MCP: multi-currency reconciliation, variance analysis with natural language commentary, and exception routing with human escalation. Each workflow is auditable end-to-end.",
+    "so_what": "The most operationally specific demo available: finance teams on any ERP can adapt these three workflows directly for their own close process.",
+    "source_url": "https://www.kognitos.com/webinars/how-to-use-claude-for-month-end-close/",
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 9, "total": 26 }
+  },
+  {
+    "id": "tips_004",
+    "category": "tips",
+    "headline": "Guide: Step-by-step install of Anthropic's Month-End Closer agent template",
+    "what": "A practical written guide walks through installing and configuring Anthropic's Month-End Closer template from scratch: connecting to a general ledger, setting reconciliation rules, configuring exception escalation, and running the first automated close cycle.",
+    "so_what": "The most immediately actionable written reference for a finance team ready to start without a formal implementation project.",
+    "source_url": "https://finstoryai.substack.com/p/anthropic-just-released-10-finance",
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "total": 24 }
   }
 ]
