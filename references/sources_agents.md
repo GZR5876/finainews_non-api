@@ -30,13 +30,6 @@
 - https://www.pwc.com/gx/en/news-room.html
 - https://www.ey.com/en_gl/newsroom
 
-## Analyst / VC (monthly cadence — check every 4 weeks)
-- https://a16z.com/tag/ai/
-- https://www.sequoiacap.com/articles/
-- https://menlovc.com  (State of AI in Business)
-- https://www.bain.com  (AI insights)
-- https://www.mckinsey.com/capabilities/quantumblack/our-insights
-
 ## What to look for
 - New agentic AI products capable of autonomous multi-step workflows in enterprise
 - AI agents for financial reporting, board pack generation, audit trail creation

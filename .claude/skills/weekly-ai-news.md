@@ -30,6 +30,11 @@ Search patterns to use:
 site:therundown.ai AI finance agents enterprise [current month] [year]
 site:bensbites.com AI finance enterprise agents [current month] [year]
 site:tldr.tech AI finance agents models [current month] [year]
+site:a16z.com AI finance enterprise agents [year]
+site:mckinsey.com AI finance enterprise agents [year]
+site:bain.com AI finance enterprise agents [year]
+site:sequoiacap.com AI finance enterprise [year]
+site:menlovc.com AI finance enterprise [year]
 ```
 
 Digests to sweep:
@@ -43,6 +48,11 @@ Digests to sweep:
 - One Useful Thing (oneusefulthing.org) -- Ethan Mollick, executive-forwardable
 - Interconnects (interconnects.ai) -- Nathan Lambert, model/research signal
 - Latent Space (latent.space) -- enterprise AI deployment economics
+- a16z (a16z.com) -- VC portfolio + AI commentary
+- McKinsey QuantumBlack (mckinsey.com/quantumblack)
+- Bain (bain.com) -- AI insights
+- Sequoia (sequoiacap.com)
+- Menlo Ventures (menlovc.com) -- State of AI in Business
 
 Pull any finance-relevant or port-relevant items found into the candidate pool
 before proceeding to per-category source searches.
