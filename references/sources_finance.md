@@ -28,7 +28,7 @@
 - https://www.taxnotes.com  (headlines only if paywalled)
 - https://www.internationaltaxreview.com
 - https://taxfoundation.org/blog/
-- https://www.wco.int/en/media/newsroom.aspx  (World Customs Organization)
+- https://www.wcoomd.org/en/media/newsroom.aspx  (World Customs Organization)
 - https://www.oecd.org/tax/  (Pillar Two, BEPS)
 - Big-4 tax-tech blogs (KPMG, PwC, EY, Deloitte tax pages)
 
@@ -56,7 +56,7 @@
 - Close / recon: https://www.blackline.com/blog/, https://www.trintech.com/resources/
 - AR / cash application: https://www.highradius.com/resources/
 - AP / payments: https://tipalti.com/blog/, https://ramp.com/blog/, https://www.brex.com/journal/
-- FP&A: https://www.pigment.com/blog/, https://www.vena.com/blog/, https://www.datarails.com/blog/
+- FP&A: https://www.pigment.com/blog/, https://www.venasolutions.com/blog, https://www.datarails.com/blog/
 
 ## Peer operators & strategic investors (finance AI deployments)
 
