@@ -62,8 +62,13 @@ before proceeding to per-category source searches.
 Work through the four categories below. For each:
 
 1. Read the corresponding source file (references/sources_{category}.md).
-2. Use WebSearch + WebFetch to find items published in the last 7 days.
-3. For each candidate item, run: `python scripts/check_history.py --url "{url}"` -- skip any that return `SEEN`.
+2. **Run every `search:` query listed in that file via WebSearch** -- no source may be
+   skipped. Each source has a pre-defined query; execute it exactly as written,
+   substituting the current year for `[year]`. Also substitute `[current month]`
+   where it appears (e.g. "May 2026").
+3. For each result returned, attempt WebFetch on the article URL to retrieve full content.
+   If WebFetch returns 403 or times out, write `what`/`so_what` from the search snippet.
+4. For each candidate item, run: `python scripts/check_history.py --url "{url}"` -- skip any that return `SEEN`.
 4. Score each surviving item on three dimensions (1-10 each):
    - **Relevance** to a CFO of a global port operator (apply +1 materiality bonus for finance items per audience.md)
    - **Novelty** -- genuinely new development, not a restatement of old news
@@ -104,36 +109,13 @@ Anthropic should be scored at full value regardless of recency within the last 3
 
 ### Step 1c: Tips scout (run after category scout)
 
-Read references/sources_tips.md for the full source list. Target **3-5 tip
-candidates** per run so the user has meaningful choice. Search across all
-four source types:
+Read references/sources_tips.md for the full source list. **Run every `search:`
+query listed in that file** -- all 6 YouTube searches, all webinar sources, all
+written guide sources, all editorial sources. No source may be skipped.
+Target **3-5 tip candidates** per run so the user has meaningful choice.
 
-**YouTube** -- Use WebSearch (WebFetch to youtube.com returns 403). Run at
-least 3 separate searches targeting different platforms and use cases:
-```
-site:youtube.com anthropic claude finance agents tutorial [year]
-site:youtube.com SAP OR Workday AI finance agents demo [year]
-site:youtube.com microsoft copilot finance reconciliation tutorial [year]
-site:youtube.com AI treasury "cash flow" forecast tutorial [year]
-site:youtube.com "AI agent" CFO accounts payable month-end close [year]
-```
-Pick videos with clearly instructional titles ("How to...", "Demo:", "Step-by-step").
-Avoid opinion pieces or news summaries.
-
-**Vendor webinars (recorded/on-demand):**
-- https://www.anthropic.com/webinars
-- https://www.kognitos.com/webinars
-- https://www.cfoconnect.eu/resources/event-recaps
-
-**Written step-by-step guides:**
-- https://finstoryai.substack.com
-- https://buildingprofit.substack.com
-- https://reruption.com/en/knowledge/how-to-ai/finance/
-- https://chatfin.ai/blog
-
-**Editorial with actionable takeaways:**
-- https://hbr.org/topic/subject/artificial-intelligence
-- https://www.cfo.com/technology/
+Pick videos/articles with clearly instructional titles ("How to...", "Demo:",
+"Walkthrough", "Step-by-step"). Avoid opinion pieces or news summaries.
 
 Record tips as `tips_NNN` with `"category": "tips"`. Score and filter the same
 way as other candidates (Relevance < 7 or total < 21 → drop).

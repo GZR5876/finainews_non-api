@@ -1,28 +1,65 @@
 # Sources — Foundation Models
 
+## How to use this file
+For every source listed below, run the associated `search:` query via WebSearch.
+Run ALL sources every scout — do not skip any.
+
+---
+
 ## Primary (check every week)
+
 - https://www.anthropic.com/news
+  `search: site:anthropic.com model release capability enterprise [year]`
 - https://openai.com/news
+  `search: site:openai.com model release capability enterprise [year]`
 - https://deepmind.google/discover/blog/
+  `search: site:deepmind.google model release Gemini capability [year]`
 - https://ai.meta.com/blog/
+  `search: site:ai.meta.com Llama model release open weight [year]`
 - https://mistral.ai/news/
+  `search: site:mistral.ai model release open weight enterprise [year]`
 - https://huggingface.co/blog
-- xAI news
+  `search: site:huggingface.co model release open weight enterprise [year]`
+- xAI: https://x.ai/blog/
+  `search: site:x.ai Grok model release capability enterprise [year]`
 - https://cohere.com/blog
-- Microsoft Research AI blog
+  `search: site:cohere.com model release enterprise finance [year]`
+- Microsoft Research AI blog: https://www.microsoft.com/en-us/research/blog/
+  `search: site:microsoft.com research AI model enterprise [year]`
+
+---
 
 ## Trade & analysis
+
 - https://www.technologyreview.com/topic/artificial-intelligence/
+  `search: site:technologyreview.com AI model release enterprise capability [year]`
 - https://the-decoder.com
-- https://www.theinformation.com  (headlines only if paywalled)
+  `search: site:the-decoder.com AI model release benchmark enterprise [year]`
+- https://www.theinformation.com (headlines only if paywalled)
+  `search: site:theinformation.com AI model release enterprise [year]`
 - https://venturebeat.com/ai/
-- https://stratechery.com  (Monday free article — strategic framing)
-- https://www.semianalysis.com  (AI economics, chip supply, hyperscaler capex)
-- Bloomberg Technology AI, FT AI coverage
+  `search: site:venturebeat.com AI model release enterprise deployment [year]`
+- https://stratechery.com (Monday free article — strategic framing)
+  `search: site:stratechery.com AI model enterprise strategy [year]`
+- https://www.semianalysis.com (AI economics, chip supply, hyperscaler capex)
+  `search: site:semianalysis.com AI model economics capex hyperscaler [year]`
+- Bloomberg Technology AI coverage
+  `search: site:bloomberg.com AI model release enterprise foundation [year]`
+- FT AI coverage
+  `search: site:ft.com AI model release enterprise foundation [year]`
+
+---
 
 ## Capability surprises & demos
-- https://simonwillison.net  (Simon Willison — fast, reliable capability signal)
-- Two Minute Papers, AI Explained (YouTube)
+
+- https://simonwillison.net (Simon Willison — fast, reliable capability signal)
+  `search: site:simonwillison.net AI model release capability [year]`
+- Two Minute Papers (YouTube)
+  `search: site:youtube.com "Two Minute Papers" AI model [year]`
+- AI Explained (YouTube)
+  `search: site:youtube.com "AI Explained" model release enterprise [year]`
+
+---
 
 ## What to look for
 - New model releases: name, version, release date, and who released it
