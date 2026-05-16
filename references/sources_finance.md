@@ -48,11 +48,9 @@
 - https://www.bankingtech.com
 
 ## ERP / EPM / planning vendors
-- Oracle: https://www.oracle.com/news/, Modern Finance blog, EPM Cloud release readiness
 - SAP: https://www.sap.com/news/, Joule announcements, SAP BTP AI
 - Workday: https://www.workday.com/en-us/company/newsroom.html, Illuminate posts
 - Microsoft: https://blogs.microsoft.com/ai/, Microsoft 365 Copilot blog, Power Platform blog, Microsoft Fabric blog
-- Anaplan: https://www.anaplan.com/blog/, CoPlanner announcements
 
 ## Finance point solutions (named deployments surface here -- high signal)
 - Close / recon: https://www.blackline.com/blog/, https://www.trintech.com/resources/

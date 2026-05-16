@@ -16,10 +16,8 @@ Search via `site:youtube.com [topic]` in WebSearch (direct WebFetch to youtube.c
 
 Priority channels (run at least one search per channel per run):
 - Anthropic: `site:youtube.com anthropic claude finance agents tutorial [year]`
-- SAP / Oracle / Workday: `site:youtube.com SAP OR Oracle OR Workday AI finance agents demo [year]`
+- SAP / Workday: `site:youtube.com SAP OR Workday AI finance agents demo [year]`
 - Microsoft Mechanics / M365: `site:youtube.com microsoft copilot finance reconciliation tutorial [year]`
-- Oracle Modern Finance: `site:youtube.com oracle modern finance AI agent demo [year]`
-- Anaplan: `site:youtube.com anaplan AI planning agent demo [year]`
 - AICPA & CIMA: `site:youtube.com AICPA CIMA AI finance tutorial [year]`
 
 Additional catch-all searches (run at least 2 per scout):
@@ -35,7 +33,6 @@ These are often more detailed than YouTube clips and cover governance/rollout qu
 - https://www.anthropic.com/webinars  (Claude finance and enterprise webinars)
 - https://www.kognitos.com/webinars  (Claude + MCP finance workflow demos)
 - https://www.cfoconnect.eu/resources/event-recaps  (CFO Connect AI event recaps)
-- Oracle EPM webinars, Anaplan CPX sessions
 - https://www.blackline.com/resources/  (BlackLine BeyondTheBlack)
 - https://www.highradius.com/resources/  (HighRadius webinars)
 

@@ -97,7 +97,7 @@ four source types:
 least 3 separate searches targeting different platforms and use cases:
 ```
 site:youtube.com anthropic claude finance agents tutorial [year]
-site:youtube.com SAP OR Oracle OR Workday AI finance agents demo [year]
+site:youtube.com SAP OR Workday AI finance agents demo [year]
 site:youtube.com microsoft copilot finance reconciliation tutorial [year]
 site:youtube.com AI treasury "cash flow" forecast tutorial [year]
 site:youtube.com "AI agent" CFO accounts payable month-end close [year]

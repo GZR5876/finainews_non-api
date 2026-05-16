@@ -19,7 +19,6 @@
 - https://www.salesforce.com/news/  (Agentforce)
 - https://www.servicenow.com/company/media/press-room.html
 - https://www.sap.com/news/  (SAP Joule)
-- https://www.oracle.com/news/  (Oracle AI)
 - https://www.workday.com/en-us/company/newsroom.html
 - https://cloud.google.com/blog/products/ai-machine-learning  (Google Cloud AI)
 - https://www.databricks.com/blog
