@@ -60,13 +60,39 @@
 - AP / payments: https://tipalti.com/blog/, https://ramp.com/blog/, https://www.brex.com/journal/
 - FP&A: https://www.pigment.com/blog/, https://www.vena.com/blog/, https://www.datarails.com/blog/
 
+## Peer operators & strategic investors (finance AI deployments)
+
+Search for AI finance use cases, deployments, or announcements from these organisations.
+Any named finance AI deployment from this group scores at full value (8-10).
+
+**Temasek & portfolio companies:**
+- Temasek: https://www.temasek.com.sg/en/news-and-views
+- PSA International: https://www.internationalpsa.com/news/  (port ops + finance AI)
+- Mapletree: https://www.mapletree.com.sg/news-and-media/
+- Keppel: https://www.kepcorp.com/en/news/
+- Sembcorp: https://www.sembcorp.com/en/media/
+- ST Engineering: https://www.stengg.com/en/newsroom/
+- DBS Bank: https://www.dbs.com/newsroom/  (trade finance AI, treasury AI -- high signal)
+- Singapore Airlines: https://www.singaporeair.com/en_UK/sg/media-centre/press-release/
+
+**Major port operator peers:**
+- DP World: https://www.dpworld.com/news/
+- APM Terminals (Maersk): https://www.apmterminals.com/en/news
+- Hutchison Ports: https://www.hutchisonports.com/en/press/
+- ICTSI: https://www.ictsi.com/press-releases
+- COSCO Shipping Ports: https://www.coscoshipping.com/col/col1209/
+- CMA CGM / CMA Terminals: https://www.cmacgm-group.com/en/news
+- MSC / TIL (Terminal Investment Limited): https://www.msc.com/en/news
+
+Search pattern: `"{company name}" AI finance OR treasury OR automation [year]`
+
 ## What to look for
 - AI tools automating AP/AR, financial close, reconciliation, or reporting
 - Treasury AI: cash flow forecasting, FX optimisation, bank fee analysis
 - Tax AI: customs classification, transfer pricing, VAT/GST e-invoicing mandates
 - ERP vendor AI releases (SAP, Oracle, Workday, Coupa) relevant to finance ops
 - Named finance agent deployments with disclosed productivity or cost metrics
-- AI capex disclosures from port operator peers
+- AI capex disclosures from port operator peers or Temasek portfolio companies
 
 ## Scoring notes
 Score highest for items with quantified outcomes (cost, time, headcount) or
