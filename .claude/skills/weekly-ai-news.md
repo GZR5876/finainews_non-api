@@ -14,7 +14,8 @@ description: Generates the weekly AI news executive summary for a port-operator
   Use this range as the recency filter for all searches in Phase 1.
 - Determine the current ISO week: YYYY-WNN (e.g. 2026-W20).
 - Create the issue directory: data/issues/{week}/ if it does not exist.
-- Run `python scripts/setup_db.py` to ensure data/history.db exists.
+- Run `python scripts/setup_db.py` to confirm data/archive/ exists and report how many
+  past newsletters are loaded for history checking.
 - Read references/audience.md and references/voice.md before writing anything.
 
 ## Phase 1: Scout
@@ -212,7 +213,8 @@ After all categories and tips are scouted:
 
 1. Run `python scripts/render.py --week {week}` -- produces newsletter.html and
    newsletter.pdf in data/issues/{week}/.
-2. The script also inserts all rendered items into data/history.db to prevent
-   future duplicates.
+2. Copy (or instruct the user to copy) `data/issues/{week}/newsletter.html` into
+   `data/archive/` so future runs detect these URLs as already published.
+   The file is automatically picked up by check_history.py on the next scout.
 3. Commit and push all output files to the remote branch.
 4. Report the output paths to the user.

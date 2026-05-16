@@ -10,7 +10,6 @@ Requires: jinja2, markdown, weasyprint (optional — PDF skipped if not installe
 """
 import argparse
 import json
-import sqlite3
 from datetime import datetime, date
 from pathlib import Path
 
@@ -27,7 +26,6 @@ except ImportError:
 ROOT = Path(__file__).parent.parent
 TEMPLATES = ROOT / "templates"
 DATA = ROOT / "data"
-DB_PATH = DATA / "history.db"
 
 SECTION_MAP = {
     "finance":    "1. AI in Finance",
@@ -138,26 +136,6 @@ def parse_draft_sections(draft_md: str, selections: list[dict], candidates: dict
     return sections
 
 
-def archive_to_db(week: str, selections: list[dict], candidates: dict):
-    if not DB_PATH.exists():
-        return
-    con = sqlite3.connect(DB_PATH)
-    for sel in selections:
-        item_id = sel["id"]
-        candidate = candidates.get(item_id, {})
-        category = item_id.rsplit("_", 1)[0]
-        try:
-            con.execute(
-                "INSERT OR IGNORE INTO issues (id, week, category, headline, source_url) "
-                "VALUES (?, ?, ?, ?, ?)",
-                (item_id, week, category,
-                 candidate.get("headline", ""), candidate.get("source_url", "")),
-            )
-        except sqlite3.Error:
-            pass
-    con.commit()
-    con.close()
-
 
 def main():
     parser = argparse.ArgumentParser()
@@ -195,8 +173,7 @@ def main():
     except ImportError:
         print("PDF skipped (weasyprint not installed; run: pip install weasyprint)")
 
-    archive_to_db(week, selections, candidates)
-    print("Archived to history.db")
+    print("Done. Copy newsletter.html to data/archive/ to register these URLs in history.")
 
 
 if __name__ == "__main__":
