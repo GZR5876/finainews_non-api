@@ -23,8 +23,10 @@ Pick videos where the title is clearly instructional ("How to...", "Demo:", "Wal
 
 - Anthropic channel
   `search: site:youtube.com anthropic claude finance agents tutorial [year]`
-- SAP / Workday channels
-  `search: site:youtube.com SAP OR Workday AI finance agents demo [year]`
+- Microsoft Copilot for Finance / Excel
+  `search: site:youtube.com "copilot for finance" OR "copilot in excel" tutorial [year]`
+- Microsoft Copilot Studio
+  `search: site:youtube.com "copilot studio" finance workflow demo tutorial [year]`
 - Microsoft Mechanics / M365 channel
   `search: site:youtube.com microsoft copilot finance reconciliation tutorial [year]`
 - AICPA & CIMA channel

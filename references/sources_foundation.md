@@ -13,6 +13,7 @@ Run ALL sources every scout — do not skip any.
 - https://openai.com/news
   `search: site:openai.com model release capability enterprise [year]`
 - https://deepmind.google/discover/blog/
+  `search: site:deepmind.google Gemini 4 release [year]`
   `search: site:deepmind.google model release Gemini capability [year]`
 - https://ai.meta.com/blog/
   `search: site:ai.meta.com Llama model release open weight [year]`
