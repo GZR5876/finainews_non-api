@@ -12,9 +12,10 @@ Run ALL sources every scout — do not skip any.
   `search: site:anthropic.com model release capability enterprise [year]`
 - https://openai.com/news
   `search: site:openai.com model release capability enterprise [year]`
-- https://deepmind.google/discover/blog/
-  `search: site:deepmind.google Gemini 4 release [year]`
+- https://deepmind.google/models/ (model cards and release pages)
   `search: site:deepmind.google model release Gemini capability [year]`
+- https://blog.google/technology/google-deepmind/ (announcements and launches)
+  `search: site:blog.google google-deepmind model release Gemini [year]`
 - https://ai.meta.com/blog/
   `search: site:ai.meta.com Llama model release open weight [year]`
 - https://mistral.ai/news/
