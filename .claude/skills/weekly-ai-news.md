@@ -8,6 +8,10 @@ description: Generates the weekly AI news executive summary for a port-operator
 # Weekly AI News -- Procedure
 
 ## Setup
+- Ask the user for the **news period** if not specified (default: last 7 days).
+  Accept natural language such as "last 14 days", "May 5-12", or "since May 1".
+  Derive a concrete date range: {period_start} to {period_end} (YYYY-MM-DD).
+  Use this range as the recency filter for all searches in Phase 1.
 - Determine the current ISO week: YYYY-WNN (e.g. 2026-W20).
 - Create the issue directory: data/issues/{week}/ if it does not exist.
 - Run `python scripts/setup_db.py` to ensure data/history.db exists.
@@ -55,6 +59,7 @@ Work through the four categories below. For each:
    {
      "id": "{category}_{NNN}",
      "category": "{category}",
+     "published_date": "YYYY-MM-DD",
      "headline": "...",
      "what": "2 sentences -- what happened",
      "so_what": "1 sentence -- why a port CFO cares",
@@ -62,6 +67,8 @@ Work through the four categories below. For each:
      "scores": { "relevance": N, "novelty": N, "materiality": N, "total": N }
    }
    ```
+   Use the article's actual publication date for `published_date`. If only a
+   month/year is known, use the first of that month (e.g. "2026-03-01").
 
 Categories (scout order -- finance goes first in both scout and output):
 - `finance`    -- references/sources_finance.md   (target 3+ items, 50% of total)
@@ -130,7 +137,7 @@ After all categories and tips are scouted:
    candidates = json.loads(Path('data/issues/{week}/candidates.json').read_text())
    env = Environment(loader=FileSystemLoader('templates'))
    tmpl = env.get_template('candidates.html.j2')
-   html = tmpl.render(items=candidates, week='{week}', generated_at=datetime.now().strftime('%Y-%m-%d %H:%M'))
+   html = tmpl.render(items=candidates, week='{week}', generated_at=datetime.now().strftime('%Y-%m-%d %H:%M'), period='{period_start} to {period_end}')
    Path('data/issues/{week}/candidates.html').write_text(html)
    "
    ```

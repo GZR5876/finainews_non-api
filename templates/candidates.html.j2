@@ -25,7 +25,7 @@
 </head>
 <body>
   <h1>AI News Candidates &mdash; {{ week }}</h1>
-  <p>Generated: {{ generated_at }} &nbsp;|&nbsp; Total candidates: {{ items | length }}</p>
+  <p>Generated: {{ generated_at }} &nbsp;|&nbsp; Total candidates: {{ items | length }}{% if period %} &nbsp;|&nbsp; Period: {{ period }}{% endif %}</p>
 
   <div class="instructions">
     <strong>Next step:</strong> Review the items below, then edit
@@ -49,10 +49,11 @@
       <tr>
         <th style="width:3%">#</th>
         <th style="width:4%">ID</th>
-        <th style="width:28%">Headline</th>
-        <th style="width:35%">What / So What</th>
+        <th style="width:8%">Published</th>
+        <th style="width:24%">Headline</th>
+        <th style="width:33%">What / So What</th>
         <th style="width:12%">Source</th>
-        <th style="width:18%">Scores (R / N / M = Total)</th>
+        <th style="width:16%">Scores (R / N / M = Total)</th>
       </tr>
     </thead>
     <tbody>
@@ -62,6 +63,7 @@
     <tr>
       <td>{{ loop.index }}</td>
       <td><code>{{ item.id }}</code></td>
+      <td style="white-space:nowrap; color:#555; font-size:0.9em;">{{ item.published_date or '—' }}</td>
       <td><strong>{{ item.headline }}</strong></td>
       <td>
         <div class="what">{{ item.what }}</div>
