@@ -63,10 +63,13 @@ before proceeding to per-category source searches.
 Work through the four categories below. For each:
 
 1. Read the corresponding source file (references/sources_{category}.md).
-2. **Run every `search:` query listed in that file via WebSearch** -- no source may be
-   skipped. Each source has a pre-defined query; execute it exactly as written,
-   substituting the current year for `[year]`. Also substitute `[current month]`
-   where it appears (e.g. "May 2026").
+2. **For each source, run its queries using the two-tier system:**
+   - Run the `search:` (core) query — this runs every scout, no exceptions.
+   - Each source also has three `rotation:` queries. Pick **2 of the 3** at random
+     and run those as well. Use whichever 2 feel most likely to surface new content
+     given the current news cycle; vary the selection across runs.
+   - No source may be skipped. Substitute the current year for `[year]` and the
+     current month for `[current month]` (e.g. "May 2026") throughout.
 3. For each result returned, attempt WebFetch on the article URL to retrieve full content.
    If WebFetch returns 403 or times out, write `what`/`so_what` from the search snippet.
 4. For each candidate item, run: `python scripts/check_history.py --url "{url}"` -- skip any that return `SEEN`.
@@ -110,9 +113,10 @@ Anthropic should be scored at full value regardless of recency within the last 3
 
 ### Step 1c: Tips scout (run after category scout)
 
-Read references/sources_tips.md for the full source list. **Run every `search:`
-query listed in that file** -- all 6 YouTube searches, all webinar sources, all
-written guide sources, all editorial sources. No source may be skipped.
+Read references/sources_tips.md for the full source list. Apply the same two-tier
+system: run the `search:` (core) query for every source, plus **2 of 3** `rotation:`
+queries per source sampled randomly. Cover all YouTube entries, all webinar sources,
+all written guide sources, all editorial sources. No source may be skipped.
 Target **3-5 tip candidates** per run so the user has meaningful choice.
 
 Pick videos/articles with clearly instructional titles ("How to...", "Demo:",
