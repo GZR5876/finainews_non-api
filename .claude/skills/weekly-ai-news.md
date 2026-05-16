@@ -38,6 +38,11 @@ Digests to sweep:
 - Ben's Bites (bensbites.com)
 - Superhuman AI (superhuman.ai)
 - Air Street Press (press.airstreet.com)
+- Import AI (jack-clark.net) -- Jack Clark, weekly, research + reflection
+- Benedict Evans (ben-evans.com) -- weekly, strategic framing
+- One Useful Thing (oneusefulthing.org) -- Ethan Mollick, executive-forwardable
+- Interconnects (interconnects.ai) -- Nathan Lambert, model/research signal
+- Latent Space (latent.space) -- enterprise AI deployment economics
 
 Pull any finance-relevant or port-relevant items found into the candidate pool
 before proceeding to per-category source searches.

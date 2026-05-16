@@ -26,20 +26,28 @@ Category order in the output:
 - AI in treasury: cash forecasting, FX hedging optimisation, payments, bank connectivity
 - AI in tax/customs: duty classification, transfer pricing, e-invoicing mandates
 - Named finance agent deployments from Big-4, major ERP vendors, or tier-1 banks
-- AI agent governance and risk controls in finance contexts
-- AI that affects port throughput, berth utilisation, or vessel scheduling (capex impact)
+- Audit firm AI tooling moves — affects audit fees and scope
+- ERP/EPM vendor AI releases that change roadmap planning
+- AI affecting trade-flow visibility, vessel scheduling, or terminal productivity with disclosed metrics
 - Autonomous port equipment (cranes, AGVs, drones) — capex cycles, safety liability
+- AI/automation capex disclosures from port operator peers
+- Concession, tariff, or labour developments tied to terminal automation
 
 **Moderate relevance (score 6-8):**
-- Foundation model cost curves — affects build-vs-buy calculus for internal tools
-- AI regulation creating compliance obligations (EU AI Act, SEC disclosure rules)
+- Foundation model cost curves and pricing moves — build-vs-buy signal
+- Software vendor pricing model changes (consumption vs. seat-based)
 - Agentic AI that could automate CFO-office workflows (reporting, board packs, audit)
+- Cross-functional enterprise AI deployment patterns (legal, HR, supply chain)
+- Notable demos and capability surprises with clear enterprise relevance
+- Sharp essays reframing AI strategy for executives with actionable takeaways
 
 **Lower relevance (score down):**
 - Consumer AI products with no enterprise or industrial angle
 - Academic research without near-term commercial path
 - AI in healthcare, media, or retail with no port/logistics/finance crossover
-- Hype-driven funding rounds with no product or deployment story
+- Funding-round news without product or named deployment story
+- Model benchmark results without enterprise relevance
+- Vendor announcements without named deployment evidence
 
 ## Tone expectations
 - Terse, factual, risk-aware
