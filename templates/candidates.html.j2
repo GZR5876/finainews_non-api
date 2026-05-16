@@ -64,7 +64,7 @@
       <td>{{ loop.index }}</td>
       <td><code>{{ item.id }}</code></td>
       <td style="white-space:nowrap; color:#555; font-size:0.9em;">{{ item.published_date or '—' }}</td>
-      <td><strong>{{ item.headline }}</strong></td>
+      <td><strong>{{ item.headline }}</strong>{% if item.paywalled %} <span style="color:#cc0000;font-size:0.8em;">[paywall]</span>{% endif %}</td>
       <td>
         <div class="what">{{ item.what }}</div>
         <div class="so-what">&#8594; {{ item.so_what }}</div>

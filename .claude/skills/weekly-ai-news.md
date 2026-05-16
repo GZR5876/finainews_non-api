@@ -79,11 +79,16 @@ Work through the four categories below. For each:
      "what": "2 sentences -- what happened",
      "so_what": "1 sentence -- why a port CFO cares",
      "source_url": "...",
+     "paywalled": false,
      "scores": { "relevance": N, "novelty": N, "materiality": N, "total": N }
    }
    ```
    Use the article's actual publication date for `published_date`. If only a
    month/year is known, use the first of that month (e.g. "2026-03-01").
+   Set `"paywalled": true` if the source requires a subscription to read the
+   full article (e.g. taxnotes.com, lloydslist.com, theinformation.com, FT).
+   In that case, the `what` field is based on headline + teaser only -- flag
+   this in the `what` field with "(headline/teaser only)" at the end.
 
 Categories (scout order -- finance goes first in both scout and output):
 - `finance`    -- references/sources_finance.md   (target 3+ items, 50% of total)
@@ -174,7 +179,14 @@ After all categories and tips are scouted:
 
 1. Read `data/issues/{week}/selections.json`.
 
-2. Write a **digest paragraph** (60-80 words, no bullet points) that goes between
+2. For each selected item, attempt `WebFetch` on its `source_url` to get full
+   article content. Three outcomes:
+   - **Full content retrieved**: use it to improve or verify `what` and `so_what`.
+   - **403 / bot-blocked**: write from the `what` and `so_what` already in candidates.json.
+   - **Paywalled** (`"paywalled": true` or paywall detected): write from candidates.json
+     content only; do not invent details beyond what the teaser provides.
+
+3. Write a **digest paragraph** (60-80 words, no bullet points) that goes between
    the dateline and the first section. Structure:
    - Sentence 1: the dominant theme across all items this week.
    - Sentence 2: the most material finance-specific signal.
