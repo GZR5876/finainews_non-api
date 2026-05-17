@@ -112,6 +112,13 @@ Categories (scout order -- finance goes first in both scout and output):
 - `physical`   -- references/sources_physical.md
 - `foundation` -- references/sources_foundation.md
 
+**Categorization rule:** assign each candidate to the category that best describes
+*what the story is about*, not where it was found. A story about a model provider
+(e.g. Anthropic, OpenAI) integrating their model into an ERP, finance platform, or
+enterprise workflow belongs in `finance` or `agents`, not `foundation`. Reserve
+`foundation` for model releases, capability benchmarks, pricing changes, and model
+provider strategy stories where the subject is the model itself.
+
 Also check Anthropic's finance-specific resources every run:
 - https://www.anthropic.com/news/finance-agents (and related Anthropic finance pages)
 
