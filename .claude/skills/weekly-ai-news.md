@@ -82,8 +82,8 @@ Work through the four categories below. For each:
      random and run those. Vary the selection across runs to maximise coverage over time.
    - Substitute the current year for `[year]` and the current month for
      `[current month]` (e.g. "May 2026") throughout.
-3. For each result returned, attempt WebFetch on the article URL to retrieve full content.
-   If WebFetch returns 403 or times out, write `what`/`so_what` from the search snippet.
+3. **Do NOT WebFetch any URLs during the scout phase.** Write `what`/`so_what` from
+   the search snippet only. WebFetch is reserved for Phase 3.
 4. For each candidate item, run: `python scripts/check_history.py --url "{url}"` -- skip any that return `SEEN`.
 4. Score each surviving item on four dimensions (1-10 each):
    - **Relevance** to a CFO of a global port operator (apply +1 materiality bonus for finance items per audience.md)
