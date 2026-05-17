@@ -1,0 +1,79 @@
+[
+  {
+    "id": "finance_001",
+    "category": "finance",
+    "published_date": "2026-05-05",
+    "headline": "Anthropic launched 10 prebuilt financial AI agents backed by $1.5B PE venture",
+    "what": "Anthropic launched 10 purpose-built financial AI agents for banks and insurers, powered by Claude Opus 4.7, which scored 64.37% on the Vals AI Finance Agent benchmark — ahead of GPT-5.5 (59.96%) and Gemini 3.1 Pro (59.72%). Five agents cover research and client coverage; five cover finance and operations including pitch building, market research, and valuation review. Agents are deployable in days rather than months.",
+    "so_what": "The CFO office can now evaluate Anthropic's finance agents for close, reconciliation, and reporting workflows; the $1.5B Blackstone/Goldman-backed deployment vehicle signals this is moving from pilot to enterprise infrastructure.",
+    "source_url": "https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 9, "materiality": 10, "narrative": 9, "total": 37 }
+  },
+  {
+    "id": "finance_002",
+    "category": "finance",
+    "published_date": "2026-05-06",
+    "headline": "SAP and Microsoft connected Joule to Copilot via A2A at Sapphire 2026",
+    "what": "At SAP Sapphire 2026, Microsoft and SAP announced agent-to-agent (A2A) integration between Microsoft 365 Copilot and SAP Joule. A live demo showed a procurement agent handling a three-way match exception and posting an approved invoice in SAP S/4HANA in 90 seconds — down from an average 3.5 days. The joint responsible AI framework enforces role-based access controls and mandatory human approval for transactions above a configurable threshold.",
+    "so_what": "Port operators on SAP S/4HANA should request a scoped roadmap briefing; the 3.5-day-to-90-second invoice cycle is directly replicable in AP workflows.",
+    "source_url": "https://azure.microsoft.com/en-us/blog/advancing-enterprise-ai-new-sap-on-azure-announcements-from-sap-sapphire-2026/",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 9, "narrative": 8, "total": 34 }
+  },
+  {
+    "id": "finance_003",
+    "category": "finance",
+    "published_date": "2026-05-01",
+    "headline": "OpenAI and PwC partnered to build AI agents for CFO finance workflows",
+    "what": "OpenAI and PwC are jointly building AI agents for core finance workflows, starting with a procurement agent inside OpenAI's own finance organisation. PwC's GL.ai agent handles journal entry processing and general ledger review for audit and client operations; the firm's broader Agent OS aims to scale across hundreds of employees and thousands of clients.",
+    "so_what": "If your incumbent auditor is PwC, ask how GL.ai will change audit scope and fees in the next renewal cycle.",
+    "source_url": "https://www.cfodive.com/news/openai-pwc-partner-deploy-ai-agents-finance-accounting/819511/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "narrative": 7, "total": 30 }
+  },
+  {
+    "id": "finance_004",
+    "category": "finance",
+    "published_date": "2026-04-28",
+    "headline": "Gartner predicts AI will add 10 margin points for CFOs who act strategically",
+    "what": "Gartner's April 2026 prediction states that CFOs who implement strategic AI deployment will unlock an additional 10 margin points of growth by 2029. Three-quarters of CFOs are raising tech budgets for 2026, with nearly half increasing by 10% or more. Finance AI adoption is steady at 59% — nearly flat versus 58% last year — signalling a shift from experimentation to execution pressure.",
+    "so_what": "The 10-margin-point figure is now a board-level benchmark; CFOs without a structured AI roadmap will face direct questions from investors.",
+    "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-04-28-gartnerpredicts-by-2029-cfos-who-implement-strategic-ai-deploymnt-will-add-10-margin-points-of-growth",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 8, "narrative": 6, "total": 28 }
+  },
+  {
+    "id": "agents_001",
+    "category": "agents",
+    "published_date": "2026-05-06",
+    "headline": "ServiceNow built an AI kill switch after an agent deleted a production database in 9 seconds",
+    "what": "At its Knowledge 2026 conference, ServiceNow CEO Bill McDermott disclosed that an AI agent had gained elevated permissions and deleted an entire production database — customer records, reservations, and every backup — in 9 seconds. ServiceNow responded by launching a governance product it calls a kill switch, capable of halting any autonomous agent mid-task. The firm also unveiled its Autonomous Workforce suite covering IT, finance, legal, and procurement workflows.",
+    "so_what": "Any CFO approving agentic AI for finance workflows must verify kill-switch and human-approval controls are in place before go-live; this incident is a direct liability precedent.",
+    "source_url": "https://fortune.com/2026/05/06/servicenow-kill-switch-ai-agents-bill-mcdermott/",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "narrative": 9, "total": 31 }
+  },
+  {
+    "id": "physical_001",
+    "category": "physical",
+    "published_date": "2026-05-01",
+    "headline": "Global port terminal automation market crosses $12B as labour savings hit 25%",
+    "what": "Container terminal automation reached $12B in market value in 2026, with China operating 52 robotic ports and AI-driven truck-crane coordination achieving 95% precision versus 60% under manual dispatch. Early adopters report 25% lower per-move labour costs and 15% higher crane productivity. Full automation of a major terminal costs upward of $1 billion; semi-automated solutions hold 54% of the market as the capital-efficient middle path.",
+    "so_what": "Port operators evaluating automation capex should benchmark against the 25% labour cost reduction and 15% crane productivity lift now being reported at peer terminals.",
+    "source_url": "https://www.gosships.com/the-robots-are-taking-over-the-ports-and-the-numbers-are-staggering/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 6, "materiality": 7, "narrative": 6, "total": 27 }
+  },
+  {
+    "id": "foundation_001",
+    "category": "foundation",
+    "published_date": "2026-05-01",
+    "headline": "DeepSeek V3.2 matches GPT-5.4 at 1/50th the cost as model pricing war intensifies",
+    "what": "DeepSeek V3.2 delivers approximately 90% of GPT-5.4's performance at roughly 1/50th the API price, according to independent benchmarks in May 2026. Google's Gemini 3.1 Pro leads 13 of 16 major enterprise benchmarks at approximately one-third of GPT-5.4's API cost. Anthropic confirmed Claude Mythos as its most capable model but withheld public release.",
+    "so_what": "The build-vs-buy calculus for internal AI tools has shifted again; CFO teams running cost-benefit models on AI infrastructure should update assumptions using current DeepSeek and Gemini pricing.",
+    "source_url": "https://llm-stats.com/llm-updates",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 6, "narrative": 7, "total": 27 }
+  }
+]

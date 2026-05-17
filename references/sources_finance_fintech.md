@@ -1,13 +1,15 @@
 # Sources — Finance: Fintech Media
 
+`simple_query: AI trade finance payments B2B automation bank deployment [year] after:{period_start}`
+
 ---
 
 - https://www.fintechfutures.com
-  `search: site:fintechfutures.com AI finance agents automation [year]`
+  `search: site:fintechfutures.com AI finance agents automation [year] after:{period_start}`
 - https://www.pymnts.com/tag/artificial-intelligence/
-  `search: site:pymnts.com AI finance payments automation [year]`
+  `search: site:pymnts.com AI finance payments automation [year] after:{period_start}`
 - https://www.bankingtech.com
-  `search: site:bankingtech.com AI finance automation agents [year]`
+  `search: site:bankingtech.com AI finance automation agents [year] after:{period_start}`
 
 ---
 

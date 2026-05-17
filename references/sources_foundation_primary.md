@@ -1,27 +1,29 @@
 # Sources — Foundation Models: Primary
 
+`simple_query: AI foundation model release capability benchmark pricing enterprise build-vs-buy [year] after:{period_start}`
+
 ---
 
 - https://www.anthropic.com/news
-  `search: site:anthropic.com model release capability enterprise [year]`
+  `search: site:anthropic.com model release capability enterprise [year] after:{period_start}`
 - https://openai.com/news
-  `search: site:openai.com model release capability enterprise [year]`
+  `search: site:openai.com model release capability enterprise [year] after:{period_start}`
 - https://deepmind.google/models/
-  `search: site:deepmind.google model release Gemini capability [year]`
+  `search: site:deepmind.google model release Gemini capability [year] after:{period_start}`
 - https://blog.google/technology/google-deepmind/
-  `search: site:blog.google google-deepmind model release Gemini [year]`
+  `search: site:blog.google google-deepmind model release Gemini [year] after:{period_start}`
 - https://ai.meta.com/blog/
-  `search: site:ai.meta.com Llama model release open weight [year]`
+  `search: site:ai.meta.com Llama model release open weight [year] after:{period_start}`
 - https://mistral.ai/news/
-  `search: site:mistral.ai model release open weight enterprise [year]`
+  `search: site:mistral.ai model release open weight enterprise [year] after:{period_start}`
 - https://huggingface.co/blog
-  `search: site:huggingface.co model release open weight enterprise [year]`
+  `search: site:huggingface.co model release open weight enterprise [year] after:{period_start}`
 - https://x.ai/blog/
-  `search: site:x.ai Grok model release capability enterprise [year]`
+  `search: site:x.ai Grok model release capability enterprise [year] after:{period_start}`
 - https://cohere.com/blog
-  `search: site:cohere.com model release enterprise finance [year]`
+  `search: site:cohere.com model release enterprise finance [year] after:{period_start}`
 - https://www.microsoft.com/en-us/research/blog/
-  `search: site:microsoft.com research AI model enterprise [year]`
+  `search: site:microsoft.com research AI model enterprise [year] after:{period_start}`
 
 ---
 

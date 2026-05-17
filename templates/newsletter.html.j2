@@ -97,13 +97,20 @@
       margin-bottom: 7px;
       line-height: 1.4;
     }
+    .story h3 a {
+      color: #0d0d0d;
+      text-decoration: none;
+    }
+    .story h3 a:hover {
+      text-decoration: underline;
+    }
     .story p {
       font-size: 12px;
       line-height: 1.7;
-      color: #444;
+      color: #666;
     }
     .story p strong {
-      color: #1c1c1c;
+      color: #666;
       font-weight: 600;
     }
     .story .source {
@@ -162,7 +169,7 @@
   {% if digest %}
   <div class="digest">
     <div class="digest-label">This Week in Brief</div>
-    <p>{{ digest }}</p>
+    <p>{{ digest | safe }}</p>
   </div>
   {% endif %}
 
@@ -174,16 +181,16 @@
     </div>
     {% for story in section.stories %}
     <div class="story">
-      <h3>{{ story.headline }}</h3>
-      <p>{{ story.body_html | striptags }}</p>
-      <div class="source">Source: <a href="{{ story.source_url }}">{{ story.source_url }}</a></div>
+      <h3><a href="{{ story.source_url }}">{{ story.headline }}</a></h3>
+      <p>{{ story.body_html | safe }}</p>
+
     </div>
     {% endfor %}
   </div>
   {% endfor %}
 
   <div class="footer">
-    Generated from public sources. Items selected and reviewed by the finance team.
+    Generated from public sources. Items selected and reviewed by Claude.
   </div>
 
 </div>

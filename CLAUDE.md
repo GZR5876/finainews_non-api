@@ -22,6 +22,7 @@ Trigger phrases (non-exhaustive):
 - "fully automated mode"
 - "draft this week's AI news"
 - any message containing "weekly-ai-news"
+- any of the above combined with "ignore history", "skip history", or "force rescan"
 
 ## Development branch
 

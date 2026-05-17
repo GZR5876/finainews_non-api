@@ -11,6 +11,12 @@ description: Generates the weekly AI news executive summary for a port-operator
 - Determine the **run mode**:
   - If the user says "run automated", "fully automated mode", or similar → **automated mode**.
   - Otherwise → **human mode** (default).
+- Determine the **history mode**:
+  - If the user's message contains "ignore history", "skip history", "force rescan", or similar → set `{ignore_history} = true`. Inform the user: "History deduplication disabled — all URLs will be treated as new."
+  - Otherwise → `{ignore_history} = false` (default).
+- Determine the **scout mode**:
+  - If the user says "simple scout", "quick scout", or similar → **simple scout mode** (`{simple_scout} = true`). Inform the user: "Simple scout enabled — one broad query per source file, relaxed thresholds (Relevance ≥ 6, total ≥ 24)."
+  - Otherwise → **full scout mode** (`{simple_scout} = false`, default).
 - Ask the user for the **news period** if not specified (default: last 7 days).
   Accept natural language such as "last 14 days", "May 5-12", or "since May 1".
   Derive a concrete date range: {period_start} to {period_end} (YYYY-MM-DD).
@@ -35,16 +41,26 @@ Search the following weekly AI digests for items published in the last 7 days.
 **Important:** These sites block WebFetch with 403. Use WebSearch with
 site-specific queries instead -- do NOT try to WebFetch their homepages.
 
-Search patterns to use:
+Search patterns to use — append `after:{period_start}` to every query before issuing.
+
+**Full scout mode** (all 8 queries):
 ```
-site:therundown.ai AI finance agents enterprise [current month] [year]
-site:bensbites.com AI finance enterprise agents [current month] [year]
-site:tldr.tech AI finance agents models [current month] [year]
-site:a16z.com AI finance enterprise agents [year]
-site:mckinsey.com AI finance enterprise agents [year]
-site:bain.com AI finance enterprise agents [year]
-site:sequoiacap.com AI finance enterprise [year]
-site:menlovc.com AI finance enterprise [year]
+site:therundown.ai AI finance agents enterprise [current month] [year] after:{period_start}
+site:bensbites.com AI finance enterprise agents [current month] [year] after:{period_start}
+site:tldr.tech AI finance agents models [current month] [year] after:{period_start}
+site:a16z.com AI finance enterprise agents [year] after:{period_start}
+site:mckinsey.com AI finance enterprise agents [year] after:{period_start}
+site:bain.com AI finance enterprise agents [year] after:{period_start}
+site:sequoiacap.com AI finance enterprise [year] after:{period_start}
+site:menlovc.com AI finance enterprise [year] after:{period_start}
+```
+
+**Simple scout mode** (4 queries only):
+```
+site:therundown.ai AI finance agents enterprise [current month] [year] after:{period_start}
+site:a16z.com AI finance enterprise agents [year] after:{period_start}
+site:mckinsey.com AI finance enterprise agents [year] after:{period_start}
+site:tldr.tech AI finance agents models [current month] [year] after:{period_start}
 ```
 
 Digests to sweep:
@@ -77,12 +93,18 @@ calls in one turn, then score the results. Do not WebFetch during the scout phas
 Work through the four categories below. For each:
 
 1. Read the source files for the category one at a time (listed below).
-2. For each file: issue all `search:` queries as parallel tool calls in one turn,
-   then score the results before moving to the next file.
-   Substitute the current year for `[year]` throughout. No source may be skipped.
+2. For each file: issue queries as parallel tool calls in one turn, then score
+   the results before moving to the next file. Substitute the current year for
+   `[year]` throughout. Append `after:{period_start}` to every query before
+   issuing it. No source may be skipped.
+   - **Full scout mode**: issue all `search:` queries listed in the file.
+   - **Simple scout mode**: issue only the single `simple_query:` line from the
+     file (one query per source file, no `site:` restriction).
 3. **Do NOT WebFetch any URLs during the scout phase.** Write `what`/`so_what` from
    the search snippet only. WebFetch is reserved for Phase 3.
-4. For each candidate item, run: `python scripts/check_history.py --url "{url}"` -- skip any that return `SEEN`.
+4. For each candidate item, check history:
+   - If `{ignore_history} = false` (default): run `python scripts/check_history.py --url "{url}"` and skip any that return `SEEN`.
+   - If `{ignore_history} = true`: skip this check entirely — treat every URL as NEW.
 5. Score each surviving item on four dimensions (1-10 each):
    - **Relevance** to a CFO of a global port operator (apply +1 materiality bonus for finance items per audience.md)
    - **Novelty** -- genuinely new development, not a restatement of old news
@@ -92,7 +114,9 @@ Work through the four categories below. For each:
      for 6 months"), consequence ("AI agent approved a duplicate $2M payment"), or first-ever
      production deployment at scale. Scores low for vendor press releases, generic capability claims,
      and incremental product updates with no human or financial drama.
-6. Drop any item where Relevance < 7 or total score < 28.
+6. Drop items below threshold:
+   - **Full scout mode**: drop any item where Relevance < 7 or total score < 28.
+   - **Simple scout mode**: drop any item where Relevance < 6 or total score < 24.
 7. Keep top 5-8 items per category. Record each as a JSON object:
    ```json
    {
@@ -154,8 +178,10 @@ provider strategy stories where the subject is the model itself.
 
 ### Step 1c: Tips scout (run after category scout)
 
-Read each tips source file below and run every `search:` query. Read and complete
-one file at a time before moving to the next. No source may be skipped.
+Read each tips source file below. Append `after:{period_start}` to every query.
+- **Full scout mode**: run every `search:` query in the file.
+- **Simple scout mode**: run only the `simple_query:` from the file.
+Read and complete one file at a time before moving to the next. No source may be skipped.
 Target **3-5 tip candidates** per run so the user has meaningful choice.
 
 Tips source files:
@@ -281,12 +307,19 @@ After all categories and tips are scouted:
 
 3. For each selected **news item** (non-tips), write a newsletter entry following
    the voice defined in references/voice.md. Hard rules for every item:
-   - **Headline**: "Company/who did what" format -- subject + verb + object, max 10
+   - **Headline**: Use the `headline` field from candidates.json verbatim. Only
+     rewrite it if WebFetch reveals a materially better framing (e.g. a specific
+     metric that changes the meaning). Format: subject + verb + object, max 10
      words, no qualifiers. Plain text title above the body.
    - **No em dashes** anywhere. Use a comma, colon, or recast the sentence.
-   - **One sentence** (~25 words): combine the key fact (who/what/scale) with the CFO's action or watch item. Bold only the 2-4 key words or phrase that carry the most weight (e.g. the metric, the actor, the deadline) using `**...**` inline.
+   - **One sentence** (≤25 words): compress the `what` field from candidates.json
+     down to its single most important fact. If WebFetch retrieved full content,
+     use any new specifics (named clients, exact metrics) to sharpen the `what`
+     before compressing. No CFO action or watch item in the body.
+     Bold only the 2-4 key words that carry the most weight (the metric, the
+     actor, the scale) using `**...**` inline.
    - `Source: {url}` on its own line after the sentence.
-   - Total target: ~25 words per item.
+   - Total target: ≤25 words per item.
 
 4. Assemble news sections into `data/issues/{week}/draft.md`:
    ```

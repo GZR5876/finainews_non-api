@@ -39,14 +39,14 @@ def load_selections(week: str) -> list[dict]:
     path = DATA / "issues" / week / "selections.json"
     if not path.exists():
         raise SystemExit(f"selections.json not found at {path}")
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def load_candidates(week: str) -> dict[str, dict]:
     path = DATA / "issues" / week / "candidates.json"
     if not path.exists():
         raise SystemExit(f"candidates.json not found at {path}")
-    items = json.loads(path.read_text())
+    items = json.loads(path.read_text(encoding="utf-8"))
     return {item["id"]: item for item in items}
 
 
@@ -54,7 +54,7 @@ def load_draft(week: str) -> str:
     path = DATA / "issues" / week / "draft.md"
     if not path.exists():
         raise SystemExit(f"draft.md not found at {path}")
-    return path.read_text()
+    return path.read_text(encoding="utf-8")
 
 
 def extract_digest(draft_md: str) -> str:
@@ -191,18 +191,21 @@ def main():
     candidates = load_candidates(week)
     draft_md   = load_draft(week)
     sections   = parse_draft_sections(draft_md, selections, candidates)
-    digest     = extract_digest(draft_md)
+    import re
+    digest_html = md_lib.markdown(extract_digest(draft_md))
+    digest_html = re.sub(r"^\s*<p>", "", digest_html).strip()
+    digest_html = re.sub(r"</p>\s*$", "", digest_html).strip()
 
     issue_date = date.today().strftime("%d %B %Y")
 
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
     tmpl = env.get_template("newsletter.html.j2")
     html = tmpl.render(week=week, issue_date=issue_date, sections=sections,
-                       digest=digest,
+                       digest=digest_html,
                        generated_at=datetime.now().isoformat(timespec="minutes"))
 
     html_path = issue_dir / "newsletter.html"
-    html_path.write_text(html)
+    html_path.write_text(html, encoding="utf-8")
     print(f"HTML: {html_path}")
 
     # Optional PDF via WeasyPrint

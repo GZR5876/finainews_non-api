@@ -1,17 +1,19 @@
 # Sources — Physical AI: Port Operator Newsrooms
 
+`simple_query: AI automation robotics port terminal AGV crane capex productivity deployment [year] after:{period_start}`
+
 Peer disclosures — high signal.
 
 ---
 
 - https://www.internationalpsa.com/news/
-  `search: site:internationalpsa.com AI automation robotics port [year]`
+  `search: site:internationalpsa.com AI automation robotics port [year] after:{period_start}`
 - https://www.dpworld.com/news/
-  `search: site:dpworld.com AI automation robotics terminal [year]`
+  `search: site:dpworld.com AI automation robotics terminal [year] after:{period_start}`
 - https://www.apmterminals.com/en/news
-  `search: site:apmterminals.com AI automation robotics terminal [year]`
+  `search: site:apmterminals.com AI automation robotics terminal [year] after:{period_start}`
 - https://www.portofrotterdam.com/en/news-and-press
-  `search: site:portofrotterdam.com AI automation robotics port [year]`
+  `search: site:portofrotterdam.com AI automation robotics port [year] after:{period_start}`
 
 ---
 

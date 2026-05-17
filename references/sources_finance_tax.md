@@ -1,17 +1,19 @@
 # Sources — Finance: Tax & Customs
 
+`simple_query: AI tax customs duty classification e-invoicing transfer pricing automation port [year] after:{period_start}`
+
 ---
 
 - https://www.taxnotes.com
-  `search: site:taxnotes.com AI tax automation agents [year]`
+  `search: site:taxnotes.com AI tax automation agents [year] after:{period_start}`
 - https://www.internationaltaxreview.com
-  `search: site:internationaltaxreview.com AI tax technology [year]`
+  `search: site:internationaltaxreview.com AI tax technology [year] after:{period_start}`
 - https://www.wcoomd.org/en/media/newsroom.aspx
-  `search: site:wcoomd.org AI customs classification automation [year]`
+  `search: site:wcoomd.org AI customs classification automation [year] after:{period_start}`
 - https://www.oecd.org/tax/
-  `search: site:oecd.org AI tax Pillar Two BEPS automation [year]`
+  `search: site:oecd.org AI tax Pillar Two BEPS automation [year] after:{period_start}`
 - https://kpmg.com (tax-tech)
-  `search: site:kpmg.com AI tax technology customs automation [year]`
+  `search: site:kpmg.com AI tax technology customs automation [year] after:{period_start}`
 
 ---
 
