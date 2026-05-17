@@ -2,8 +2,9 @@
 
 ## How to use this file
 For every source listed below, run the associated `search:` (core) query via WebSearch — these run every scout.
-Also run 2 of the 3 `rotation:` queries per source, sampled randomly each run.
-Run ALL sources every scout — do not skip any. Target 3-5 tip candidates per issue (tips file only).
+All `rotation:` queries across this file form a single pool; pick 25% at random each run and run those.
+Run ALL `search:` (core) queries every scout — do not skip any based on priority or recency.
+Use the article's actual URL from results; the listed URL is the site root for reference.
 
 ---
 

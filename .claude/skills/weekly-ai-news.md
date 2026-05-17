@@ -63,13 +63,12 @@ before proceeding to per-category source searches.
 Work through the four categories below. For each:
 
 1. Read the corresponding source file (references/sources_{category}.md).
-2. **For each source, run its queries using the two-tier system:**
-   - Run the `search:` (core) query — this runs every scout, no exceptions.
-   - Each source also has three `rotation:` queries. Pick **2 of the 3** at random
-     and run those as well. Use whichever 2 feel most likely to surface new content
-     given the current news cycle; vary the selection across runs.
-   - No source may be skipped. Substitute the current year for `[year]` and the
-     current month for `[current month]` (e.g. "May 2026") throughout.
+2. **Run queries using the two-tier system:**
+   - Run every `search:` (core) query in the file — no source may be skipped.
+   - Collect all `rotation:` queries in the file into a single pool. Pick 25% at
+     random and run those. Vary the selection across runs to maximise coverage over time.
+   - Substitute the current year for `[year]` and the current month for
+     `[current month]` (e.g. "May 2026") throughout.
 3. For each result returned, attempt WebFetch on the article URL to retrieve full content.
    If WebFetch returns 403 or times out, write `what`/`so_what` from the search snippet.
 4. For each candidate item, run: `python scripts/check_history.py --url "{url}"` -- skip any that return `SEEN`.
@@ -114,9 +113,9 @@ Anthropic should be scored at full value regardless of recency within the last 3
 ### Step 1c: Tips scout (run after category scout)
 
 Read references/sources_tips.md for the full source list. Apply the same two-tier
-system: run the `search:` (core) query for every source, plus **2 of 3** `rotation:`
-queries per source sampled randomly. Cover all YouTube entries, all webinar sources,
-all written guide sources, all editorial sources. No source may be skipped.
+system: run every `search:` (core) query, then pick 25% of all `rotation:` queries
+in the file at random and run those. Cover all source categories (YouTube, webinars,
+written guides, editorial). No `search:` source may be skipped.
 Target **3-5 tip candidates** per run so the user has meaningful choice.
 
 Pick videos/articles with clearly instructional titles ("How to...", "Demo:",
