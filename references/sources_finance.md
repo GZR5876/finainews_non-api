@@ -124,26 +124,11 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
   `rotation: site:afponline.org AI working capital optimisation [year]`
   `rotation: site:afponline.org AI payment fraud treasury [year]`
   `rotation: site:afponline.org AI FX exposure treasury [year]`
-- https://www.gtnews.com
-  `search: site:gtnews.com AI treasury automation [year]`
-  `rotation: site:gtnews.com AI cash pooling treasury [year]`
-  `rotation: site:gtnews.com AI bank connectivity treasury [year]`
-  `rotation: site:gtnews.com AI real-time payments treasury [year]`
 - https://www.swift.com/news-events/news
   `search: site:swift.com AI treasury payments automation [year]`
   `rotation: site:swift.com AI fraud detection payments [year]`
   `rotation: site:swift.com AI cross-border payments ISO 20022 [year]`
   `rotation: site:swift.com AI correspondent banking automation [year]`
-- https://www.eurofinance.com
-  `search: site:eurofinance.com AI treasury cash management [year]`
-  `rotation: site:eurofinance.com AI FX treasury hedging [year]`
-  `rotation: site:eurofinance.com AI supply chain finance working capital [year]`
-  `rotation: site:eurofinance.com AI treasury centralisation multibank [year]`
-- https://www.gtreasury.com/resources
-  `search: site:gtreasury.com AI treasury automation [year]`
-  `rotation: site:gtreasury.com AI cash visibility multibank [year]`
-  `rotation: site:gtreasury.com AI payment workflow treasury [year]`
-  `rotation: site:gtreasury.com AI treasury risk management [year]`
 - https://www.kyriba.com/blog
   `search: site:kyriba.com AI treasury cash flow forecast [year]`
   `rotation: site:kyriba.com AI FX risk hedging scenario [year]`
@@ -164,11 +149,6 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
   `rotation: site:internationaltaxreview.com AI transfer pricing automation [year]`
   `rotation: site:internationaltaxreview.com AI e-invoicing VAT mandate [year]`
   `rotation: site:internationaltaxreview.com AI customs duty classification [year]`
-- https://taxfoundation.org/blog/
-  `search: site:taxfoundation.org AI tax automation [year]`
-  `rotation: site:taxfoundation.org AI tax policy compliance [year]`
-  `rotation: site:taxfoundation.org AI corporate tax reform [year]`
-  `rotation: site:taxfoundation.org AI tax compliance administration [year]`
 - https://www.wcoomd.org/en/media/newsroom.aspx
   `search: site:wcoomd.org AI customs classification automation [year]`
   `rotation: site:wcoomd.org AI trade facilitation single window [year]`
@@ -184,21 +164,6 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
   `rotation: site:kpmg.com AI customs duty tariff classification [year]`
   `rotation: site:kpmg.com AI e-invoicing VAT compliance [year]`
   `rotation: site:kpmg.com AI transfer pricing automation [year]`
-- PwC tax-tech blog
-  `search: site:pwc.com AI tax technology automation [year]`
-  `rotation: site:pwc.com AI customs duty tariff classification [year]`
-  `rotation: site:pwc.com AI e-invoicing VAT compliance [year]`
-  `rotation: site:pwc.com AI transfer pricing automation [year]`
-- EY tax-tech blog
-  `search: site:ey.com AI tax technology automation [year]`
-  `rotation: site:ey.com AI customs duty tariff classification [year]`
-  `rotation: site:ey.com AI e-invoicing VAT compliance [year]`
-  `rotation: site:ey.com AI transfer pricing automation [year]`
-- Deloitte tax-tech blog
-  `search: site:deloitte.com AI tax technology automation [year]`
-  `rotation: site:deloitte.com AI customs duty tariff classification [year]`
-  `rotation: site:deloitte.com AI e-invoicing VAT compliance [year]`
-  `rotation: site:deloitte.com AI transfer pricing automation [year]`
 
 ---
 
