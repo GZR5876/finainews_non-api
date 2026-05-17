@@ -4,7 +4,6 @@
 For every source listed below, run the associated `search:` (core) query via WebSearch — these run every scout.
 All `rotation:` queries across this file form a single pool; pick 25% at random each run and run those.
 Run ALL `search:` (core) queries every scout — do not skip any based on priority or recency.
-Use the article's actual URL from results; the listed URL is the site root for reference.
 
 ---
 
