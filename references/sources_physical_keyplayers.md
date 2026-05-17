@@ -23,6 +23,8 @@ HIGHEST PRIORITY — run these first.
   `search: "Figure AI" humanoid robot deployment logistics warehouse [year]`
 - https://physicalintelligence.company/blog/
   `search: "Physical Intelligence" robot foundation model deployment [year]`
+- https://www.unitree.com/news/
+  `search: "Unitree" AI robot logistics industrial deployment [year]`
 
 ### Autonomous vehicles & port software
 
