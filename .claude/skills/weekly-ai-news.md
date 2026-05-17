@@ -137,6 +137,7 @@ Categories and source files (scout order -- finance goes first in both scout and
 - references/sources_physical_keyplayers.md
 - references/sources_physical_operators.md
 - references/sources_physical_maritime.md
+- references/sources_physical_media.md
 
 **`foundation`**:
 - references/sources_foundation_primary.md
@@ -175,7 +176,7 @@ Then print a **query count report**:
 Scout complete — queries run:
   finance (11 files)   : N
   agents (4 files)     : N
-  physical (3 files)   : N
+  physical (4 files)   : N
   foundation (3 files) : N
   tips (1 file)        : N
   TOTAL                : N

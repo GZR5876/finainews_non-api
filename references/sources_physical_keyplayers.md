@@ -15,17 +15,6 @@ HIGHEST PRIORITY — run these first.
 - https://www.abb.com/news/
   `search: site:abb.com AI port crane automation [year]`
 
-### Humanoid & mobile robotics
-
-- https://bostondynamics.com/blog/
-  `search: site:bostondynamics.com AI robotics logistics port [year]`
-- https://www.figure.ai/news/
-  `search: "Figure AI" humanoid robot deployment logistics warehouse [year]`
-- https://physicalintelligence.company/blog/
-  `search: "Physical Intelligence" robot foundation model deployment [year]`
-- https://www.unitree.com/news/
-  `search: "Unitree" AI robot logistics industrial deployment [year]`
-
 ### Autonomous vehicles & port software
 
 - https://www.navis.com/news/
