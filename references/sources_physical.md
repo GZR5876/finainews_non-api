@@ -174,6 +174,16 @@ Run ALL `search:` (core) queries every scout — do not skip any.
   `rotation: site:newatlas.com humanoid robot industrial deployment [year]`
   `rotation: site:newatlas.com AI drone inspection infrastructure [year]`
   `rotation: site:newatlas.com autonomous vehicle freight logistics [year]`
+- https://techcrunch.com/category/robotics/
+  `search: site:techcrunch.com AI robotics logistics warehouse deployment [year]`
+  `rotation: site:techcrunch.com humanoid robot industrial deployment funding [year]`
+  `rotation: site:techcrunch.com autonomous robot logistics case study [year]`
+  `rotation: site:techcrunch.com AI robotics startup enterprise contract [year]`
+- https://www.wired.com/tag/robots/
+  `search: site:wired.com AI robotics logistics industrial deployment [year]`
+  `rotation: site:wired.com humanoid robot warehouse factory [year]`
+  `rotation: site:wired.com AI robotics labour automation [year]`
+  `rotation: site:wired.com autonomous robot deployment named company [year]`
 
 ---
 
@@ -219,6 +229,31 @@ Run ALL `search:` (core) queries every scout — do not skip any.
   `rotation: site:agilityrobotics.com Digit humanoid robot warehouse deployment [year]`
   `rotation: site:agilityrobotics.com AI humanoid robot logistics case study [year]`
   `rotation: site:agilityrobotics.com AI robot deployment named facility [year]`
+- Figure AI: https://www.figure.ai/news/
+  `search: "Figure AI" humanoid robot deployment logistics warehouse [year]`
+  `rotation: "Figure AI" robot commercial deployment named customer [year]`
+  `rotation: "Figure AI" humanoid robot industrial contract [year]`
+  `rotation: "Figure AI" robot funding valuation enterprise [year]`
+- 1X Technologies: https://www.1x.tech/discover/
+  `search: "1X Technologies" humanoid robot deployment [year]`
+  `rotation: "1X" NEO robot commercial deployment logistics [year]`
+  `rotation: "1X Technologies" humanoid robot industrial contract [year]`
+  `rotation: "1X Technologies" robot funding enterprise [year]`
+- Apptronik: https://apptronik.com/news/
+  `search: site:apptronik.com humanoid robot logistics deployment [year]`
+  `rotation: site:apptronik.com Apollo robot warehouse industrial [year]`
+  `rotation: site:apptronik.com humanoid robot enterprise contract [year]`
+  `rotation: site:apptronik.com AI robot deployment named customer [year]`
+- Unitree Robotics: https://www.unitree.com/news/
+  `search: "Unitree" AI robot logistics industrial deployment [year]`
+  `rotation: "Unitree" humanoid robot G1 H1 enterprise deployment [year]`
+  `rotation: "Unitree" robot commercial contract logistics [year]`
+  `rotation: "Unitree" robot price cost enterprise adoption [year]`
+- Physical Intelligence (Pi): https://physicalintelligence.company/blog/
+  `search: "Physical Intelligence" robot foundation model deployment [year]`
+  `rotation: "Physical Intelligence" pi0 robot logistics industrial [year]`
+  `rotation: "Physical Intelligence" robot learning deployment enterprise [year]`
+  `rotation: "Physical Intelligence" robot funding enterprise contract [year]`
 - Mobileye: https://www.mobileye.com/newsroom/
   `search: site:mobileye.com AI autonomous logistics vehicle [year]`
   `rotation: site:mobileye.com autonomous vehicle port yard truck [year]`
