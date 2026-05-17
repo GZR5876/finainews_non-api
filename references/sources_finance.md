@@ -7,7 +7,7 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
 
 ---
 
-## High-priority (check every week, score with +1 materiality bonus)
+## High-priority (score with +1 materiality bonus)
 
 - https://www.anthropic.com/news/finance-agents
   `search: site:anthropic.com finance agents [year]`

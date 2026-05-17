@@ -7,7 +7,7 @@ Run ALL `search:` (core) queries every scout — do not skip any.
 
 ---
 
-## Primary (check every week)
+## Primary
 
 - https://www.anthropic.com/news
   `search: site:anthropic.com model release capability enterprise [year]`

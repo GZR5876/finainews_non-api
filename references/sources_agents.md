@@ -112,7 +112,7 @@ Run ALL `search:` (core) queries every scout — do not skip any. Target 3-5 tip
 
 ---
 
-## Big-4 AI announcements (check every week — high signal for CFO audience)
+## Big-4 AI announcements (high signal for CFO audience)
 
 - https://kpmg.com/us/en/media/news.html
   `search: site:kpmg.com AI agents enterprise finance deployment [year]`
