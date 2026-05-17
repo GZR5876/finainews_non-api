@@ -151,8 +151,20 @@ way as other candidates (Relevance < 7 or total < 28 → drop).
 
 ### Step 1d: Write candidates.json
 
-Write all candidates (news + tips) to `data/issues/{week}/candidates.json` as
+Write all candidates (news + tips) to `data/issues/{run_folder}/candidates.json` as
 a JSON array, ordered: finance items first, then agents, physical, foundation, tips.
+
+Then print a **query count report**:
+```
+Scout complete — queries run:
+  finance    : X core, Y rotation
+  agents     : X core, Y rotation
+  physical   : X core, Y rotation
+  foundation : X core, Y rotation
+  tips       : X core, Y rotation
+  TOTAL      : X core, Y rotation
+Candidates found: N (before history filter), M kept
+```
 
 ## Phase 1.5: Automated selection (automated mode only)
 
