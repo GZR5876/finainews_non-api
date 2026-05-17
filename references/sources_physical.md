@@ -121,9 +121,9 @@ Run ALL `search:` (core) queries every scout — do not skip any.
   `rotation: site:xeneta.com AI procurement freight benchmark [year]`
 - Sea-Intelligence: https://www.sea-intelligence.com/
   `search: site:sea-intelligence.com AI shipping analytics [year]`
-  `rotation: site:sea-intelligence.com autonomous crane AGV investment [year]`
-  `rotation: site:sea-intelligence.com digital twin port simulation [year]`
-  `rotation: site:sea-intelligence.com terminal productivity throughput AI [year]`
+  `rotation: site:sea-intelligence.com schedule reliability carrier ranking [year]`
+  `rotation: site:sea-intelligence.com container shipping market intelligence [year]`
+  `rotation: site:sea-intelligence.com AI freight demand forecast capacity [year]`
 - Kpler: https://www.kpler.com/blog/
   `search: site:kpler.com AI shipping analytics trade flow [year]`
   `rotation: site:kpler.com AI commodity trade flow analytics [year]`
@@ -211,54 +211,54 @@ Run ALL `search:` (core) queries every scout — do not skip any.
   `rotation: site:liebherr.com AI contract deployment named port [year]`
 - Boston Dynamics: https://bostondynamics.com/blog/
   `search: site:bostondynamics.com AI robotics logistics port [year]`
-  `rotation: site:bostondynamics.com autonomous stacking crane electrification [year]`
-  `rotation: site:bostondynamics.com digital twin remote operation [year]`
-  `rotation: site:bostondynamics.com AI contract deployment named port [year]`
+  `rotation: site:bostondynamics.com Spot robot inspection logistics [year]`
+  `rotation: site:bostondynamics.com Atlas humanoid robot industrial [year]`
+  `rotation: site:bostondynamics.com AI robot deployment named facility [year]`
 - Agility Robotics: https://agilityrobotics.com/news/
   `search: site:agilityrobotics.com AI robotics logistics [year]`
-  `rotation: site:agilityrobotics.com autonomous stacking crane electrification [year]`
-  `rotation: site:agilityrobotics.com digital twin remote operation [year]`
-  `rotation: site:agilityrobotics.com AI contract deployment named port [year]`
+  `rotation: site:agilityrobotics.com Digit humanoid robot warehouse deployment [year]`
+  `rotation: site:agilityrobotics.com AI humanoid robot logistics case study [year]`
+  `rotation: site:agilityrobotics.com AI robot deployment named facility [year]`
 - Mobileye: https://www.mobileye.com/newsroom/
   `search: site:mobileye.com AI autonomous logistics vehicle [year]`
-  `rotation: site:mobileye.com autonomous stacking crane electrification [year]`
-  `rotation: site:mobileye.com digital twin remote operation [year]`
-  `rotation: site:mobileye.com AI contract deployment named port [year]`
+  `rotation: site:mobileye.com autonomous vehicle port yard truck [year]`
+  `rotation: site:mobileye.com AI driver assistance logistics commercial [year]`
+  `rotation: site:mobileye.com autonomous driving deployment named fleet [year]`
 - Waymo Via: https://waymo.com/blog/
   `search: site:waymo.com AI autonomous logistics freight [year]`
-  `rotation: site:waymo.com autonomous stacking crane electrification [year]`
-  `rotation: site:waymo.com digital twin remote operation [year]`
-  `rotation: site:waymo.com AI contract deployment named port [year]`
+  `rotation: site:waymo.com autonomous truck freight named route [year]`
+  `rotation: site:waymo.com Waymo Via commercial deployment [year]`
+  `rotation: site:waymo.com AI autonomous vehicle regulatory approval [year]`
 - Navis: https://www.navis.com/news/
   `search: site:navis.com AI port operating system terminal [year]`
-  `rotation: site:navis.com autonomous stacking crane electrification [year]`
-  `rotation: site:navis.com digital twin remote operation [year]`
-  `rotation: site:navis.com AI contract deployment named port [year]`
+  `rotation: site:navis.com N4 TOS terminal implementation [year]`
+  `rotation: site:navis.com AI terminal data analytics productivity [year]`
+  `rotation: site:navis.com AI vessel planning berth optimisation [year]`
 - Identec Solutions: https://www.identecsolutions.com/blog/
   `search: site:identecsolutions.com AI port terminal automation [year]`
-  `rotation: site:identecsolutions.com autonomous stacking crane electrification [year]`
-  `rotation: site:identecsolutions.com digital twin remote operation [year]`
-  `rotation: site:identecsolutions.com AI contract deployment named port [year]`
+  `rotation: site:identecsolutions.com RTLS asset tracking port yard [year]`
+  `rotation: site:identecsolutions.com AI IoT port safety compliance [year]`
+  `rotation: site:identecsolutions.com AI port visibility tracking deployment [year]`
 - Portchain: https://www.portchain.com/blog/
   `search: site:portchain.com AI port scheduling automation [year]`
-  `rotation: site:portchain.com autonomous stacking crane electrification [year]`
-  `rotation: site:portchain.com digital twin remote operation [year]`
-  `rotation: site:portchain.com AI contract deployment named port [year]`
+  `rotation: site:portchain.com vessel schedule optimisation port call [year]`
+  `rotation: site:portchain.com AI berth planning productivity [year]`
+  `rotation: site:portchain.com AI port call coordination named port [year]`
 - TBA Group: https://www.tbagroup.eu/news/
   `search: site:tbagroup.eu AI port terminal automation [year]`
-  `rotation: site:tbagroup.eu autonomous stacking crane electrification [year]`
-  `rotation: site:tbagroup.eu digital twin remote operation [year]`
-  `rotation: site:tbagroup.eu AI contract deployment named port [year]`
+  `rotation: site:tbagroup.eu terminal automation integration TOS [year]`
+  `rotation: site:tbagroup.eu AI port software deployment named terminal [year]`
+  `rotation: site:tbagroup.eu AI simulation planning port [year]`
 - INFORM: https://www.inform-software.com/news/
   `search: site:inform-software.com AI port terminal logistics [year]`
-  `rotation: site:inform-software.com autonomous stacking crane electrification [year]`
-  `rotation: site:inform-software.com digital twin remote operation [year]`
-  `rotation: site:inform-software.com AI contract deployment named port [year]`
+  `rotation: site:inform-software.com AI optimisation logistics scheduling [year]`
+  `rotation: site:inform-software.com AI ground handler airport logistics [year]`
+  `rotation: site:inform-software.com AI workforce planning port terminal [year]`
 - Octopi: https://www.octopi.com/blog/
   `search: site:octopi.com AI port terminal management [year]`
-  `rotation: site:octopi.com autonomous stacking crane electrification [year]`
-  `rotation: site:octopi.com digital twin remote operation [year]`
-  `rotation: site:octopi.com AI contract deployment named port [year]`
+  `rotation: site:octopi.com cloud TOS terminal management deployment [year]`
+  `rotation: site:octopi.com AI terminal analytics productivity [year]`
+  `rotation: site:octopi.com AI port operations small terminal [year]`
 
 ---
 
