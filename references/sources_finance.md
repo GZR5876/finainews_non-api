@@ -37,7 +37,7 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
 - https://www.cfo.com
   `search: site:cfo.com AI agents finance automation [year]`
   `rotation: site:cfo.com AI financial close reporting cycle [year]`
-  `rotation: site:cfo.com AI finance workforce headcount [year]`
+  `rotation: site:cfo.com AI finance ROI payback period [year]`
   `rotation: site:cfo.com agentic AI board reporting strategy [year]`
 - https://www.cfodive.com
   `search: site:cfodive.com AI finance agents automation [year]`
