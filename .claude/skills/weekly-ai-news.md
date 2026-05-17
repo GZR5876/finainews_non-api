@@ -8,6 +8,9 @@ description: Generates the weekly AI news executive summary for a port-operator
 # Weekly AI News -- Procedure
 
 ## Setup
+- Determine the **run mode**:
+  - If the user says "run automated", "fully automated mode", or similar → **automated mode**.
+  - Otherwise → **human mode** (default).
 - Ask the user for the **news period** if not specified (default: last 7 days).
   Accept natural language such as "last 14 days", "May 5-12", or "since May 1".
   Derive a concrete date range: {period_start} to {period_end} (YYYY-MM-DD).
@@ -127,14 +130,61 @@ Pick videos/articles with clearly instructional titles ("How to...", "Demo:",
 "Walkthrough", "Step-by-step"). Avoid opinion pieces or news summaries.
 
 Record tips as `tips_NNN` with `"category": "tips"`. Score and filter the same
-way as other candidates (Relevance < 7 or total < 21 → drop).
+way as other candidates (Relevance < 7 or total < 28 → drop).
 
 ### Step 1d: Write candidates.json
 
 Write all candidates (news + tips) to `data/issues/{week}/candidates.json` as
 a JSON array, ordered: finance items first, then agents, physical, foundation, tips.
 
-## Phase 2: Candidate review (human checkpoint)
+## Phase 1.5: Automated selection (automated mode only)
+
+Skip this phase entirely in human mode — go directly to Phase 2.
+
+In **automated mode**, after Step 1d is complete:
+
+1. Render `data/issues/{week}/candidates.html` using the same command as Phase 2
+   step 1 (jinja2 template render). Commit and push candidates.json and
+   candidates.html so the user can review the full candidate pool later.
+
+2. Read `data/issues/{week}/candidates.json`.
+
+3. Acting as a **senior financial process and automation specialist** advising a
+   port-operator CFO, select the final items for the newsletter:
+   - Pick **5 to 7 items** total (news + tip combined).
+   - Rank candidates by total score; higher score wins.
+   - Category balance is a secondary preference — do not force it.
+     A category may be dropped entirely if its best candidate scores below the
+     weakest item from another category.
+   - Include the highest-scoring `tips_NNN` item **only if** it is genuinely
+     useful (strong score, actionable same day). If no tip clears the bar, omit
+     the tip entirely.
+   - Do not force inclusion of failure/risk stories. If they scored high,
+     they are already in the ranking.
+   - Two items covering the same underlying news event count as duplicates;
+     keep only the higher-scoring one.
+
+4. Write `data/issues/{week}/selections.json` as a JSON array in the same
+   format as the human-mode file:
+   ```json
+   [
+     {"id": "finance_001", "user_comment": null},
+     {"id": "agents_002", "user_comment": null}
+   ]
+   ```
+   Set `user_comment` to `null` for every entry.
+
+5. Print a one-line summary for each selected item:
+   `[id] (score: N) — headline`
+
+6. **Do not stop.** Proceed immediately to Phase 3.
+
+---
+
+## Phase 2: Candidate review (human mode only)
+
+Skip this phase entirely in automated mode — Phase 1.5 has already written
+selections.json and Phase 3 follows immediately.
 
 After all categories and tips are scouted:
 
