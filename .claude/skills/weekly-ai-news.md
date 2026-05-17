@@ -71,12 +71,14 @@ before proceeding to per-category source searches.
 
 **IMPORTANT:** Run all searches directly in the main agent — do NOT spawn sub-agents
 or parallel agents for web search. Sub-agents consume more tokens and are slower for
-this workload. Execute every WebSearch and WebFetch call sequentially, one at a time.
+this workload. Within each source file, issue all `search:` queries as parallel tool
+calls in one turn, then score the results. Do not WebFetch during the scout phase.
 
 Work through the four categories below. For each:
 
 1. Read the source files for the category one at a time (listed below).
-2. For each file: run every `search:` query, then move to the next file.
+2. For each file: issue all `search:` queries as parallel tool calls in one turn,
+   then score the results before moving to the next file.
    Substitute the current year for `[year]` throughout. No source may be skipped.
 3. **Do NOT WebFetch any URLs during the scout phase.** Write `what`/`so_what` from
    the search snippet only. WebFetch is reserved for Phase 3.
