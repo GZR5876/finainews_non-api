@@ -136,9 +136,7 @@ Categories and source files (scout order -- finance goes first in both scout and
 **`physical`**:
 - references/sources_physical_keyplayers.md
 - references/sources_physical_operators.md
-- references/sources_physical_media.md
 - references/sources_physical_maritime.md
-- references/sources_physical_analytics.md
 
 **`foundation`**:
 - references/sources_foundation_primary.md
@@ -160,9 +158,6 @@ Target **3-5 tip candidates** per run so the user has meaningful choice.
 
 Tips source files:
 - references/sources_tips_youtube.md
-- references/sources_tips_webinars.md
-- references/sources_tips_guides.md
-- references/sources_tips_editorial.md
 
 Pick videos/articles with clearly instructional titles ("How to...", "Demo:",
 "Walkthrough", "Step-by-step"). Avoid opinion pieces or news summaries.
@@ -180,9 +175,9 @@ Then print a **query count report**:
 Scout complete — queries run:
   finance (11 files)   : N
   agents (4 files)     : N
-  physical (5 files)   : N
+  physical (3 files)   : N
   foundation (3 files) : N
-  tips (4 files)       : N
+  tips (1 file)        : N
   TOTAL                : N
 Candidates found: N (before history filter), M kept
 ```
