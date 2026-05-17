@@ -110,6 +110,24 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
   `rotation: site:journalofaccountancy.com AI intercompany reconciliation [year]`
   `rotation: site:journalofaccountancy.com AI IFRS reporting automation [year]`
 
+### Management reporting & board packs
+
+- Vareto: https://www.vareto.com/blog/
+  `search: site:vareto.com AI board reporting management [year]`
+  `rotation: site:vareto.com AI CFO board pack automation [year]`
+  `rotation: site:vareto.com AI variance commentary reporting [year]`
+  `rotation: site:vareto.com AI executive dashboard finance [year]`
+- Cube: https://www.cube.dev/blog/
+  `search: site:cube.dev AI FP&A board reporting automation [year]`
+  `rotation: site:cube.dev AI management reporting Excel integration [year]`
+  `rotation: site:cube.dev AI budget vs actual variance [year]`
+  `rotation: site:cube.dev AI rolling forecast board pack [year]`
+- Mosaic: https://www.mosaic.tech/blog/
+  `search: site:mosaic.tech AI strategic finance board reporting [year]`
+  `rotation: site:mosaic.tech AI CFO dashboard metrics reporting [year]`
+  `rotation: site:mosaic.tech AI scenario planning board narrative [year]`
+  `rotation: site:mosaic.tech AI finance storytelling management report [year]`
+
 ---
 
 ## Treasury
