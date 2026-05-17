@@ -144,3 +144,7 @@ Lead question: "Is this a meaningfully more capable or cheaper model than what
 existed last week?" If yes and it has enterprise applicability, score high.
 Relevance to a port CFO is indirect — score higher when the capability jump
 has a clear path to enterprise or industrial deployment within 12 months.
+Narrative scores high for a benchmark that overturns a prior leader, a dramatic
+price cut (e.g. 80% cost reduction), a model doing something previously thought
+impossible, or a safety/alignment incident. Model release announcements without
+a clear capability leap over the prior version score 1-3 on narrative.

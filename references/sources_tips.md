@@ -12,6 +12,9 @@ Run ALL `search:` (core) queries every scout — do not skip any. Target 3-5 tip
 - Specific enough to act on (not "use AI to be more productive")
 - Tied to a tool or platform the audience likely has access to
 - Ideally demonstrates something new that was not possible 6 months ago
+- Narrative scores high when the tip has a surprising outcome ("cut board pack prep from 3 days
+  to 2 hours"), a concrete before/after, or a workflow most readers didn't know was possible.
+  Generic "use AI to summarise documents" tips score 1-3 on narrative.
 
 ---
 

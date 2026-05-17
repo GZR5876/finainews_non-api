@@ -72,11 +72,16 @@ Work through the four categories below. For each:
 3. For each result returned, attempt WebFetch on the article URL to retrieve full content.
    If WebFetch returns 403 or times out, write `what`/`so_what` from the search snippet.
 4. For each candidate item, run: `python scripts/check_history.py --url "{url}"` -- skip any that return `SEEN`.
-4. Score each surviving item on three dimensions (1-10 each):
+4. Score each surviving item on four dimensions (1-10 each):
    - **Relevance** to a CFO of a global port operator (apply +1 materiality bonus for finance items per audience.md)
    - **Novelty** -- genuinely new development, not a restatement of old news
    - **Materiality** -- near-term financial or operational impact
-5. Drop any item where Relevance < 7 or total score < 21.
+   - **Narrative** -- how compelling is the story; scores high for: named actor + specific outcome
+     ("DP World cut close cycle by 23%"), surprise or contradiction ("AI flagged fraud humans missed
+     for 6 months"), consequence ("AI agent approved a duplicate $2M payment"), or first-ever
+     production deployment at scale. Scores low for vendor press releases, generic capability claims,
+     and incremental product updates with no human or financial drama.
+5. Drop any item where Relevance < 7 or total score < 28.
 6. Keep top 5-8 items per category. Record each as a JSON object:
    ```json
    {
@@ -88,7 +93,7 @@ Work through the four categories below. For each:
      "so_what": "1 sentence -- why a port CFO cares",
      "source_url": "...",
      "paywalled": false,
-     "scores": { "relevance": N, "novelty": N, "materiality": N, "total": N }
+     "scores": { "relevance": N, "novelty": N, "materiality": N, "narrative": N, "total": N }
    }
    ```
    Use the article's actual publication date for `published_date`. If only a

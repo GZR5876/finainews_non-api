@@ -149,3 +149,6 @@ Run ALL `search:` (core) queries every scout — do not skip any. Target 3-5 tip
 Score highest when an agent is deployed in production at a named enterprise with
 measurable outcome. Score down for demo-stage products or research previews
 with no clear deployment timeline.
+Narrative scores high for incidents (agent caused an error, data loss, unexpected action),
+dramatic productivity gains with a named company, or first-ever autonomous completion of a
+finance workflow. Generic agentic AI announcements with no deployment evidence score 1-3.

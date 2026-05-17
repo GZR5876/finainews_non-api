@@ -429,3 +429,6 @@ Score highest for items with quantified outcomes (cost, time, headcount) or name
 deployments. Prioritise close, reporting, and planning AI over generic treasury or tax coverage.
 Score down for generic vendor marketing without deployment evidence.
 Apply +1 materiality bonus to all finance items per audience.md.
+Narrative scores high when the story has a named CFO or company, a specific number, a failure
+or surprise (AI error, unexpected productivity gain), or a first-ever deployment. Vendor blog
+posts announcing features with no customer evidence score 1-3 on narrative.

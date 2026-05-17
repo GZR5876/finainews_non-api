@@ -275,3 +275,7 @@ Score highest when tied to a named port deployment, quantified productivity gain
 or a capital procurement event. Peer operator disclosures score at full value.
 Generic robotics R&D scores lower unless it has a clear port logistics application
 within 2 years.
+Narrative scores high for equipment failures or safety incidents, a robot replacing
+a named number of workers at a specific terminal, an unexpected throughput record, or
+a vendor contract win at a peer port. Press releases announcing product availability
+with no deployment evidence score 1-3.
