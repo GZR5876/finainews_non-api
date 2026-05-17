@@ -414,14 +414,18 @@ Any named finance AI deployment from this group scores at full value (8-10).
 ---
 
 ## What to look for
-- AI tools automating AP/AR, financial close, reconciliation, or reporting
-- Treasury AI: cash flow forecasting, FX optimisation, bank fee analysis
-- Tax AI: customs classification, transfer pricing, VAT/GST e-invoicing mandates
-- ERP vendor AI releases (SAP, Workday) relevant to finance ops
+- AI automated financial close: cycle time reduction, AI-driven intercompany matching and elimination
+- AI management reporting and board pack generation: variance commentary, narrative automation
+- FP&A and planning AI: rolling forecasts, scenario analysis, budget vs actual
+- AP/AR automation: invoice processing, cash application, collections
+- ERP/EPM vendor AI releases (SAP, Workday, OneStream, Microsoft) relevant to group finance ops
 - Named finance agent deployments with disclosed productivity or cost metrics
+- Treasury AI when tied to a named deployment or measurable outcome (cash forecasting, FX)
+- Tax and customs AI when operationally relevant to port ops (HS code classification, e-invoicing)
 - AI capex disclosures from port operator peers or Temasek portfolio companies
 
 ## Scoring notes
-Score highest for items with quantified outcomes (cost, time, headcount) or
-named enterprise deployments. Score down for generic vendor marketing without
-deployment evidence. Apply +1 materiality bonus to all finance items per audience.md.
+Score highest for items with quantified outcomes (cost, time, headcount) or named enterprise
+deployments. Prioritise close, reporting, and planning AI over generic treasury or tax coverage.
+Score down for generic vendor marketing without deployment evidence.
+Apply +1 materiality bonus to all finance items per audience.md.
