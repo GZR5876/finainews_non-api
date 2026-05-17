@@ -267,6 +267,11 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
   `rotation: site:blogs.microsoft.com AI Copilot group consolidation reporting [year]`
   `rotation: site:blogs.microsoft.com AI Fabric finance analytics [year]`
   `rotation: site:blogs.microsoft.com AI Dynamics 365 finance agents [year]`
+- OneStream: https://www.onestream.com/blog/
+  `search: site:onestream.com AI financial close consolidation [year]`
+  `rotation: site:onestream.com AI intercompany matching elimination [year]`
+  `rotation: site:onestream.com AI management reporting board pack [year]`
+  `rotation: site:onestream.com AI unified planning close platform [year]`
 
 ---
 
