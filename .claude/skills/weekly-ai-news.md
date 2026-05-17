@@ -227,11 +227,9 @@ After all categories and tips are scouted:
    - **Paywalled** (`"paywalled": true` or paywall detected): write from candidates.json
      content only; do not invent details beyond what the teaser provides.
 
-3. Write a **digest paragraph** (60-80 words, no bullet points) that goes between
-   the dateline and the first section. Structure:
-   - Sentence 1: the dominant theme across all items this week.
-   - Sentence 2: the most material finance-specific signal.
-   - Sentence 3: one risk or watch item.
+3. Write a **digest paragraph** (~25 words, no bullet points) that goes between
+   the dateline and the first section. One or two sentences: the dominant theme
+   this week and the single most material signal for a port CFO.
    Place it in draft.md directly after the italicised dateline, before the first `---`.
 
 3. For each selected **news item** (non-tips), write a newsletter entry following
