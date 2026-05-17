@@ -239,7 +239,7 @@ After all categories and tips are scouted:
    - **Headline**: "Company/who did what" format -- subject + verb + object, max 10
      words, no qualifiers. Plain text title above the body.
    - **No em dashes** anywhere. Use a comma, colon, or recast the sentence.
-   - **One sentence:** combine the key fact (who/what/scale) with the CFO's action or watch item. No bold text.
+   - **One sentence** in bold: combine the key fact (who/what/scale) with the CFO's action or watch item. Wrap the entire sentence in `**...**`.
    - `Source: {url}` on its own line after the sentence.
    - Total target: ~25 words per item.
 
