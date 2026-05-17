@@ -69,6 +69,10 @@ before proceeding to per-category source searches.
 
 ### Step 1b: Category scout (sequential, one category at a time)
 
+**IMPORTANT:** Run all searches directly in the main agent — do NOT spawn sub-agents
+or parallel agents for web search. Sub-agents consume more tokens and are slower for
+this workload. Execute every WebSearch and WebFetch call sequentially, one at a time.
+
 Work through the four categories below. For each:
 
 1. Read the corresponding source file (references/sources_{category}.md).
