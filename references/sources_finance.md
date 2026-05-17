@@ -36,7 +36,7 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
 
 - https://www.cfo.com
   `search: site:cfo.com AI agents finance automation [year]`
-  `rotation: site:cfo.com AI finance ROI payback period [year]`
+  `rotation: site:cfo.com AI financial close reporting cycle [year]`
   `rotation: site:cfo.com AI finance workforce headcount [year]`
   `rotation: site:cfo.com agentic AI board reporting strategy [year]`
 - https://www.cfodive.com
@@ -74,6 +74,41 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
   `rotation: site:mostlymetrics.com AI FP&A metrics reporting [year]`
   `rotation: site:mostlymetrics.com AI finance unit economics [year]`
   `rotation: site:mostlymetrics.com agentic AI finance SaaS [year]`
+
+---
+
+## Financial close & reporting
+
+- FloQast: https://floqast.com/blog/
+  `search: site:floqast.com AI financial close automation [year]`
+  `rotation: site:floqast.com AI close checklist intercompany matching [year]`
+  `rotation: site:floqast.com AI reconciliation automation cycle reduction [year]`
+  `rotation: site:floqast.com AI close management named deployment [year]`
+- Workiva: https://www.workiva.com/blog/
+  `search: site:workiva.com AI financial reporting consolidation [year]`
+  `rotation: site:workiva.com AI intercompany reporting audit readiness [year]`
+  `rotation: site:workiva.com AI IFRS group reporting automation [year]`
+  `rotation: site:workiva.com AI ESG integrated reporting controls [year]`
+- OneStream: https://www.onestream.com/blog/
+  `search: site:onestream.com AI financial close consolidation [year]`
+  `rotation: site:onestream.com AI intercompany matching elimination [year]`
+  `rotation: site:onestream.com AI management reporting board pack [year]`
+  `rotation: site:onestream.com AI unified planning close platform [year]`
+- CCH Tagetik (Wolters Kluwer): https://www.wolterskluwer.com/en/solutions/cch-tagetik
+  `search: site:wolterskluwer.com AI consolidation close reporting [year]`
+  `rotation: site:wolterskluwer.com AI intercompany elimination group reporting [year]`
+  `rotation: site:wolterskluwer.com AI IFRS close management automation [year]`
+  `rotation: site:wolterskluwer.com AI statutory reporting consolidation [year]`
+- insightsoftware: https://insightsoftware.com/blog/
+  `search: site:insightsoftware.com AI financial reporting automation [year]`
+  `rotation: site:insightsoftware.com AI close reporting ERP integration [year]`
+  `rotation: site:insightsoftware.com AI consolidation group reporting [year]`
+  `rotation: site:insightsoftware.com AI management reporting analytics [year]`
+- Journal of Accountancy (AICPA): https://www.journalofaccountancy.com/
+  `search: site:journalofaccountancy.com AI financial close reporting [year]`
+  `rotation: site:journalofaccountancy.com AI audit technology controls [year]`
+  `rotation: site:journalofaccountancy.com AI intercompany reconciliation [year]`
+  `rotation: site:journalofaccountancy.com AI IFRS reporting automation [year]`
 
 ---
 
@@ -171,7 +206,7 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
 
 - https://kpmg.com/us/en/media/news.html (KPMG Clara / Workbench)
   `search: site:kpmg.com AI finance agents Clara Workbench [year]`
-  `rotation: site:kpmg.com AI audit quality Clara deployment [year]`
+  `rotation: site:kpmg.com AI intercompany close automation Clara [year]`
   `rotation: site:kpmg.com AI finance assurance client outcome [year]`
   `rotation: site:kpmg.com agentic AI finance advisory [year]`
 - https://kpmg.com/xx/en/our-insights/cfo-insights.html
@@ -191,7 +226,7 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
   `rotation: site:deloitte.com CFO AI board reporting governance [year]`
 - https://www.pwc.com/gx/en/news-room.html (ChatPwC / Agent OS)
   `search: site:pwc.com AI finance agents ChatPwC [year]`
-  `rotation: site:pwc.com AI finance transformation office CFO [year]`
+  `rotation: site:pwc.com AI financial close reporting agents [year]`
   `rotation: site:pwc.com AI finance OpenAI partnership deployment [year]`
   `rotation: site:pwc.com AI finance agents ROI productivity [year]`
 - https://www.pwc.com/gx/en/cfo-agenda.html
@@ -236,7 +271,7 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
 
 - SAP: https://www.sap.com/news/ (Joule announcements, SAP BTP AI)
   `search: site:sap.com AI Joule finance agents automation [year]`
-  `rotation: site:sap.com AI Joule financial close treasury [year]`
+  `rotation: site:sap.com AI Joule intercompany matching close [year]`
   `rotation: site:sap.com AI BTP integration finance workflow [year]`
   `rotation: site:sap.com AI autonomous enterprise finance capex [year]`
 - Workday: https://www.workday.com/en-us/company/newsroom.html (Illuminate posts)
@@ -246,7 +281,7 @@ Run ALL `search:` (core) queries every scout — do not skip any based on priori
   `rotation: site:workday.com AI Flex Credits consumption finance [year]`
 - Microsoft: https://blogs.microsoft.com/ai/ (Microsoft 365 Copilot, Power Platform, Fabric)
   `search: site:blogs.microsoft.com AI Copilot finance automation [year]`
-  `rotation: site:blogs.microsoft.com AI Copilot reconciliation Excel [year]`
+  `rotation: site:blogs.microsoft.com AI Copilot group consolidation reporting [year]`
   `rotation: site:blogs.microsoft.com AI Fabric finance analytics [year]`
   `rotation: site:blogs.microsoft.com AI Dynamics 365 finance agents [year]`
 
