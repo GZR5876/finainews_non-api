@@ -16,7 +16,13 @@ description: Generates the weekly AI news executive summary for a port-operator
   Derive a concrete date range: {period_start} to {period_end} (YYYY-MM-DD).
   Use this range as the recency filter for all searches in Phase 1.
 - Determine the current ISO week: YYYY-WNN (e.g. 2026-W20).
-- Create the issue directory: data/issues/{week}/ if it does not exist.
+- Determine the **run folder**: each run gets its own directory, even within the
+  same week. Check `data/issues/` for existing folders matching `{week}-run*`,
+  find the highest run number, and create the next one:
+  - First run of the week → `data/issues/{week}-run1/`
+  - Second run → `data/issues/{week}-run2/`, and so on.
+  - Use `{run_folder}` (e.g. `2026-W20-run2`) everywhere `{week}` appears in
+    subsequent steps (file paths, render command, archive copy).
 - Run `python scripts/setup_db.py` to confirm data/archive/ exists and report how many
   past newsletters are loaded for history checking.
 - Read references/audience.md and references/voice.md before writing anything.
