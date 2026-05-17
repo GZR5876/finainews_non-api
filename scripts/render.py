@@ -74,6 +74,18 @@ def parse_draft_sections(draft_md: str, selections: list[dict], candidates: dict
     """
     Split draft.md on section headers and map body text back to selected items.
     Returns a list of section dicts ready for the Jinja2 template.
+
+    Each item in draft.md follows voice.md format:
+        Plain headline text
+
+        **Bold impact lead.** Context sentence. Implication sentence.
+
+        Source: https://...
+
+    The function groups paragraphs by item boundary (each item ends with
+    a "Source:" paragraph) so headline/body/URL never slip across items.
+    It also handles the legacy single-paragraph format where the headline
+    is embedded as **bold text** at the start of the body paragraph.
     """
     import re
 
@@ -93,7 +105,6 @@ def parse_draft_sections(draft_md: str, selections: list[dict], candidates: dict
 
     # Split draft on ## headers
     blocks = re.split(r"^(##\s+.+)$", draft_md, flags=re.MULTILINE)
-    # blocks: ['preamble', '## 1. Foundation Models', 'body...', '## 2. ...', ...]
     section_bodies: dict[str, str] = {}
     for i in range(1, len(blocks) - 1, 2):
         header = blocks[i]
@@ -109,28 +120,58 @@ def parse_draft_sections(draft_md: str, selections: list[dict], candidates: dict
         if not sel_items:
             continue
         body_md = section_bodies.get(cat, "")
-        # Split into paragraphs; separate "Source: URL" lines from body text.
-        # Each item in the draft is one body paragraph followed by one Source: paragraph.
+
+        # Split into paragraphs and group by item.
+        # Each item ends with a "Source:" paragraph — use that as the boundary.
         all_paras = [p.strip() for p in re.split(r"\n{2,}", body_md) if p.strip()]
-        body_paras, source_urls = [], []
+        item_groups: list[list[str]] = []
+        current: list[str] = []
         for p in all_paras:
+            current.append(p)
             if p.startswith("Source:"):
-                source_urls.append(p.replace("Source:", "").strip())
-            else:
-                body_paras.append(p)
+                item_groups.append(current)
+                current = []
+        if current:
+            item_groups.append(current)
+
         rendered_items = []
         for idx, meta in enumerate(sel_items):
-            body_text  = body_paras[idx] if idx < len(body_paras) else ""
-            source_url = source_urls[idx] if idx < len(source_urls) else meta["source_url"]
-            # Extract leading **bold text** as the display headline
-            m = re.match(r"^\*\*(.+?)\*\*", body_text)
-            headline   = m.group(1) if m else meta["headline"]
-            body_rest  = body_text[m.end():].strip() if m else body_text
+            group = item_groups[idx] if idx < len(item_groups) else []
+
+            # Separate "Source:" paragraph from content paragraphs
+            source_url = meta["source_url"]
+            content = []
+            for p in group:
+                if p.startswith("Source:"):
+                    source_url = p.replace("Source:", "").strip()
+                else:
+                    content.append(p)
+
+            if not content:
+                rendered_items.append({
+                    "headline": meta["headline"],
+                    "body_html": "",
+                    "source_url": source_url,
+                })
+                continue
+
+            # Two-paragraph format (voice.md): plain headline + **bold** body
+            if len(content) >= 2 and not content[0].startswith("**"):
+                headline  = content[0]
+                body_text = " ".join(content[1:])
+            else:
+                # Legacy single-paragraph format: **Bold headline.** rest of body
+                body_text = content[0]
+                m = re.match(r"^\*\*(.+?)\*\*", body_text)
+                headline  = m.group(1) if m else meta["headline"]
+                body_text = body_text[m.end():].strip() if m else body_text
+
             rendered_items.append({
-                "headline":   headline,
-                "body_html":  md_lib.markdown(body_rest),
+                "headline":  headline,
+                "body_html": md_lib.markdown(body_text),
                 "source_url": source_url,
             })
+
         sections.append({"label": SECTION_MAP[cat], "stories": rendered_items})
 
     return sections
