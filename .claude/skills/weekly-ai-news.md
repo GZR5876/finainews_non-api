@@ -75,17 +75,13 @@ this workload. Execute every WebSearch and WebFetch call sequentially, one at a 
 
 Work through the four categories below. For each:
 
-1. Read the corresponding source file (references/sources_{category}.md).
-2. **Run queries using the two-tier system:**
-   - Run every `search:` (core) query in the file — no source may be skipped.
-   - Collect all `rotation:` queries in the file into a single pool. Pick 25% at
-     random and run those. Vary the selection across runs to maximise coverage over time.
-   - Substitute the current year for `[year]` and the current month for
-     `[current month]` (e.g. "May 2026") throughout.
+1. Read the source files for the category one at a time (listed below).
+2. For each file: run every `search:` query, then move to the next file.
+   Substitute the current year for `[year]` throughout. No source may be skipped.
 3. **Do NOT WebFetch any URLs during the scout phase.** Write `what`/`so_what` from
    the search snippet only. WebFetch is reserved for Phase 3.
 4. For each candidate item, run: `python scripts/check_history.py --url "{url}"` -- skip any that return `SEEN`.
-4. Score each surviving item on four dimensions (1-10 each):
+5. Score each surviving item on four dimensions (1-10 each):
    - **Relevance** to a CFO of a global port operator (apply +1 materiality bonus for finance items per audience.md)
    - **Novelty** -- genuinely new development, not a restatement of old news
    - **Materiality** -- near-term financial or operational impact
@@ -94,8 +90,8 @@ Work through the four categories below. For each:
      for 6 months"), consequence ("AI agent approved a duplicate $2M payment"), or first-ever
      production deployment at scale. Scores low for vendor press releases, generic capability claims,
      and incremental product updates with no human or financial drama.
-5. Drop any item where Relevance < 7 or total score < 28.
-6. Keep top 5-8 items per category. Record each as a JSON object:
+6. Drop any item where Relevance < 7 or total score < 28.
+7. Keep top 5-8 items per category. Record each as a JSON object:
    ```json
    {
      "id": "{category}_{NNN}",
@@ -116,11 +112,38 @@ Work through the four categories below. For each:
    In that case, the `what` field is based on headline + teaser only -- flag
    this in the `what` field with "(headline/teaser only)" at the end.
 
-Categories (scout order -- finance goes first in both scout and output):
-- `finance`    -- references/sources_finance.md   (target 3+ items, 50% of total)
-- `agents`     -- references/sources_agents.md
-- `physical`   -- references/sources_physical.md
-- `foundation` -- references/sources_foundation.md
+Categories and source files (scout order -- finance goes first in both scout and output):
+
+**`finance`** (target 3+ items, 50% of total):
+- references/sources_finance_highpri.md
+- references/sources_finance_media.md
+- references/sources_finance_close.md
+- references/sources_finance_treasury.md
+- references/sources_finance_tax.md
+- references/sources_finance_bigfour.md
+- references/sources_finance_fintech.md
+- references/sources_finance_erp.md
+- references/sources_finance_pointsolutions.md
+- references/sources_finance_peers_sg.md
+- references/sources_finance_peers_portops.md
+
+**`agents`**:
+- references/sources_agents_general.md
+- references/sources_agents_frameworks.md
+- references/sources_agents_enterprise.md
+- references/sources_agents_bigfour.md
+
+**`physical`**:
+- references/sources_physical_keyplayers.md
+- references/sources_physical_operators.md
+- references/sources_physical_media.md
+- references/sources_physical_maritime.md
+- references/sources_physical_analytics.md
+
+**`foundation`**:
+- references/sources_foundation_primary.md
+- references/sources_foundation_trade.md
+- references/sources_foundation_demos.md
 
 **Categorization rule:** assign each candidate to the category that best describes
 *what the story is about*, not where it was found. A story about a model provider
@@ -129,19 +152,17 @@ enterprise workflow belongs in `finance` or `agents`, not `foundation`. Reserve
 `foundation` for model releases, capability benchmarks, pricing changes, and model
 provider strategy stories where the subject is the model itself.
 
-Also check Anthropic's finance-specific resources every run:
-- https://www.anthropic.com/news/finance-agents (and related Anthropic finance pages)
-
-These pages carry heavier weight -- any named finance agent deployment from
-Anthropic should be scored at full value regardless of recency within the last 30 days.
-
 ### Step 1c: Tips scout (run after category scout)
 
-Read references/sources_tips.md for the full source list. Apply the same two-tier
-system: run every `search:` (core) query, then pick 25% of all `rotation:` queries
-in the file at random and run those. Cover all source categories (YouTube, webinars,
-written guides, editorial). No `search:` source may be skipped.
+Read each tips source file below and run every `search:` query. Read and complete
+one file at a time before moving to the next. No source may be skipped.
 Target **3-5 tip candidates** per run so the user has meaningful choice.
+
+Tips source files:
+- references/sources_tips_youtube.md
+- references/sources_tips_webinars.md
+- references/sources_tips_guides.md
+- references/sources_tips_editorial.md
 
 Pick videos/articles with clearly instructional titles ("How to...", "Demo:",
 "Walkthrough", "Step-by-step"). Avoid opinion pieces or news summaries.
@@ -157,12 +178,12 @@ a JSON array, ordered: finance items first, then agents, physical, foundation, t
 Then print a **query count report**:
 ```
 Scout complete — queries run:
-  finance    : X core, Y rotation
-  agents     : X core, Y rotation
-  physical   : X core, Y rotation
-  foundation : X core, Y rotation
-  tips       : X core, Y rotation
-  TOTAL      : X core, Y rotation
+  finance (11 files)   : N
+  agents (4 files)     : N
+  physical (5 files)   : N
+  foundation (3 files) : N
+  tips (4 files)       : N
+  TOTAL                : N
 Candidates found: N (before history filter), M kept
 ```
 
