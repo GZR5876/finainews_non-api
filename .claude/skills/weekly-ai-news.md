@@ -239,12 +239,11 @@ After all categories and tips are scouted:
    - **Headline**: "Company/who did what" format -- subject + verb + object, max 10
      words, no qualifiers. Plain text title above the body.
    - **No em dashes** anywhere. Use a comma, colon, or recast the sentence.
-   - **Three sentences maximum:**
+   - **Two sentences maximum:**
      1. Bold impact lead -- one sentence, operational or financial consequence.
-     2. One context sentence: who, what, key facts or scale.
-     3. One implication sentence: what the CFO's team should do or watch.
-   - `Source: {url}` on its own line after the three sentences.
-   - Total target: ~60 words per item.
+     2. One sentence combining the key fact (who/what/scale) with the CFO's action or watch item.
+   - `Source: {url}` on its own line after the two sentences.
+   - Total target: ~40 words per item.
 
 4. Assemble news sections into `data/issues/{week}/draft.md`:
    ```
