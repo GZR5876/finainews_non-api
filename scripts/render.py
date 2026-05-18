@@ -32,6 +32,7 @@ SECTION_MAP = {
     "agents":     "2. AI Agents & Applications",
     "physical":   "3. Physical AI",
     "foundation": "4. Foundation Models",
+    "tips":       "Tip of the Week",
 }
 
 
@@ -172,7 +173,9 @@ def parse_draft_sections(draft_md: str, selections: list[dict], candidates: dict
                 "source_url": source_url,
             })
 
-        sections.append({"label": SECTION_MAP[cat], "stories": rendered_items})
+        import re as _re
+        title = _re.sub(r"^\d+\.\s*", "", SECTION_MAP[cat])
+        sections.append({"label": SECTION_MAP[cat], "title": title, "stories": rendered_items})
 
     return sections
 

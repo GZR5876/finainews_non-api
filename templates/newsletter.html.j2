@@ -177,12 +177,12 @@
   <div class="section">
     <div class="section-header">
       <div class="section-number">{{ loop.index }}</div>
-      <div class="section-title">{{ section.label | replace(section.label[:3], '', 1) | trim }}</div>
+      <div class="section-title">{{ section.title }}</div>
     </div>
     {% for story in section.stories %}
     <div class="story">
       <h3><a href="{{ story.source_url }}">{{ story.headline }}</a></h3>
-      <p>{{ story.body_html | safe }}</p>
+      {{ story.body_html | safe }}
 
     </div>
     {% endfor %}
