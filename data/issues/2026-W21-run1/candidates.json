@@ -1,0 +1,123 @@
+[
+  {
+    "id": "finance_001",
+    "category": "finance",
+    "published_date": "2026-05-12",
+    "headline": "SAP unveiled Autonomous Enterprise with Financial Closing Assistant at Sapphire 2026",
+    "what": "At SAP Sapphire 2026 (May 11-13, Orlando), SAP announced the Autonomous Enterprise vision: 50+ domain-specific Joule Assistants across finance, supply chain, and procurement. The Financial Closing Assistant orchestrates the full close lifecycle — journal posting, accruals, reconciliation, error resolution, intercompany — compressing close from weeks to days. GA is targeted Q2 2026. Joule Studio for enterprise-scale agent development was also launched. The Autonomous Enterprise runs on a unified AI platform with Anthropic's Claude among the foundation models.",
+    "so_what": "SAP-using port operators (most run SAP ERP) should request a demo of the Financial Closing Assistant immediately given Q2 GA; the Accounts Receivable Assistant and Tax/Compliance Assistant are also on the same timeline.",
+    "source_url": "https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 9, "narrative": 8, "total": 33 }
+  },
+  {
+    "id": "finance_002",
+    "category": "finance",
+    "published_date": "2026-05-05",
+    "headline": "OpenAI and PwC build AI agents across the office of the CFO",
+    "what": "PwC and OpenAI announced a partnership (May 5) to build AI agents covering the full CFO mandate: procurement, planning, forecasting, treasury, tax, and accounting close. OpenAI's own finance org serves as the live testing ground — already using agents for 5x contract processing throughput and managing 200+ investor interactions during its $122B fundraise. PwC will roll out Claude Code and Cowork to a global workforce of hundreds of thousands, certifying 30,000 PwC professionals on Claude.",
+    "so_what": "CFOs relying on PwC for finance transformation should ask about the AI-native finance function; the live deployment inside OpenAI's own finance team provides unusually credible evidence of production-grade performance across all CFO workflows.",
+    "source_url": "https://openai.com/index/openai-pwc-finance-collaboration/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 9, "narrative": 8, "total": 33 }
+  },
+  {
+    "id": "finance_003",
+    "category": "finance",
+    "published_date": "2026-05-05",
+    "headline": "Anthropic released 10 production-ready agent templates for financial services",
+    "what": "Anthropic launched ten ready-to-run agent templates for financial services: building pitchbooks, screening KYC files, and closing the books at month-end. Templates are available as plugins in Claude Code and as cookbooks for Managed Agents. Claude connects to FactSet, S&P Capital IQ, MSCI, PitchBook, and Morningstar under governed access controls. Enterprise controls include SSO, SCIM, audit logs, and ISO/IEC 42001:2023 certification, and the suite is available on AWS Marketplace for consolidated billing.",
+    "so_what": "Finance teams can trial Claude-powered agents for close and KYC immediately without custom model builds; the AWS Marketplace listing enables procurement through existing cloud spend commitments.",
+    "source_url": "https://www.anthropic.com/news/finance-agents",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "narrative": 7, "total": 30 }
+  },
+  {
+    "id": "finance_004",
+    "category": "finance",
+    "published_date": "2026-05-01",
+    "headline": "KPMG report: 93% of US firms plan AI in finance but 75% require human validation",
+    "what": "KPMG's 2026 Global AI in Finance report (published May 2026) surveyed finance leaders globally: 93% of US companies plan to deploy or scale AI in finance within 18 months; half plan multi-agent AI orchestration. Agentic AI early adopters show a 32-point advantage in close efficiency over non-users. Yet only 15-25% have scaled AI across finance functions, and 75% of leaders now require human validation of agent outputs — nearly triple the rate a year ago.",
+    "so_what": "Finance leaders should read this report to benchmark AI maturity; the validation-rate jump signals that governance, not model capability, is the bottleneck holding most CFO functions back.",
+    "source_url": "https://assets.kpmg.com/content/dam/kpmgsites/sg/pdf/2026/05/global-ai-in-finance-report.pdf",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 9, "narrative": 7, "total": 31 }
+  },
+  {
+    "id": "agents_001",
+    "category": "agents",
+    "published_date": "2026-05-06",
+    "headline": "Anthropic launched multi-agent orchestration and Remote Agents at Code with Claude 2026",
+    "what": "At its May 6 developer keynote, Anthropic shipped three major capabilities for Managed Agents: multi-agent orchestration (a lead agent breaks jobs into pieces and delegates to parallel specialists sharing a filesystem), Remote Agents (Claude-powered agents invokable from chat or scheduled triggers), and 'dreaming' (agents review past sessions to self-improve). Netflix has deployed multi-agent orchestration for its platform engineering team in production.",
+    "so_what": "Enterprise teams building multi-step finance workflows — close, reconciliation, reporting — can now coordinate specialist Claude sub-agents without rebuilding pipelines; the Netflix production deployment demonstrates readiness for complex professional workflows.",
+    "source_url": "https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "narrative": 8, "total": 30 }
+  },
+  {
+    "id": "agents_002",
+    "category": "agents",
+    "published_date": "2026-05-05",
+    "headline": "ServiceNow launched Autonomous Workforce across all major enterprise functions",
+    "what": "At Knowledge 2026 (May 5-7, Las Vegas), ServiceNow launched Autonomous Workforce AI specialists for IT, CRM (including invoice disputes, order fulfilment, renewals), employee services, and security/risk — executing end-to-end jobs with built-in governance. ServiceNow also launched Otto, a unified AI experience across desktop and workflow, and opened its Action Fabric so any agent — including Claude and Copilot — can take action across the ServiceNow platform.",
+    "so_what": "Enterprises on ServiceNow can deploy governed AI specialists for invoice dispute resolution and order fulfilment workflows now; CRM AI specialists covering accounts receivable processes are generally available immediately.",
+    "source_url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-brings-Autonomous-Workforce-to-every-major-business-function/default.aspx",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 7, "narrative": 7, "total": 28 }
+  },
+  {
+    "id": "agents_003",
+    "category": "agents",
+    "published_date": "2026-05-13",
+    "headline": "Three-quarters of enterprise AI customer-service rollouts later get shut down",
+    "what": "New research published May 13 (The Register) shows 74% of enterprises that deploy AI customer communications agents later roll them back or shut them down; the systems are far harder to manage reliably in production than AI hype implied. Separately, a Cloud Security Alliance report (April 2026) found 65% of organizations experienced at least one cybersecurity incident caused by AI agents in the past year, with 43% causing operational disruption.",
+    "so_what": "CFO teams deploying AI in customer-facing workflows — collections, invoice disputes, supplier communications — should budget for governance infrastructure from day one; a 74% rollback rate suggests most first deployments will require significant rework.",
+    "source_url": "https://www.theregister.com/ai-ml/2026/05/13/ai-customer-service-bots-get-rolled-back-at-74-of-firms/5239800",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "narrative": 8, "total": 30 }
+  },
+  {
+    "id": "physical_001",
+    "category": "physical",
+    "published_date": "2026-05-12",
+    "headline": "NYK car carrier trialled autonomous navigation integrated with Singapore port systems",
+    "what": "On April 29, NYK's car carrier Elder Leader completed a demonstration trial at Singapore's MPA port: the vessel's autonomous navigation system transmitted voyage plans to MPA's next-generation vessel traffic management system (NGVTMS), shared pilotage routes with the onshore support system in real time, and used MPA's Just-in-Time platform for smooth vessel arrival. The trial was announced publicly May 12. Elder Leader operates on LNG and carries advanced autonomous navigation, large-motion mitigation, and vessel-wide Wi-Fi.",
+    "so_what": "Singapore port is integrating autonomous-vessel data feeds into its live traffic management system; port operators managing Singapore calls should monitor how JIT arrival data from autonomous vessels affects berth scheduling algorithms and turnaround performance.",
+    "source_url": "https://www.nyk.com/english/news/2026/20260512_01.html",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "narrative": 8, "total": 30 }
+  },
+  {
+    "id": "physical_002",
+    "category": "physical",
+    "published_date": "2026-05-13",
+    "headline": "Awake.AI and Tidalis partnered to automate Scope 1 emissions reporting at ports",
+    "what": "Awake.AI and Tidalis announced a partnership on May 13 to automate Scope 1 emissions reporting at ports and for shipping companies. Awake's Emission Monitor links port-call, fueling, cargo handling, shore power, and gate-event data from Tidalis' vessel traffic and port management systems to generate automated FuelEU Maritime, EU ETS, and IMO-compliant reports. Rollout begins in Europe in 2026, followed by Asia-Pacific, Middle East, and the Americas.",
+    "so_what": "Port operators facing increasing regulatory reporting obligations should evaluate AI-automated Scope 1 reporting as a compliance risk reduction tool; manual processes risk errors that could trigger EU ETS penalties.",
+    "source_url": "https://shipandbunker.com/news/world/777912-awakeai-and-tidalis-partner-on-maritime-emissions-reporting",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 7, "narrative": 7, "total": 28 }
+  },
+  {
+    "id": "foundation_001",
+    "category": "foundation",
+    "published_date": "2026-05-17",
+    "headline": "Google released Deep Research Max combining web and private enterprise data search",
+    "what": "Google released Deep Research Max on May 17, built on Gemini 3.1 Pro with MCP support: a long-horizon research agent that can search the web and connected private enterprise data sources simultaneously, delivering native visualizations and high-quality analytical outputs. Gemini 3 Deep Think was also updated in a step-change for scientific and professional reasoning. Paid Gemini Enterprise monthly active users grew 40% quarter-over-quarter.",
+    "so_what": "Finance teams on Google Workspace can deploy research agents that combine external market intelligence and regulatory filings with internal financial data in a single workflow — relevant for board-pack preparation and M&A due diligence.",
+    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "narrative": 6, "total": 28 }
+  },
+  {
+    "id": "tips_001",
+    "category": "tips",
+    "published_date": "2026-04-27",
+    "headline": "YouTube: tested every Claude feature for finance and FP&A — what actually works",
+    "what": "A finance practitioner tested all Claude features against real FP&A workflows — variance analysis, financial modeling, board pack prep, scenario planning — and published findings on what delivers consistent results vs. what disappoints. Covers Claude Code, Cowork finance plugin, and Managed Agents.",
+    "so_what": "CFO teams considering Claude for FP&A can skip the experimentation phase and adopt only the validated workflows directly.",
+    "source_url": "https://www.youtube.com/watch?v=csxzlkUF_tA",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 7, "narrative": 8, "total": 29 }
+  }
+]
