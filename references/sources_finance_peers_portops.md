@@ -8,15 +8,15 @@ High signal — any named finance AI deployment from this group scores at full v
 
 - https://www.dpworld.com/news/
   `search: site:dpworld.com AI finance technology automation [year] after:{period_start}`
-- https://www.apmterminals.com/en/news
+- https://www.apmterminals.com/en/news/news-releases
   `search: site:apmterminals.com AI finance technology [year] after:{period_start}`
-- https://www.hutchisonports.com/en/press/
+- https://hutchisonports.com/en/media/news/
   `search: site:hutchisonports.com AI finance technology [year] after:{period_start}`
-- https://www.ictsi.com/press-releases
+- https://www.ictsi.com/news-and-media
   `search: site:ictsi.com AI finance technology automation [year] after:{period_start}`
 - COSCO Shipping Ports
   `search: "COSCO Shipping Ports" AI finance technology [year] after:{period_start}`
-- https://www.cmacgm-group.com/en/news
+- https://www.cmacgm-group.com/en/news-media
   `search: site:cmacgm-group.com AI finance technology [year] after:{period_start}`
 - MSC / Terminal Investment Limited
   `search: "Terminal Investment Limited" OR "MSC" AI finance technology [year] after:{period_start}`

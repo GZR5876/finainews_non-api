@@ -10,7 +10,7 @@
   `search: site:internationaltaxreview.com AI tax technology [year] after:{period_start}`
 - https://www.wcoomd.org/en/media/newsroom.aspx
   `search: site:wcoomd.org AI customs classification automation [year] after:{period_start}`
-- https://www.oecd.org/tax/
+- https://www.oecd.org/en/topics/policy-areas/taxation.html
   `search: site:oecd.org AI tax Pillar Two BEPS automation [year] after:{period_start}`
 - https://kpmg.com (tax-tech)
   `search: site:kpmg.com AI tax technology customs automation [year] after:{period_start}`

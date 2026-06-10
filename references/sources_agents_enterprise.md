@@ -10,9 +10,9 @@
   `search: site:salesforce.com Agentforce AI agents enterprise [year] after:{period_start}`
 - https://www.servicenow.com/company/media/press-room.html
   `search: site:servicenow.com AI agents enterprise automation [year] after:{period_start}`
-- https://www.sap.com/news/ (Joule Studio)
+- https://news.sap.com/ (Joule Studio)
   `search: site:sap.com Joule AI agents enterprise [year] after:{period_start}`
-- https://www.workday.com/en-us/company/newsroom.html (Illuminate)
+- https://newsroom.workday.com/ (Illuminate)
   `search: site:workday.com AI agents Illuminate enterprise [year] after:{period_start}`
 - https://cloud.google.com/blog/products/ai-machine-learning
   `search: site:cloud.google.com AI agents enterprise finance automation [year] after:{period_start}`
