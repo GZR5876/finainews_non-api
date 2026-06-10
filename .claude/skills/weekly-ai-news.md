@@ -80,6 +80,34 @@ Digests to sweep:
 - Sequoia (sequoiacap.com)
 - Menlo Ventures (menlovc.com) -- State of AI in Business
 
+### Broad news sweep (run together with the digest sweep)
+
+Unrestricted recency queries (no `site:` filter) to catch major-outlet stories
+that the curated source list misses — the "Google News" view of the week.
+
+**Full scout mode (5 queries):**
+```
+finance AI news after:{period_start}
+CFO AI agents adoption news [year] after:{period_start}
+AI tax treasury customs automation news [year] after:{period_start}
+port terminal AI automation news [year] after:{period_start}
+humanoid robot deployment news [year] after:{period_start}
+```
+
+**Simple scout mode (2 queries):**
+```
+finance AI news after:{period_start}
+humanoid robot deployment news [year] after:{period_start}
+```
+
+**Source-quality rule (applies to all scout results, broad sweep especially):**
+never record an item whose only source is an SEO content farm, listicle
+aggregator, or AI-generated news site. Trace the story to a primary source —
+the vendor or operator newsroom, the regulator, or a major outlet (Reuters,
+Bloomberg, FT, CNBC, or trade press already in references/) — and cite that
+instead. If no primary source can be found, discard the item. Broad-sweep items
+must also pass the date-verification rule before entering the pool.
+
 Pull any finance-relevant or port-relevant items found into the candidate pool
 before proceeding to per-category source searches.
 
