@@ -133,6 +133,12 @@ Work through the four categories below. For each:
    ```
    Use the article's actual publication date for `published_date`. If only a
    month/year is known, use the first of that month (e.g. "2026-03-01").
+   **Date verification:** if no publication date is visible in the search
+   snippet or URL, run one follow-up search ("{headline} date" or a site query)
+   to pin it before recording. Never guess a date into the news period. If the
+   date still cannot be verified, set `published_date` to null, append
+   "(date unverified)" to the `what` field, and exclude the item from automated
+   selection. Drop any item whose verified date falls outside the news period.
    Set `"paywalled": true` if the source requires a subscription to read the
    full article (e.g. taxnotes.com, lloydslist.com, theinformation.com, FT).
    In that case, the `what` field is based on headline + teaser only -- flag
@@ -303,6 +309,10 @@ After all categories and tips are scouted:
    - **403 / bot-blocked**: write from the `what` and `so_what` already in candidates.json.
    - **Paywalled** (`"paywalled": true` or paywall detected): write from candidates.json
      content only; do not invent details beyond what the teaser provides.
+   - **WebFetch blocked by network policy**: verify each selected item's
+     publication date with a targeted WebSearch instead. Correct
+     `published_date` in candidates.json, and flag any item that falls outside
+     the news period to the user before drafting.
 
 3. Write a **digest paragraph** (~25 words, no bullet points) that goes between
    the dateline and the first section. One or two sentences: the dominant theme
