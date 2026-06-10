@@ -220,6 +220,17 @@
     "scores": { "relevance": 7, "novelty": 8, "materiality": 5, "narrative": 8, "total": 28 }
   },
   {
+    "id": "foundation_005",
+    "category": "foundation",
+    "published_date": "2026-06-09",
+    "headline": "Anthropic releases Claude Fable 5, first Mythos-class model for broad use",
+    "what": "Claude Fable 5 (9 June) makes Mythos-class capability generally available: state-of-the-art on nearly all tested benchmarks, able to run for days in agent harnesses, priced at $10/$50 per million tokens, less than half Mythos Preview pricing, and free for Pro/Max/Team/Enterprise until 22 June. Cybersecurity safeguards route sensitive queries to Opus 4.8 in under 5% of sessions; Mythos 5 itself stays in limited release via Project Glasswing.",
+    "so_what": "A step-change in generally available capability at mid-tier pricing: re-baseline which finance workflows you assumed needed humans, and test it during the free window.",
+    "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 9, "materiality": 8, "narrative": 8, "total": 33 }
+  },
+  {
     "id": "tips_001",
     "category": "tips",
     "published_date": "2026-05-02",
