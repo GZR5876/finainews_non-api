@@ -322,6 +322,12 @@ After all categories and tips are scouted:
      before compressing. No CFO action or watch item in the body.
      Bold only the 2-4 key words that carry the most weight (the metric, the
      actor, the scale) using `**...**` inline.
+   - **Plain language**: write for a senior finance executive, not a technologist.
+     At most 1-2 numbers per item — pick the one that carries the story. At most
+     one vendor or product name in the body; drop platform, module, or tool names
+     unless the story is about them. Translate technical terms into everyday words
+     ("ready-made AI assistants", not "skills, connectors and plugins"). One idea
+     per sentence; never stack facts.
    - `Source: {url}` on its own line after the sentence.
    - Total target: ≤25 words per item.
 
