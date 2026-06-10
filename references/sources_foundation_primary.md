@@ -15,8 +15,8 @@ news — discard those results here; they belong in the agents or finance catego
   `search: site:openai.com model release capability enterprise [year] after:{period_start}`
 - https://deepmind.google/models/
   `search: site:deepmind.google model release Gemini capability [year] after:{period_start}`
-- https://blog.google/technology/google-deepmind/
-  `search: site:blog.google google-deepmind model release Gemini [year] after:{period_start}`
+- https://blog.google/products/gemini/
+  `search: site:blog.google Gemini model release [year] after:{period_start}`
 - https://ai.meta.com/blog/
   `search: site:ai.meta.com Llama model release open weight [year] after:{period_start}`
 - https://mistral.ai/news/

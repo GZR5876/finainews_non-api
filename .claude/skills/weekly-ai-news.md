@@ -337,7 +337,7 @@ After all categories and tips are scouted:
 
 5. If a `tips_NNN` item was selected, append a **Tip of the Week** block at the
    very end of draft.md (after all news sections), following the format in
-   references/sources_tips.md. The tip should be 2-3 sentences: what to do,
+   references/sources_tips_youtube.md. The tip should be 2-3 sentences: what to do,
    how to do it, what outcome to expect -- actionable enough to try the same day.
 
 6. **STOP.** Tell the user:
