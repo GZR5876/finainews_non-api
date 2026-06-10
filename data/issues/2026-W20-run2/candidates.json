@@ -1,0 +1,112 @@
+[
+  {
+    "id": "finance_001",
+    "category": "finance",
+    "published_date": "2026-05-05",
+    "headline": "PwC and OpenAI build first AI-native finance function at enterprise scale",
+    "what": "PwC and OpenAI announced the first AI-native finance function, deploying agents across planning, forecasting, reporting, procurement, payments, treasury, tax, and accounting close simultaneously. The partnership covers PwC's full finance workflow, with OpenAI agents handling end-to-end execution under human supervision.",
+    "so_what": "The first complete CFO-office AI agent blueprint is now documented and replicable — a Big Four firm has published the reference architecture that peers will benchmark against.",
+    "source_url": "https://www.cfodive.com/news/openai-pwc-partner-deploy-ai-agents-finance-accounting/819511/",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 9, "materiality": 9, "narrative": 9, "total": 36 }
+  },
+  {
+    "id": "finance_002",
+    "category": "finance",
+    "published_date": "2026-05-05",
+    "headline": "Anthropic launches Claude for Financial Services with 10 pre-built agents and Microsoft 365 integration",
+    "what": "Anthropic launched Claude for Financial Services with 10 purpose-built agent templates spanning reconciliation, valuation review, earnings analysis, and statement audits; full integration across Microsoft Excel, PowerPoint, Word, and Outlook; and MCP connectors to FactSet, PitchBook, S&P Capital IQ, and Morningstar. (headline/teaser only for some details)",
+    "so_what": "Finance teams on Microsoft 365 can deploy pre-built Claude agents directly inside Excel with no ML team or custom build required.",
+    "source_url": "https://www.anthropic.com/news/claude-for-financial-services",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 8, "narrative": 8, "total": 33 }
+  },
+  {
+    "id": "finance_003",
+    "category": "finance",
+    "published_date": "2026-05-11",
+    "headline": "KPMG: AI adoption in finance doubled; agentic leaders outperform peers by 32 points",
+    "what": "KPMG's Global AI in Finance survey of 1,013 senior finance leaders across 20 countries found AI adoption in finance doubled year-over-year; organizations with agentic AI outperform finance peers by 32 percentage points on key metrics; average enterprise AI spend now $207M/year.",
+    "so_what": "The performance gap between agentic leaders and laggards is now independently measured and large enough to show up in peer benchmarks — a board-level risk for CFOs who have not yet deployed.",
+    "source_url": "https://kpmg.com/xx/en/media/press-releases/2026/05/ai-adoption-in-finance-doubles-but-assurance-readiness-determines-who-wins.html",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 7, "materiality": 8, "narrative": 7, "total": 31 }
+  },
+  {
+    "id": "finance_004",
+    "category": "finance",
+    "published_date": "2026-05-12",
+    "headline": "SAP Sapphire: 50+ Joule Assistants and 200+ agents target autonomous finance operations",
+    "what": "SAP's Sapphire 2026 'Autonomous Enterprise' launch included 50+ domain-specific Joule Assistants across finance, supply chain, and procurement, orchestrating 200+ specialized agents; Joule Studio now builds custom enterprise agents in 10-15 minutes vs. 3-4 days of manual development.",
+    "so_what": "SAP customers — a large share of global port operators — now have a vendor-supported path to agent-native finance without custom builds.",
+    "source_url": "https://www.cfodive.com/news/sap-ramps-push-autonomous-finance-agentic-ai/819929/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 7, "narrative": 7, "total": 29 }
+  },
+  {
+    "id": "agents_001",
+    "category": "agents",
+    "published_date": "2026-05-05",
+    "headline": "Microsoft Agent 365 goes GA: 80% of Fortune 500 now using Microsoft agents",
+    "what": "Microsoft's Agent 365 reached general availability on May 1, 2026, as part of the 365 E7 Frontier Suite; 80% of Fortune 500 are now using Microsoft agents; BDO Colombia deployed Copilot Studio to cut payroll and finance operational workload by 50%.",
+    "so_what": "The enterprise AI agent platform has passed the Fortune 500 majority threshold — CFOs on Microsoft 365 can activate an agent governance layer with their existing license.",
+    "source_url": "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "narrative": 8, "total": 31 }
+  },
+  {
+    "id": "agents_002",
+    "category": "agents",
+    "published_date": "2026-05-13",
+    "headline": "74% of enterprise AI customer service deployments rolled back within 12 months",
+    "what": "A Gartner-cited survey reported by The Register finds 74% of enterprises that deployed AI customer communications agents rolled them back or shut them down, driven by unexpected costs, governance failures, and unintended outcomes; Gartner notes a fully agentless contact center is not yet technically feasible.",
+    "so_what": "Enterprise AI agent failure rates are now quantified — a CFO approving agentic AI rollouts needs explicit governance controls and ROI gates before scaling, not just a deployment plan.",
+    "source_url": "https://www.theregister.com/ai-ml/2026/05/13/ai-customer-service-bots-get-rolled-back-at-74-of-firms/5239800",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "narrative": 8, "total": 32 }
+  },
+  {
+    "id": "physical_001",
+    "category": "physical",
+    "published_date": "2026-05-01",
+    "headline": "DP World playbook: AI cuts supply chain forecasting errors by up to 50%",
+    "what": "DP World released an AI deployment playbook showing companies using AI achieve up to 50% reduction in supply chain forecasting errors; DP World's own implementations include Zodiac-driven 100% automation at Jebel Ali Terminal 3 and autonomous ITV deployment.",
+    "so_what": "A named global port operator has published the AI business case with specific metrics — directly replicable framework for a peer CFO's capex and ROI justification.",
+    "source_url": "https://www.dpworld.com/en/news/usa/companies-using-ai-report-up-to-50-percent-reduction-in-forecasting-errors",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 7, "materiality": 8, "narrative": 8, "total": 32 }
+  },
+  {
+    "id": "foundation_001",
+    "category": "foundation",
+    "published_date": "2026-05-04",
+    "headline": "Anthropic and OpenAI simultaneously launch enterprise AI joint ventures",
+    "what": "On the same day, both Anthropic and OpenAI announced enterprise joint ventures embedding their models into professional services — Anthropic with Big Four and financial services firms, OpenAI with PwC — marking a strategic shift from API sales to direct enterprise integration partnerships.",
+    "so_what": "The two leading AI providers are now competing on enterprise workflow ownership, not just model capability — the platform consolidation race has begun.",
+    "source_url": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "narrative": 8, "total": 32 }
+  },
+  {
+    "id": "foundation_002",
+    "category": "foundation",
+    "published_date": "2026-05-01",
+    "headline": "Gemini 3.5 Flash: 42% benchmark gain and 68% better token efficiency over prior version",
+    "what": "Google released Gemini 3.5 Flash in May 2026, achieving 42% improvement on the long-range multi-turn cyber benchmark versus Flash 3 and 68% better token efficiency, with enterprise API cost implications for high-volume deployments.",
+    "so_what": "Sustained token efficiency gains across each model generation are lowering the unit economics of AI at scale — CFOs running large-volume internal agents should refresh their cost models.",
+    "source_url": "https://deepmind.google/models/model-cards/gemini-3-5-flash/",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 7, "narrative": 7, "total": 28 }
+  },
+  {
+    "id": "tips_001",
+    "category": "tips",
+    "published_date": "2026-05-05",
+    "headline": "Anthropic demo: 10 finance agent templates including DCF, earnings review, and reconciliation",
+    "what": "Anthropic's official walkthrough of 10 new Claude finance agent templates covering DCF model building, earnings analysis, reconciliation automation, and KYC screening — deployable same day via Claude Cowork plugins or the Managed Agents API.",
+    "so_what": "A finance analyst can watch this 20-minute demo and have a working DCF or earnings review agent running inside their existing tools the same afternoon.",
+    "source_url": "https://www.youtube.com/watch?v=foxeK2AXfHQ",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 8, "narrative": 8, "total": 33 }
+  }
+]
