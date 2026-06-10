@@ -8,12 +8,12 @@ High signal — any named finance AI deployment from this group scores at full v
 
 - https://www.temasek.com.sg/en/news-and-views
   `search: site:temasek.com.sg AI finance technology [year] after:{period_start}`
-- https://www.internationalpsa.com/news/
-  `search: site:internationalpsa.com AI finance technology [year] after:{period_start}`
-- https://www.mapletree.com.sg/news-and-media/
+- https://www.globalpsa.com/news-releases/
+  `search: site:globalpsa.com AI finance technology [year] after:{period_start}`
+- https://www.mapletree.com.sg/media-overview/
   `search: site:mapletree.com.sg AI technology finance [year] after:{period_start}`
-- https://www.kepcorp.com/en/news/
-  `search: site:kepcorp.com AI technology finance automation [year] after:{period_start}`
+- https://www.keppel.com/media/
+  `search: site:keppel.com AI technology finance automation [year] after:{period_start}`
 - https://www.sembcorp.com/en/media/
   `search: site:sembcorp.com AI technology finance [year] after:{period_start}`
 - https://www.stengg.com/en/newsroom/

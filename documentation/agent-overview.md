@@ -32,9 +32,9 @@ Fifteen curated AI newsletters and research publications are swept before any ca
 | Sequoia | Technology investment signals |
 | Menlo Ventures | State of AI in Business |
 
-### Category Source Files (22 files across 5 categories)
+### Category Source Files (23 files across 5 categories)
 
-After the digest sweep, the agent works through 22 source files grouped by category. Finance is always searched first and accounts for ~50% of the final newsletter.
+After the digest sweep, the agent works through 23 source files grouped by category. Finance is always searched first and accounts for ~50% of the final newsletter.
 
 **AI in Finance (11 files)**
 
@@ -61,10 +61,11 @@ After the digest sweep, the agent works through 22 source files grouped by categ
 | `sources_agents_enterprise.md` | Enterprise software with AI agents |
 | `sources_agents_bigfour.md` | Big-4 AI agent announcements |
 
-**Physical AI (3 files)**
+**Physical AI (4 files — humanoid robotics is the priority focus)**
 
 | File | Coverage |
 |---|---|
+| `sources_physical_humanoid.md` | Humanoid robotics makers: Figure, Boston Dynamics, Agility, Apptronik, Tesla, Unitree |
 | `sources_physical_operators.md` | Port operator newsrooms |
 | `sources_physical_maritime.md` | Port and maritime media |
 | `sources_physical_media.md` | Robotics and automation media |
@@ -133,10 +134,11 @@ site:tldr.tech AI finance agents models [month] [year] after:{period_start}
 | `sources_agents_enterprise.md` | AI agents enterprise software production deployment Salesforce Agentforce SAP Workday Microsoft named outcome [year] after:{period_start} |
 | `sources_agents_bigfour.md` | AI agents enterprise finance Big-4 KPMG Deloitte PwC EY client deployment outcome [year] after:{period_start} |
 
-**Physical AI (3 queries)**
+**Physical AI (4 queries)**
 
 | Source File | Query |
 |---|---|
+| `sources_physical_humanoid.md` | humanoid robot production deployment pricing logistics warehouse Figure Apptronik Agility Tesla Optimus [year] after:{period_start} |
 | `sources_physical_operators.md` | AI automation robotics port terminal AGV crane capex productivity deployment [year] after:{period_start} |
 | `sources_physical_maritime.md` | AI automation port maritime robotics AGV terminal throughput deployment named [year] after:{period_start} |
 | `sources_physical_media.md` | humanoid robot logistics warehouse industrial deployment production Boston Dynamics Figure Unitree [year] after:{period_start} |
@@ -145,9 +147,9 @@ site:tldr.tech AI finance agents models [month] [year] after:{period_start}
 
 | Source File | Query |
 |---|---|
-| `sources_foundation_primary.md` | AI foundation model release capability benchmark pricing enterprise build-vs-buy [year] after:{period_start} |
-| `sources_foundation_trade.md` | AI foundation model enterprise economics capability analysis pricing strategy [year] after:{period_start} |
-| `sources_foundation_demos.md` | AI model capability demo benchmark enterprise deployment signal [year] after:{period_start} |
+| `sources_foundation_primary.md` | foundation model release OpenAI OR Anthropic OR Gemini OR DeepSeek OR Mistral capability benchmark pricing [year] after:{period_start} |
+| `sources_foundation_trade.md` | foundation model economics pricing analysis OpenAI OR Anthropic OR Gemini OR DeepSeek [year] after:{period_start} |
+| `sources_foundation_demos.md` | AI model capability demo benchmark OpenAI OR Anthropic OR Gemini OR DeepSeek [year] after:{period_start} |
 
 **Tips (1 query)**
 
@@ -155,7 +157,7 @@ site:tldr.tech AI finance agents models [month] [year] after:{period_start}
 |---|---|
 | `sources_tips_youtube.md` | site:youtube.com AI finance automation tutorial walkthrough CFO agents how-to [year] after:{period_start} |
 
-**Total: 26 queries** (4 digest + 22 category)
+**Total: 27 queries** (4 digest + 23 category)
 
 ---
 

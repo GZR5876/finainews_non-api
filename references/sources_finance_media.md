@@ -8,7 +8,7 @@
   `search: site:cfo.com AI agents finance automation [year] after:{period_start}`
 - https://www.cfodive.com
   `search: site:cfodive.com AI finance agents automation [year] after:{period_start}`
-- https://www.financialexecutives.org/FEI-Daily
+- https://daily.financialexecutives.org/
   `search: site:financialexecutives.org AI finance technology [year] after:{period_start}`
 - https://www.gartner.com/en/finance
   `search: site:gartner.com AI finance CFO agents [year] after:{period_start}`

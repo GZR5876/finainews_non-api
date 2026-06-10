@@ -8,7 +8,7 @@ High signal — any named finance agent deployment from these providers scores a
 
 - https://www.anthropic.com/news/finance-agents
   `search: site:anthropic.com finance agents enterprise [year] after:{period_start}`
-- https://openai.com/solutions/financial-services
+- https://openai.com/solutions/industries/financial-services/
   `search: site:openai.com financial services AI agents [year] after:{period_start}`
 - https://cloud.google.com/solutions/financial-services
   `search: site:cloud.google.com financial services AI finance [year] after:{period_start}`

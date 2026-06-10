@@ -30,6 +30,7 @@ Category order in the output:
 - ERP/EPM vendor AI releases that change roadmap planning
 - AI affecting trade-flow visibility, vessel scheduling, or terminal productivity with disclosed metrics
 - Autonomous port equipment (cranes, AGVs, drones) — capex cycles, safety liability
+- Humanoid robotics: production deployments, unit pricing, labour-substitution economics
 - AI/automation capex disclosures from port operator peers
 - Concession, tariff, or labour developments tied to terminal automation
 

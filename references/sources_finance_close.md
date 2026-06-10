@@ -18,8 +18,8 @@
   `search: site:journalofaccountancy.com AI financial close reporting [year] after:{period_start}`
 - https://www.vareto.com/blog/
   `search: site:vareto.com AI board reporting management [year] after:{period_start}`
-- https://www.cube.dev/blog/
-  `search: site:cube.dev AI FP&A board reporting automation [year] after:{period_start}`
+- https://www.cubesoftware.com/blog/
+  `search: site:cubesoftware.com AI FP&A board reporting automation [year] after:{period_start}`
 - https://www.mosaic.tech/blog/
   `search: site:mosaic.tech AI strategic finance board reporting [year] after:{period_start}`
 
