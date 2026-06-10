@@ -1,6 +1,10 @@
 # Sources — Foundation Models: Capability Signals & Demos
 
-`simple_query: AI model capability demo benchmark enterprise deployment signal [year] after:{period_start}`
+`simple_query: AI model capability demo benchmark OpenAI OR Anthropic OR Gemini OR DeepSeek [year] after:{period_start}`
+
+**Scope: foundation-model providers only.** Demos of enterprise software vendors'
+AI features (SAP, Workday, Salesforce, ServiceNow, Oracle) belong in the agents or
+finance categories, not here.
 
 ---
 
@@ -9,7 +13,7 @@
 - Two Minute Papers (YouTube)
   `search: site:youtube.com "Two Minute Papers" AI model [year] after:{period_start}`
 - AI Explained (YouTube)
-  `search: site:youtube.com "AI Explained" model release enterprise [year] after:{period_start}`
+  `search: site:youtube.com "AI Explained" model release [year] after:{period_start}`
 
 ---
 

@@ -159,7 +159,8 @@ Categories and source files (scout order -- finance goes first in both scout and
 - references/sources_agents_enterprise.md
 - references/sources_agents_bigfour.md
 
-**`physical`**:
+**`physical`** (humanoid robotics is the priority focus):
+- references/sources_physical_humanoid.md
 - references/sources_physical_operators.md
 - references/sources_physical_maritime.md
 - references/sources_physical_media.md
@@ -174,7 +175,10 @@ Categories and source files (scout order -- finance goes first in both scout and
 (e.g. Anthropic, OpenAI) integrating their model into an ERP, finance platform, or
 enterprise workflow belongs in `finance` or `agents`, not `foundation`. Reserve
 `foundation` for model releases, capability benchmarks, pricing changes, and model
-provider strategy stories where the subject is the model itself.
+provider strategy stories where the subject is the model itself. Stories about
+enterprise software vendors (e.g. SAP, Workday, Salesforce, ServiceNow, Oracle)
+shipping AI features are never `foundation` — only foundation-model providers
+(OpenAI, Anthropic, Google/Gemini, Meta, Mistral, xAI, DeepSeek, Cohere) belong there.
 
 ### Step 1c: Tips scout (run after category scout)
 
@@ -203,7 +207,7 @@ Then print a **query count report**:
 Scout complete — queries run:
   finance (11 files)   : N
   agents (4 files)     : N
-  physical (3 files)   : N
+  physical (4 files)   : N
   foundation (3 files) : N
   tips (1 file)        : N
   TOTAL                : N
