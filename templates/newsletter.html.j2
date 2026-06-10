@@ -61,48 +61,9 @@
       letter-spacing: 0.3px;
       line-height: 1.3;
     }
-    .header .meta {
-      margin-top: 8px;
-      font-size: 11px;
-      color: #6677aa;
-    }
-
-    /* ── Section ── */
-    .section {
+    /* ── Stories container ── */
+    .stories {
       padding: 0 36px;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    .section:last-of-type {
-      border-bottom: none;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 20px 0 16px;
-      border-bottom: 1px solid #ebebeb;
-      margin-bottom: 4px;
-    }
-    .section-number {
-      width: 22px;
-      height: 22px;
-      background: #8b1535;
-      color: #fff;
-      font-size: 10px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      border-radius: 2px;
-    }
-    .section-title {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: #0c1540;
     }
 
     /* ── Story ── */
@@ -114,12 +75,19 @@
       border-bottom: none;
       padding-bottom: 20px;
     }
+    .story-headline {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
     .story h3 {
       font-size: 13px;
       font-weight: 700;
       color: #0c1540;
-      margin-bottom: 7px;
       line-height: 1.4;
+      margin: 0;
     }
     .story h3 a {
       color: #2a5aad;
@@ -127,6 +95,20 @@
     }
     .story h3 a:hover {
       text-decoration: underline;
+    }
+    .story-tag {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #8b1535;
+      border-radius: 10px;
+      padding: 2px 8px;
+      white-space: nowrap;
+      vertical-align: middle;
+      flex-shrink: 0;
     }
     .story p {
       font-size: 12px;
@@ -219,7 +201,6 @@
       <div class="header-text">
         <div class="label">Weekly Intelligence Brief</div>
         <h1>Group Finance AI Buzz &mdash; New Letter {{ issue_date }}</h1>
-        <div class="meta">CFO &amp; Finance Leadership &nbsp;/&nbsp; {{ week }}</div>
       </div>
     </div>
   </div>
@@ -231,24 +212,20 @@
   </div>
   {% endif %}
 
-  {% for section in sections %}
-  <div class="section">
-    <div class="section-header">
-      <div class="section-number">{{ loop.index }}</div>
-      <div class="section-title">{{ section.label | replace(section.label[:3], '', 1) | trim }}</div>
-    </div>
-    {% for story in section.stories %}
+  <div class="stories">
+    {% for section in sections %}{% for story in section.stories %}
     <div class="story">
-      <h3><a href="{{ story.source_url }}">{{ story.headline }}</a></h3>
+      <div class="story-headline">
+        <h3><a href="{{ story.source_url }}">{{ story.headline }}</a></h3>
+        <span class="story-tag">{{ section.label | replace(section.label[:3], '', 1) | trim }}</span>
+      </div>
       <p>{{ story.body_html | safe }}</p>
-
     </div>
-    {% endfor %}
+    {% endfor %}{% endfor %}
   </div>
-  {% endfor %}
 
   <div class="footer">
-    Generated from public sources. Items selected and reviewed by Claude.
+    If you have interesting AI news, feel free to share it to the Group Finance AI Buzz Team.
   </div>
 
 </div>
