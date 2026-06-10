@@ -1,6 +1,11 @@
 # Sources — Foundation Models: Primary
 
-`simple_query: AI foundation model release capability benchmark pricing enterprise build-vs-buy [year] after:{period_start}`
+`simple_query: foundation model release OpenAI OR Anthropic OR Gemini OR DeepSeek OR Mistral capability benchmark pricing [year] after:{period_start}`
+
+**Scope: foundation-model providers only** (OpenAI, Anthropic, Google DeepMind/Gemini,
+Meta, Mistral, xAI, Cohere, DeepSeek, Hugging Face). Enterprise software vendors adding
+AI to their products (SAP, Workday, Salesforce, ServiceNow, Oracle) are NOT foundation
+news — discard those results here; they belong in the agents or finance categories.
 
 ---
 
@@ -10,20 +15,22 @@
   `search: site:openai.com model release capability enterprise [year] after:{period_start}`
 - https://deepmind.google/models/
   `search: site:deepmind.google model release Gemini capability [year] after:{period_start}`
-- https://blog.google/technology/google-deepmind/
-  `search: site:blog.google google-deepmind model release Gemini [year] after:{period_start}`
+- https://blog.google/products/gemini/
+  `search: site:blog.google Gemini model release [year] after:{period_start}`
 - https://ai.meta.com/blog/
   `search: site:ai.meta.com Llama model release open weight [year] after:{period_start}`
 - https://mistral.ai/news/
   `search: site:mistral.ai model release open weight enterprise [year] after:{period_start}`
 - https://huggingface.co/blog
   `search: site:huggingface.co model release open weight enterprise [year] after:{period_start}`
-- https://x.ai/blog/
+- https://x.ai/news
   `search: site:x.ai Grok model release capability enterprise [year] after:{period_start}`
 - https://cohere.com/blog
   `search: site:cohere.com model release enterprise finance [year] after:{period_start}`
+- https://www.deepseek.com/en/
+  `search: site:deepseek.com DeepSeek model release open weight pricing [year] after:{period_start}`
 - https://www.microsoft.com/en-us/research/blog/
-  `search: site:microsoft.com research AI model enterprise [year] after:{period_start}`
+  `search: site:microsoft.com research Phi AI model release [year] after:{period_start}`
 
 ---
 

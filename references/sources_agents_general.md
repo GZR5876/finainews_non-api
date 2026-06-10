@@ -8,7 +8,7 @@
   `search: site:venturebeat.com AI agents enterprise finance [year] after:{period_start}`
 - https://the-decoder.com
   `search: site:the-decoder.com AI agents enterprise deployment [year] after:{period_start}`
-- https://www.theregister.com/emergent_tech/ai/
+- https://www.theregister.com/software/ai_ml/
   `search: site:theregister.com AI agents enterprise incident failure [year] after:{period_start}`
 - https://techcrunch.com/category/artificial-intelligence/
   `search: site:techcrunch.com AI agents enterprise finance funding [year] after:{period_start}`

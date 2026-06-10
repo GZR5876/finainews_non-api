@@ -6,7 +6,7 @@
 
 - https://www.treasuryandrisk.com
   `search: site:treasuryandrisk.com AI treasury automation [year] after:{period_start}`
-- https://www.afponline.org/ideas-inspiration/resources/articles
+- https://www.afponline.org/training-resources/resources/articles
   `search: site:afponline.org AI treasury cash flow [year] after:{period_start}`
 - https://www.swift.com/news-events/news
   `search: site:swift.com AI treasury payments automation [year] after:{period_start}`

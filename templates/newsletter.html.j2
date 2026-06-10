@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI in Focus -- {{ week }}</title>
+  <title>Group Finance AI Buzz - New Letter {{ issue_date }}</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: #e8e8e8;
+      background: #dde2ef;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       color: #1c1c1c;
     }
@@ -19,66 +19,51 @@
       background: #ffffff;
     }
 
+    /* ── Header gradient bar ── */
+    .header-gradient-bar {
+      height: 6px;
+      background: linear-gradient(to right, #0c1540, #2a5aad, #c4a8b8, #8b1535);
+    }
+
     /* ── Header ── */
     .header {
-      background: #0d0d0d;
-      padding: 32px 36px 28px;
-      border-bottom: 3px solid #333;
+      background: #0c1540;
+      padding: 24px 36px 26px;
+      border-bottom: 3px solid #8b1535;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .header-logo {
+      flex-shrink: 0;
+    }
+    .header-logo svg {
+      width: 68px;
+      height: 68px;
+      display: block;
+    }
+    .header-text {
+      flex: 1;
     }
     .header .label {
       font-size: 10px;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #888;
-      margin-bottom: 10px;
+      color: #8899cc;
+      margin-bottom: 8px;
     }
     .header h1 {
-      font-size: 20px;
-      font-weight: 600;
-      color: #f0f0f0;
-      letter-spacing: 0.5px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #f0f4ff;
+      letter-spacing: 0.3px;
+      line-height: 1.3;
     }
-    .header .meta {
-      margin-top: 8px;
-      font-size: 11px;
-      color: #555;
-    }
-
-    /* ── Section ── */
-    .section {
+    /* ── Stories container ── */
+    .stories {
       padding: 0 36px;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    .section:last-of-type {
-      border-bottom: none;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 20px 0 16px;
-      border-bottom: 1px solid #ebebeb;
-      margin-bottom: 4px;
-    }
-    .section-number {
-      width: 22px;
-      height: 22px;
-      background: #0d0d0d;
-      color: #e8e8e8;
-      font-size: 10px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .section-title {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: #1c1c1c;
     }
 
     /* ── Story ── */
@@ -90,27 +75,44 @@
       border-bottom: none;
       padding-bottom: 20px;
     }
+    .story-headline {
+      margin-bottom: 7px;
+    }
     .story h3 {
       font-size: 13px;
       font-weight: 700;
-      color: #0d0d0d;
-      margin-bottom: 7px;
+      color: #0c1540;
       line-height: 1.4;
+      margin: 0 0 5px 0;
     }
     .story h3 a {
-      color: #0d0d0d;
+      color: #2a5aad;
       text-decoration: none;
     }
     .story h3 a:hover {
       text-decoration: underline;
     }
+    .story-tag {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #8b1535;
+      border-radius: 10px;
+      padding: 2px 8px;
+      white-space: nowrap;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
     .story p {
       font-size: 12px;
       line-height: 1.7;
-      color: #666;
+      color: #555;
     }
     .story p strong {
-      color: #666;
+      color: #444;
       font-weight: 600;
     }
     .story .source {
@@ -119,26 +121,26 @@
       color: #999;
     }
     .story .source a {
-      color: #777;
+      color: #7788bb;
       text-decoration: none;
       word-break: break-all;
     }
     .story .source a:hover {
-      color: #1c1c1c;
+      color: #2a5aad;
     }
 
     /* ── Digest ── */
     .digest {
       padding: 24px 36px;
-      background: #f7f7f7;
-      border-bottom: 1px solid #e0e0e0;
+      background: #f0f3fa;
+      border-bottom: 2px solid #c4a8b8;
     }
     .digest .digest-label {
       font-size: 9px;
       font-weight: 700;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #999;
+      color: #8b1535;
       margin-bottom: 10px;
     }
     .digest p {
@@ -149,21 +151,54 @@
 
     /* ── Footer ── */
     .footer {
-      background: #0d0d0d;
+      background: #0c1540;
       padding: 18px 36px;
       font-size: 10px;
-      color: #555;
+      color: #6677aa;
       letter-spacing: 0.3px;
+      border-top: 3px solid #8b1535;
     }
   </style>
 </head>
 <body>
 <div class="wrapper">
 
+  <div class="header-gradient-bar"></div>
+
   <div class="header">
-    <div class="label">Weekly Intelligence Brief</div>
-    <h1>AI in Focus &mdash; {{ week }}</h1>
-    <div class="meta">CFO &amp; Finance Leadership &nbsp;/&nbsp; {{ issue_date }}</div>
+    <div class="header-inner">
+      <div class="header-logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer ring -->
+          <circle cx="50" cy="50" r="47" fill="#1a2b6e" stroke="#8b1535" stroke-width="5"/>
+          <!-- Chart line -->
+          <polyline points="18,74 38,60 57,47 71,31" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Chart dots -->
+          <circle cx="18" cy="74" r="5" fill="#8b1535"/>
+          <circle cx="38" cy="60" r="5" fill="#8b1535"/>
+          <circle cx="57" cy="47" r="4.5" fill="white"/>
+          <!-- Bulb glow halo -->
+          <circle cx="71" cy="29" r="13" fill="white" opacity="0.18"/>
+          <!-- Bulb body -->
+          <circle cx="71" cy="27" r="9" fill="white"/>
+          <!-- Bulb base ridges -->
+          <rect x="67.5" y="35" width="7" height="2.5" rx="1" fill="#8b1535"/>
+          <rect x="67.5" y="38.5" width="7" height="2" rx="1" fill="#8b1535"/>
+          <!-- Lightning bolt inside bulb -->
+          <polyline points="73,21 69.5,27.5 73,27.5 70,34" fill="none" stroke="#8b1535" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Rays -->
+          <line x1="71" y1="13" x2="71" y2="10" stroke="#f0c040" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="83" y1="17" x2="85.5" y2="14.5" stroke="#f0c040" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="87" y1="27" x2="90" y2="27" stroke="#f0c040" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="59" y1="17" x2="56.5" y2="14.5" stroke="#f0c040" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="55" y1="27" x2="52" y2="27" stroke="#f0c040" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="header-text">
+        <div class="label">Weekly Intelligence Brief</div>
+        <h1>Group Finance AI Buzz &mdash; New Letter {{ issue_date }}</h1>
+      </div>
+    </div>
   </div>
 
   {% if digest %}
@@ -173,24 +208,20 @@
   </div>
   {% endif %}
 
-  {% for section in sections %}
-  <div class="section">
-    <div class="section-header">
-      <div class="section-number">{{ loop.index }}</div>
-      <div class="section-title">{{ section.title }}</div>
-    </div>
-    {% for story in section.stories %}
+  <div class="stories">
+    {% for section in sections %}{% for story in section.stories %}
     <div class="story">
-      <h3><a href="{{ story.source_url }}">{{ story.headline }}</a></h3>
-      {{ story.body_html | safe }}
-
+      <div class="story-headline">
+        <h3><a href="{{ story.source_url }}">{{ story.headline }}</a></h3>
+        <div><span class="story-tag">{{ section.label | replace(section.label[:3], '', 1) | trim }}</span></div>
+      </div>
+      <p>{{ story.body_html | safe }}</p>
     </div>
-    {% endfor %}
+    {% endfor %}{% endfor %}
   </div>
-  {% endfor %}
 
   <div class="footer">
-    Generated from public sources. Items selected and reviewed by Claude.
+    If you have interesting AI news, feel free to share it to the Group Finance AI Buzz Team.
   </div>
 
 </div>

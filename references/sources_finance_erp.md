@@ -4,9 +4,9 @@
 
 ---
 
-- https://www.sap.com/news/ (Joule)
+- https://news.sap.com/ (Joule)
   `search: site:sap.com AI Joule finance agents automation [year] after:{period_start}`
-- https://www.workday.com/en-us/company/newsroom.html (Illuminate)
+- https://newsroom.workday.com/ (Illuminate)
   `search: site:workday.com AI Illuminate finance agents [year] after:{period_start}`
 - https://blogs.microsoft.com/ai/ (Copilot, Fabric, Dynamics 365)
   `search: site:blogs.microsoft.com AI Copilot finance automation [year] after:{period_start}`

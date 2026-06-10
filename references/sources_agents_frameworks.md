@@ -8,9 +8,9 @@
   `search: site:langchain.com AI agents enterprise finance [year] after:{period_start}`
 - https://www.llamaindex.ai/blog
   `search: site:llamaindex.ai AI agents enterprise finance [year] after:{period_start}`
-- https://github.com/anthropics/anthropic-cookbook
-  `search: site:github.com anthropics anthropic-cookbook finance agents [year] after:{period_start}`
-- https://www.crewai.com/blog
+- https://github.com/anthropics/claude-cookbooks
+  `search: site:github.com anthropics claude-cookbooks finance agents [year] after:{period_start}`
+- https://blog.crewai.com/
   `search: site:crewai.com AI agents enterprise finance [year] after:{period_start}`
 - Microsoft AutoGen / Agent Framework
   `search: site:microsoft.com AutoGen AI agents enterprise [year] after:{period_start}`

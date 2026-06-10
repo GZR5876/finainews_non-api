@@ -16,4 +16,8 @@ Covers humanoid and mobile robotics news across all key companies (Boston Dynami
 ---
 
 ## Scoring notes
-Score highest for named production deployments with headcount or productivity metrics. R&D announcements without a clear deployment timeline within 2 years score lower. Incidents or safety recalls score high on narrative.
+Humanoid robotics is the priority focus within Physical AI — prefer humanoid items
+over generic warehouse or industrial automation. Score highest for named production
+deployments with headcount or productivity metrics. R&D announcements without a clear
+deployment timeline within 2 years score lower. Incidents or safety recalls score high
+on narrative.
