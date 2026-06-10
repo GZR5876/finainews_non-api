@@ -77,6 +77,17 @@
     "scores": { "relevance": 8, "novelty": 7, "materiality": 7, "narrative": 6, "total": 28 }
   },
   {
+    "id": "finance_008",
+    "category": "finance",
+    "published_date": "2026-05-27",
+    "headline": "OpenAI and Thrive build self-improving tax agents with Codex",
+    "what": "OpenAI and Thrive Holdings built production tax agents for Crete accountants that improve themselves from practitioner feedback: 7,000 returns processed, preparation time down by a third, and draft accuracy up to 97% (published around 27 May 2026). The Codex-driven loop turns production corrections into automatic agent upgrades.",
+    "so_what": "Tax preparation agents that learn from your own reviewers' corrections are now in production; benchmark this pattern when scoping customs and duty classification automation.",
+    "source_url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 7, "narrative": 8, "total": 32 }
+  },
+  {
     "id": "agents_001",
     "category": "agents",
     "published_date": "2026-05-27",
@@ -134,9 +145,9 @@
   {
     "id": "physical_002",
     "category": "physical",
-    "published_date": "2026-06-01",
-    "headline": "Schaeffler commits to hundreds of Humanoid robots in its factories",
-    "what": "Bearing-maker Schaeffler will deploy hundreds of robots from UK firm Humanoid, with first systems live in Germany before end-2026 and rollouts running into 2027; Bosch and Schaeffler are also partnering with the company to scale production (reported early June; exact date unverified). It is one of the largest disclosed humanoid orders by an industrial operator.",
+    "published_date": "2026-05-13",
+    "headline": "Schaeffler to deploy thousands of Humanoid robots in its factories",
+    "what": "Bearing-maker Schaeffler signed a binding deployment and supply agreement with UK firm Humanoid for a four-digit number of wheeled humanoid units across its global facilities by 2032, with first systems live in Germany before end-2026; Bosch is also partnering to scale production. Announced 13 May 2026, OUTSIDE this issue's 27 May-10 June window.",
     "so_what": "A tier-1 European industrial has moved from pilot to fleet commitment; expect similar proposals to reach port equipment planning within a budget cycle.",
     "source_url": "https://www.therobotreport.com/schaeffler-humanoid-partner-build-deploy-hundreds-robots/",
     "paywalled": false,
