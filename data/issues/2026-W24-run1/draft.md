@@ -8,6 +8,12 @@ This week's pattern: more AI capability is arriving at mid-range prices, yet Gar
 
 ## 1. AI in Finance
 
+OpenAI and Thrive build self-improving tax agents with Codex
+
+**OpenAI and Thrive's tax agents** learn from accountants' corrections in live work, cutting preparation time by a third with draft accuracy up to **97%**.
+
+Source: https://openai.com/index/building-self-improving-tax-agents-with-codex/
+
 Gartner says CFOs mistake finance AI deployment for value creation
 
 Gartner finds almost every finance team has AI in place or planned, yet only **7% see high impact**, a warning against spending without measurement.
