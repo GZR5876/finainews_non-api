@@ -80,6 +80,34 @@ Digests to sweep:
 - Sequoia (sequoiacap.com)
 - Menlo Ventures (menlovc.com) -- State of AI in Business
 
+### Broad news sweep (run together with the digest sweep)
+
+Unrestricted recency queries (no `site:` filter) to catch major-outlet stories
+that the curated source list misses — the "Google News" view of the week.
+
+**Full scout mode (5 queries):**
+```
+finance AI news after:{period_start}
+CFO AI agents adoption news [year] after:{period_start}
+AI tax treasury customs automation news [year] after:{period_start}
+port terminal AI automation news [year] after:{period_start}
+humanoid robot deployment news [year] after:{period_start}
+```
+
+**Simple scout mode (2 queries):**
+```
+finance AI news after:{period_start}
+humanoid robot deployment news [year] after:{period_start}
+```
+
+**Source-quality rule (applies to all scout results, broad sweep especially):**
+never record an item whose only source is an SEO content farm, listicle
+aggregator, or AI-generated news site. Trace the story to a primary source —
+the vendor or operator newsroom, the regulator, or a major outlet (Reuters,
+Bloomberg, FT, CNBC, or trade press already in references/) — and cite that
+instead. If no primary source can be found, discard the item. Broad-sweep items
+must also pass the date-verification rule before entering the pool.
+
 Pull any finance-relevant or port-relevant items found into the candidate pool
 before proceeding to per-category source searches.
 
@@ -133,6 +161,12 @@ Work through the four categories below. For each:
    ```
    Use the article's actual publication date for `published_date`. If only a
    month/year is known, use the first of that month (e.g. "2026-03-01").
+   **Date verification:** if no publication date is visible in the search
+   snippet or URL, run one follow-up search ("{headline} date" or a site query)
+   to pin it before recording. Never guess a date into the news period. If the
+   date still cannot be verified, set `published_date` to null, append
+   "(date unverified)" to the `what` field, and exclude the item from automated
+   selection. Drop any item whose verified date falls outside the news period.
    Set `"paywalled": true` if the source requires a subscription to read the
    full article (e.g. taxnotes.com, lloydslist.com, theinformation.com, FT).
    In that case, the `what` field is based on headline + teaser only -- flag
@@ -303,6 +337,10 @@ After all categories and tips are scouted:
    - **403 / bot-blocked**: write from the `what` and `so_what` already in candidates.json.
    - **Paywalled** (`"paywalled": true` or paywall detected): write from candidates.json
      content only; do not invent details beyond what the teaser provides.
+   - **WebFetch blocked by network policy**: verify each selected item's
+     publication date with a targeted WebSearch instead. Correct
+     `published_date` in candidates.json, and flag any item that falls outside
+     the news period to the user before drafting.
 
 3. Write a **digest paragraph** (~25 words, no bullet points) that goes between
    the dateline and the first section. One or two sentences: the dominant theme
@@ -322,6 +360,12 @@ After all categories and tips are scouted:
      before compressing. No CFO action or watch item in the body.
      Bold only the 2-4 key words that carry the most weight (the metric, the
      actor, the scale) using `**...**` inline.
+   - **Plain language**: write for a senior finance executive, not a technologist.
+     At most 1-2 numbers per item — pick the one that carries the story. At most
+     one vendor or product name in the body; drop platform, module, or tool names
+     unless the story is about them. Translate technical terms into everyday words
+     ("ready-made AI assistants", not "skills, connectors and plugins"). One idea
+     per sentence; never stack facts.
    - `Source: {url}` on its own line after the sentence.
    - Total target: ≤25 words per item.
 

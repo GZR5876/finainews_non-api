@@ -19,6 +19,8 @@ Write as a trusted adviser who respects the reader's time.
 ## Language rules
 - Active voice. Present or near-future tense where possible.
 - Numbers over adjectives: "cuts processing time by 40%" beats "significantly faster".
+  But at most 1-2 numbers per item — pick the one that carries the story; stacked
+  statistics shut readers down.
 - Avoid: "revolutionary", "game-changing", "unprecedented", "unleash", "harness".
 - Avoid passive hedges: "it is expected that", "it may be possible to".
 - **No em dashes.** Use a comma, colon, or recast the sentence instead.

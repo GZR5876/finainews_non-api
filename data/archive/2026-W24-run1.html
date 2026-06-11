@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Group Finance AI Buzz - Newsletter {{ issue_date }}</title>
+  <title>Group Finance AI Buzz - Newsletter 10 June 2026</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -85,21 +85,12 @@
       line-height: 1.4;
       margin: 0 0 5px 0;
     }
-    .story-meta {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .story-source-link {
-      font-size: 10px;
+    .story h3 a {
       color: #2a5aad;
       text-decoration: none;
-      border-bottom: 1px solid #b0bedc;
-      padding-bottom: 1px;
     }
-    .story-source-link:hover {
-      color: #0c1540;
-      border-bottom-color: #0c1540;
+    .story h3 a:hover {
+      text-decoration: underline;
     }
     .story-tag {
       display: inline-block;
@@ -124,7 +115,19 @@
       color: #444;
       font-weight: 600;
     }
-
+    .story .source {
+      margin-top: 8px;
+      font-size: 10px;
+      color: #999;
+    }
+    .story .source a {
+      color: #7788bb;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .story .source a:hover {
+      color: #2a5aad;
+    }
 
     /* ── Digest ── */
     .digest {
@@ -193,31 +196,68 @@
       </div>
       <div class="header-text">
         <div class="label">Weekly Intelligence Brief</div>
-        <h1>Group Finance AI Buzz &mdash; Newsletter {{ issue_date }}</h1>
+        <h1>Group Finance AI Buzz &mdash; Newsletter 10 June 2026</h1>
       </div>
     </div>
   </div>
 
-  {% if digest %}
+  
   <div class="digest">
     <div class="digest-label">This Week in Brief</div>
-    <p>{{ digest | safe }}</p>
+    <p>This week's pattern: more AI capability is arriving at mid-range prices, yet Gartner finds only <strong>7% of finance teams</strong> see high impact from it so far.</p>
   </div>
-  {% endif %}
+  
 
   <div class="stories">
-    {% for section in sections %}{% for story in section.stories %}
+    
     <div class="story">
       <div class="story-headline">
-        <h3>{{ story.headline }}</h3>
-        <div class="story-meta">
-          <span class="story-tag">{{ section.label | replace(section.label[:3], '', 1) | trim }}</span>
-          {% if story.source_url %}<a class="story-source-link" href="{{ story.source_url }}" target="_blank" rel="noopener">Source ↗</a>{% endif %}
-        </div>
+        <h3><a href="https://openai.com/index/building-self-improving-tax-agents-with-codex/">OpenAI and Thrive build self-improving tax agents with Codex</a></h3>
+        <div><span class="story-tag">AI in Finance</span></div>
       </div>
-      <p>{{ story.body_html | safe }}</p>
+      <p><p><strong>OpenAI and Thrive's tax agents</strong> learn from accountants' corrections in live work, cutting preparation time by a third with draft accuracy up to <strong>97%</strong>.</p></p>
     </div>
-    {% endfor %}{% endfor %}
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3><a href="https://www.gartner.com/en/newsroom/press-releases/2026-05-28-gartner-says-cfos-must-stop-mistaking-finance-ai-deployment-for-value-creation">Gartner says CFOs mistake finance AI deployment for value creation</a></h3>
+        <div><span class="story-tag">AI in Finance</span></div>
+      </div>
+      <p><p>Gartner finds almost every finance team has AI in place or planned, yet only <strong>7% see high impact</strong>, a warning against spending without measurement.</p></p>
+    </div>
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3><a href="https://insightsoftware.com/blog/new-insightsoftware-research-reveals-trust-not-technology-is-the-biggest-barrier-to-ai-adoption-in-finance/">insightsoftware: trust, not technology, is finance AI's biggest barrier</a></h3>
+        <div><span class="story-tag">AI in Finance</span></div>
+      </div>
+      <p><p>New research finds <strong>80% of senior finance professionals</strong> say trust and governance concerns, not the technology itself, are slowing their AI adoption.</p></p>
+    </div>
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3><a href="https://www.ey.com/en_ca/newsroom/2026/05/ey-and-microsoft-announce-global-initiative-to-help-clients-scale-ai-enterprise-wide-value-creation-and-move-beyond-experimentation">EY and Microsoft commit US$1B+ to scale enterprise AI</a></h3>
+        <div><span class="story-tag">AI in Finance</span></div>
+      </div>
+      <p><p>EY and Microsoft will invest <strong>over US$1 billion</strong> in five years to move clients from AI pilots to full rollout, finance work included.</p></p>
+    </div>
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3><a href="https://interestingengineering.com/ai-robotics/china-deploys-humanoid-robots-in-postal-hub">China Post humanoids sort 1,200 parcels per hour in Guangzhou</a></h3>
+        <div><span class="story-tag">Physical AI</span></div>
+      </div>
+      <p><p><strong>China Post</strong> has human-shaped robots sorting about <strong>1,200 parcels an hour</strong> at its Guangzhou hub, working alongside robot arms and driverless forklifts.</p></p>
+    </div>
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic releases Claude Fable 5, its most capable public model</a></h3>
+        <div><span class="story-tag">Foundation Models</span></div>
+      </div>
+      <p><p><strong>Claude Fable 5</strong> is Anthropic's most capable model for everyday business use, at under half the price of its earlier preview, free until 22 June.</p></p>
+    </div>
+    
   </div>
 
   <div class="footer">

@@ -32,6 +32,8 @@ Fifteen curated AI newsletters and research publications are swept before any ca
 | Sequoia | Technology investment signals |
 | Menlo Ventures | State of AI in Business |
 
+A **broad news sweep** (5 unrestricted recency queries; 2 in simple mode) runs alongside the digest sweep to catch major-outlet stories outside the curated source list — the "Google News" view of the week. Every item must trace back to a primary source (vendor newsroom, regulator, or major outlet); SEO aggregators and content farms are discarded.
+
 ### Category Source Files (23 files across 5 categories)
 
 After the digest sweep, the agent works through 23 source files grouped by category. Finance is always searched first and accounts for ~50% of the final newsletter.
@@ -100,13 +102,15 @@ All queries include an `after:{period_start}` date filter to restrict results to
 
 ### Simple Scout — All Queries
 
-**Digest sweep (4 queries)**
+**Digest sweep + broad news sweep (6 queries)**
 
 ```
 site:therundown.ai AI finance agents enterprise [month] [year] after:{period_start}
 site:a16z.com AI finance enterprise agents [year] after:{period_start}
 site:mckinsey.com AI finance enterprise agents [year] after:{period_start}
 site:tldr.tech AI finance agents models [month] [year] after:{period_start}
+finance AI news after:{period_start}
+humanoid robot deployment news [year] after:{period_start}
 ```
 
 **AI in Finance (11 queries)**
@@ -157,7 +161,7 @@ site:tldr.tech AI finance agents models [month] [year] after:{period_start}
 |---|---|
 | `sources_tips_youtube.md` | site:youtube.com AI finance automation tutorial walkthrough CFO agents how-to [year] after:{period_start} |
 
-**Total: 27 queries** (4 digest + 23 category)
+**Total: 29 queries** (4 digest + 2 broad news + 23 category)
 
 ---
 
