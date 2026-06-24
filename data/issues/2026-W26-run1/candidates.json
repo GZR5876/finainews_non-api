@@ -55,6 +55,28 @@
     "scores": { "relevance": 8, "novelty": 6, "materiality": 9, "narrative": 5, "total": 28 }
   },
   {
+    "id": "finance_006",
+    "category": "finance",
+    "published_date": "2026-06-09",
+    "headline": "KPMG deploys Microsoft Agent 365 to govern AI agents across 276,000 staff",
+    "what": "KPMG and Microsoft announced on June 9 that KPMG will roll out Microsoft Agent 365, a governance and orchestration layer for AI agents, across its entire global workforce alongside Microsoft 365 Copilot. Agent 365, generally available since May 2026, lets organisations manage, monitor, and audit AI agents — whether built on Microsoft, Anthropic, or proprietary stacks — through a unified control plane built on Azure AI Foundry.",
+    "so_what": "A Big Four firm deploying agent governance infrastructure at this scale is the clearest enterprise signal that AI agent management and audit controls are now a board-level requirement, not a future roadmap item.",
+    "source_url": "https://news.microsoft.com/source/2026/06/09/kpmg-and-microsoft-scale-trusted-enterprise-ai-agents-globally-through-deployment-of-agent-365-and-copilot/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 9, "narrative": 8, "total": 33 }
+  },
+  {
+    "id": "finance_007",
+    "category": "finance",
+    "published_date": "2026-06-11",
+    "headline": "Bottomline launches CFO Suite, an agentic AI platform for treasury and cash flow",
+    "what": "Bottomline unveiled its CFO Suite on June 11, connecting treasury forecasting, accounts payable, accounts receivable, outbound payments, and cash application inside a single modular AI platform powered by BEA, a finance-first agentic engine that operates inside existing workflows without replacing the underlying ERP or treasury management system. The platform delivers traceable, auditable AI outputs with human oversight controls built in.",
+    "so_what": "Port operators with multi-bank, multi-currency cash complexity can now layer agentic treasury AI over current systems as a modular overlay, reducing deployment risk and time-to-value compared to an ERP-native rollout.",
+    "source_url": "https://www.bottomline.com/newsroom/press-releases/bottomline-unveils-cfo-suite-bring-together-governed-ai-and-end-end-cash-flow-management",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "narrative": 6, "total": 29 }
+  },
+  {
     "id": "agents_001",
     "category": "agents",
     "published_date": "2026-06-10",
@@ -62,6 +84,39 @@
     "what": "McKinsey published a detailed explainer arguing that agentic AI in 2026 enables complex banking tasks to run 100× faster than human-only processes, as orchestration frameworks have simplified while model capability has jumped. The article details how banks are moving from automation (doing one task faster) to agentic systems that can own entire front-to-back workflows — credit, onboarding, compliance, and customer engagement — with humans providing decreasing oversight over time.",
     "so_what": "The 100× speed claim quantifies what CFOs should model into their own build-vs-buy and staffing scenarios for finance workflows that mirror banking operations.",
     "source_url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/banking-and-ai-when-the-tech-starts-doing-the-work-not-just-assisting-it",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 7, "narrative": 7, "total": 28 }
+  },
+  {
+    "id": "agents_002",
+    "category": "agents",
+    "published_date": "2026-06-15",
+    "headline": "Salesforce acquires AI customer service agent Fin for $3.6 billion",
+    "what": "Salesforce agreed on June 15 to acquire Fin (formerly Intercom) for $3.6 billion, the largest acquisition of an agentic customer-experience provider to date. Fin's AI agent autonomously resolves 76% of support volume end-to-end across chat, email, phone, and messaging; its 30,000-company customer base joins Agentforce, which simultaneously reported $800M in annual recurring revenue, up 169% year-on-year.",
+    "so_what": "The deal signals that the enterprise AI agent market is consolidating around platform players; CFOs evaluating point-solution vendors for finance and operations workflows should reassess whether those vendors have the balance sheet to compete as platform giants close the capability gap.",
+    "source_url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "narrative": 7, "total": 29 }
+  },
+  {
+    "id": "agents_003",
+    "category": "agents",
+    "published_date": "2026-06-16",
+    "headline": "Microsoft Copilot Cowork launches with metered per-task pricing",
+    "what": "Microsoft released Copilot Cowork as generally available on June 16, priced at $0.01 per Copilot Credit, where each credit represents one unit of compute consumed by a completed agentic task. Unlike the flat-seat Copilot licence, Cowork billing is metered at the user, department, and organisation level — and organisations without spend guardrails configured are billed immediately from the day of general availability.",
+    "so_what": "The Uber AI overspend and Microsoft's move to usage-based metering in the same fortnight make a CFO-owned AI spend control policy an immediate operational priority, not a future governance exercise.",
+    "source_url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "narrative": 8, "total": 31 }
+  },
+  {
+    "id": "agents_004",
+    "category": "agents",
+    "published_date": "2026-06-15",
+    "headline": "Salesforce Agentforce multi-agent orchestration reaches general availability",
+    "what": "Salesforce's Summer '26 release, available June 15, made multi-agent orchestration generally available: agents can now hand off tasks to specialist agents — including a finance agent that queries Tableau dashboards mid-conversation — with shared context across the full thread. The release also introduced Process Compliance Navigator, which monitors live workflows in real time and intercepts non-compliant actions before they complete.",
+    "so_what": "Process Compliance Navigator is the first broadly available agentic compliance guardrail embedded inside CRM-linked workflows; port operators using Salesforce for contract, billing, or vendor management should assess it as a controls layer.",
+    "source_url": "https://www.salesforce.com/news/stories/summer-2026-product-release-announcement/",
     "paywalled": false,
     "scores": { "relevance": 7, "novelty": 7, "materiality": 7, "narrative": 7, "total": 28 }
   },
@@ -86,6 +141,17 @@
     "source_url": "https://www.eweek.com/news/unitree-20000-humanoid-robots-2026-china/",
     "paywalled": false,
     "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "narrative": 7, "total": 31 }
+  },
+  {
+    "id": "physical_003",
+    "category": "physical",
+    "published_date": "2026-06-22",
+    "headline": "Automate 2026 opens with three humanoid makers reporting active production contracts",
+    "what": "Automate 2026 (June 22–25, Chicago) opened with Figure AI disclosing its BotQ facility crossed one Figure 03 robot per hour — a 24-fold output increase in under four months, 350+ units delivered, first-pass yield above 80%. Boston Dynamics confirmed its electric Atlas commercial units are fully committed to Hyundai's Robotics Metaplant; Agility Robotics' Digit is running paid commercial shifts at Toyota Motor Manufacturing Canada under a Robots-as-a-Service agreement.",
+    "so_what": "Three independent humanoid makers now hold named production contracts with global manufacturers, establishing a credible price and availability trajectory for logistics-capable robots within two to three years.",
+    "source_url": "https://www.techtimes.com/articles/318805/20260621/automate-2026-opens-monday-nvidia-pavilion-marks-humanoid-robot-shift-production.htm",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "narrative": 8, "total": 32 }
   },
   {
     "id": "foundation_001",
