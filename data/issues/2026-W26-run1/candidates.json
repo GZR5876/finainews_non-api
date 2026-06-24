@@ -55,6 +55,17 @@
     "scores": { "relevance": 8, "novelty": 6, "materiality": 9, "narrative": 5, "total": 28 }
   },
   {
+    "id": "finance_008",
+    "category": "finance",
+    "published_date": "2026-06-12",
+    "headline": "KPMG pulled its agentic AI report after hallucinated citations were exposed",
+    "what": "GPTZero published a forensic review on June 12 showing that only 5 of 45 citations in KPMG's October 2025 report \"Total Experience: Redefining Excellence in the Age of Agentic AI\" correctly pointed to their stated source; the rest ranged from mangled and misleading to partially fabricated — what GPTZero dubbed \"vibe citing.\" KPMG pulled the report on June 13 and issued a statement acknowledging that its own responsible-AI guidelines on human oversight and source verification had not been followed.",
+    "so_what": "A Big Four firm that sells AI governance advice to clients failed its own governance test in public; CFO teams should apply the same citation-verification discipline to any AI-generated briefing, analysis, or board paper they produce or receive.",
+    "source_url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 8, "narrative": 9, "total": 34 }
+  },
+  {
     "id": "finance_006",
     "category": "finance",
     "published_date": "2026-06-09",
