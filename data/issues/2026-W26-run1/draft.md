@@ -64,14 +64,6 @@
 
 ---
 
-**McKinsey: agentic AI can run banking tasks 100 times faster than human-only processes**
-
-> McKinsey finds agentic AI now runs complex banking workflows **up to 100x faster**, with agents owning full front-to-back processes in credit, compliance, and onboarding with declining human oversight.
->
-> Source: https://www.mckinsey.com/featured-insights/mckinsey-explainers/banking-and-ai-when-the-tech-starts-doing-the-work-not-just-assisting-it
-
----
-
 ## 3. Physical AI
 
 **APSEZ commits $100M to deploy AI across 15 terminals with disclosed productivity benchmarks**
