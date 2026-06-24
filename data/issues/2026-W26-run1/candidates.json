@@ -167,12 +167,12 @@
   {
     "id": "foundation_001",
     "category": "foundation",
-    "published_date": "2026-06-09",
-    "headline": "Anthropic released Claude Fable 5 and Mythos 5",
-    "what": "Anthropic released Claude Fable 5 as its most capable broadly available model, with a 1 million token context window and up to 128K output tokens per request, designed for demanding reasoning and long-horizon agentic work. Fable 5 includes safety classifiers; Mythos 5 shares identical specs but is available only through limited access (Project Glasswing). Fable 5 is available on Claude API, AWS Bedrock, Vertex AI, and Microsoft Foundry. The release follows Claude Opus 4.8 which introduced dynamic workflows — hundreds of parallel subagents in a single session.",
-    "so_what": "Each step up in model capability at stable or lower cost expands what finance agents can reliably execute autonomously; the 1M context window now makes full-year GL review or contract corpus analysis feasible in a single call.",
-    "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "published_date": "2026-06-13",
+    "headline": "Anthropic suspends new AI tools over US government security concerns",
+    "what": "On June 13 the White House issued an export control directive requiring Anthropic to suspend foreign national access to Fable 5 and Mythos 5, citing claims that Mythos had been jailbroken. Anthropic blocked access for non-US employees and contractors within hours; the company publicly contested the rationale, noting the vulnerability was narrow and that equivalent capability exists in GPT-5.5. Anthropic is simultaneously suing the administration over a supply-chain blacklist linked to its refusal to permit autonomous-weapons use.",
+    "so_what": "A government export control order can suspend access to frontier models overnight with no enterprise notice; any finance-agent workflow built on a single model provider needs a tested multi-model fallback and documented continuity plan.",
+    "source_url": "https://www.bbc.com/news/articles/c932g3v3e13o",
     "paywalled": false,
-    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "narrative": 7, "total": 29 }
+    "scores": { "relevance": 8, "novelty": 9, "materiality": 7, "narrative": 8, "total": 32 }
   }
 ]
