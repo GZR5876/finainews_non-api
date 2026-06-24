@@ -1,0 +1,101 @@
+[
+  {
+    "id": "finance_001",
+    "category": "finance",
+    "published_date": "2026-06-02",
+    "headline": "Uber burned its full 2026 AI budget in four months",
+    "what": "Uber exhausted its entire annual AI coding-tools budget by April 2026 after encouraging staff to use AI \"as much as possible\" and ranking usage on internal leaderboards; some engineers were generating $500–$2,000/month in token consumption. The company has now imposed a $1,500/month per-employee cap on tools including Claude Code and Cursor, and Uber's COO is publicly questioning whether the spend is worth it.",
+    "so_what": "Any CFO scaling agentic AI without per-user spend controls risks similar overruns — this is the first major enterprise case study on AI cost governance at scale.",
+    "source_url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 9, "narrative": 9, "total": 34 }
+  },
+  {
+    "id": "finance_002",
+    "category": "finance",
+    "published_date": "2026-06-10",
+    "headline": "SAP rolls out AI agents across corporate finance",
+    "what": "SAP announced a broad suite of agentic AI tools for CFOs spanning cash management, tax, financial planning, and billing. The Cash Management Agent automates daily reconciliation and surplus/shortage detection, claiming up to 70% reduction in manual cash-positioning time; the Autonomous Close Assistant compresses the financial close from weeks to days by handling journal entries, reconciliation, and error resolution end-to-end.",
+    "so_what": "Port operators running SAP should assess the Joule agent roadmap — the Close and Cash agents address two of the most time-intensive finance workflows and are now generally available or in preview.",
+    "source_url": "https://www.cfodive.com/news/sap-ramps-push-autonomous-finance-agentic-ai/819929/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 9, "narrative": 7, "total": 31 }
+  },
+  {
+    "id": "finance_003",
+    "category": "finance",
+    "published_date": "2026-06-08",
+    "headline": "Gartner tells CFOs to build structured finance AI roadmaps",
+    "what": "Gartner published a finance AI maturity model outlining five phases (avoid → experiment → stabilise → expand → transform) and four workstreams (culture, strategy, skills, software/data). The firm found that 84% of finance organisations have implemented or plan AI, yet only 7% report high or very high impact — confirming a large execution gap between adoption intent and value realised.",
+    "so_what": "The maturity model gives the CFO's team a vendor-neutral framework for auditing current AI deployment and prioritising next investments rather than chasing individual tool announcements.",
+    "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-08-gartner-says-cfos-need-structured-finance-ai-roadmaps",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "narrative": 6, "total": 29 }
+  },
+  {
+    "id": "finance_004",
+    "category": "finance",
+    "published_date": "2026-06-15",
+    "headline": "Forrester Wave names leaders in AP invoice automation",
+    "what": "Forrester published its Q2 2026 Wave for Accounts Payable Invoice Automation Software, evaluating 15 vendors across 26 criteria. The report identifies agentic AI as reshaping the category from automation to proactive finance operations — leaders can now autonomously triage invoices, recommend resolution paths, surface early-payment discount opportunities, and prompt supplier engagement before bottlenecks escalate.",
+    "so_what": "CFOs evaluating or re-tendering AP automation have a current independent benchmark; the agentic tier creates a meaningful capability gap over rules-based incumbents.",
+    "source_url": "https://www.forrester.com/blogs/announcing-the-forrester-wave-accounts-payable-invoice-automation-software-q2-2026/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "narrative": 6, "total": 29 }
+  },
+  {
+    "id": "finance_005",
+    "category": "finance",
+    "published_date": "2026-06-15",
+    "headline": "Machine learning framework proposed for transfer pricing automation at MNEs",
+    "what": "Tax Notes published a technical framework showing how multinational enterprises can apply machine learning to automate transfer pricing analysis — covering arm's-length benchmarking, documentation generation, and audit-trail maintenance across jurisdictions. The article notes that ML models can process comparable-company datasets orders of magnitude faster than manual review. (headline/teaser only)",
+    "so_what": "Transfer pricing is a significant compliance cost for port operators with terminals across many jurisdictions; AI-automated benchmarking could reduce external adviser spend and reduce filing risk.",
+    "source_url": "https://www.taxnotes.com/tax-notes-transfer-pricing-center/oecd-pillar-1-profit-reallocation-digital-tax-repeal/machine-learning-framework-transfer-pricing-automation/2026/06/15/7w612",
+    "paywalled": true,
+    "scores": { "relevance": 8, "novelty": 6, "materiality": 9, "narrative": 5, "total": 28 }
+  },
+  {
+    "id": "agents_001",
+    "category": "agents",
+    "published_date": "2026-06-10",
+    "headline": "McKinsey says agentic AI can run banking tasks 100 times faster",
+    "what": "McKinsey published a detailed explainer arguing that agentic AI in 2026 enables complex banking tasks to run 100× faster than human-only processes, as orchestration frameworks have simplified while model capability has jumped. The article details how banks are moving from automation (doing one task faster) to agentic systems that can own entire front-to-back workflows — credit, onboarding, compliance, and customer engagement — with humans providing decreasing oversight over time.",
+    "so_what": "The 100× speed claim quantifies what CFOs should model into their own build-vs-buy and staffing scenarios for finance workflows that mirror banking operations.",
+    "source_url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/banking-and-ai-when-the-tech-starts-doing-the-work-not-just-assisting-it",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 7, "materiality": 7, "narrative": 7, "total": 28 }
+  },
+  {
+    "id": "physical_001",
+    "category": "physical",
+    "published_date": "2026-06-16",
+    "headline": "APSEZ deploys AI across 15 terminals in $100M capex commitment",
+    "what": "Adani Ports and Special Economic Zone (APSEZ) expanded its multi-year partnership with US-based Kaleris to deploy an AI-augmented terminal operating system and advanced container handling optimisation across 15 container terminals in 9 ports. APSEZ disclosed up to USD 100 million in investment across two phases, expects up to 20% improvement in RTG crane productivity and 14% improvement in terminal truck productivity, and targets unlocking 91 MMT of additional throughput capacity by 2030 — roughly 10% of installed capacity.",
+    "so_what": "A peer port operator has published specific AI capex, productivity benchmarks, and capacity-unlock targets that CFOs and boards can use directly as reference points for their own automation business cases.",
+    "source_url": "https://www.adaniports.com/newsroom/media-releases/apsez-expands-partnership-with-us-based-kaleris-to-accelerate-ai-led-transformation",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 9, "narrative": 9, "total": 35 }
+  },
+  {
+    "id": "physical_002",
+    "category": "physical",
+    "published_date": "2026-06-01",
+    "headline": "Unitree Robotics IPO clears Shanghai Stock Exchange listing committee",
+    "what": "Unitree Robotics, China's leading low-cost humanoid maker, received listing approval from the Shanghai Stock Exchange committee on June 1, 2026, moving toward an IPO. The company targets shipment of 20,000 humanoid robots in 2026, up from roughly 5,500 units sold in 2025; its G1 model starts at $16,000 with enterprise configurations up to $73,900. Unitree's IPO would be the first listing by a major humanoid robotics manufacturer.",
+    "so_what": "A public listing would accelerate Unitree's production capacity and price competition, potentially pulling the cost of logistics-capable humanoid robots below $20,000 within 12–18 months — a threshold relevant to labour-substitution economics at port terminals.",
+    "source_url": "https://www.eweek.com/news/unitree-20000-humanoid-robots-2026-china/",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 8, "materiality": 8, "narrative": 7, "total": 31 }
+  },
+  {
+    "id": "foundation_001",
+    "category": "foundation",
+    "published_date": "2026-06-09",
+    "headline": "Anthropic released Claude Fable 5 and Mythos 5",
+    "what": "Anthropic released Claude Fable 5 as its most capable broadly available model, with a 1 million token context window and up to 128K output tokens per request, designed for demanding reasoning and long-horizon agentic work. Fable 5 includes safety classifiers; Mythos 5 shares identical specs but is available only through limited access (Project Glasswing). Fable 5 is available on Claude API, AWS Bedrock, Vertex AI, and Microsoft Foundry. The release follows Claude Opus 4.8 which introduced dynamic workflows — hundreds of parallel subagents in a single session.",
+    "so_what": "Each step up in model capability at stable or lower cost expands what finance agents can reliably execute autonomously; the 1M context window now makes full-year GL review or contract corpus analysis feasible in a single call.",
+    "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 8, "materiality": 7, "narrative": 7, "total": 29 }
+  }
+]
