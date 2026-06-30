@@ -174,5 +174,27 @@
     "source_url": "https://www.bbc.com/news/articles/c932g3v3e13o",
     "paywalled": false,
     "scores": { "relevance": 8, "novelty": 9, "materiality": 7, "narrative": 8, "total": 32 }
+  },
+  {
+    "id": "finance_009",
+    "category": "finance",
+    "published_date": "2026-06-10",
+    "headline": "Moody's: agentic AI can increase asset manager capacity by 55-65% and cut costs 40%",
+    "what": "Moody's published an analysis arguing that the second wave of AI in asset management moves beyond broad copilots to agents embedded in live workflows that autonomously execute tasks, coordinate with other agents, and replicate complex work products under human oversight. BCG's 2026 Global Asset Management Report, cited in the piece, finds agentic workflows can increase operational capacity by 55–65% and reduce costs by ~40%; Wolters Kluwer reports 44% of finance teams will use agentic AI in 2026.",
+    "so_what": "The 55–65% capacity and 40% cost figures from BCG give CFOs a credible external benchmark for modelling the return on agentic AI investment across treasury, FP&A, and investment operations.",
+    "source_url": "https://www.moodys.com/web/en/us/insights/ai/from-pilots-to-agents-how-the-second-wave-of-ai-is-transforming-asset-management.html",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 9, "narrative": 7, "total": 31 }
+  },
+  {
+    "id": "finance_010",
+    "category": "finance",
+    "published_date": "2026-06-12",
+    "headline": "EY says tech companies should use AI to reimagine order-to-cash and FP&A first",
+    "what": "EY published analysis arguing that AI in finance is under-optimised across most organisations due to siloed data, unclear ownership, and poor change management. The firm recommends tech companies — and by extension finance-intensive enterprises — prioritise agentic AI in order-to-cash (OTC) and financial planning and analysis (FP&A) first, as off-the-shelf solutions are rarely AI-ready for these workflows. EY frames the strategic goal as 'design for zero': reimagining finance processes around outcomes achievable without human intervention.",
+    "so_what": "The 'design for zero' framing gives the CFO's team a concrete mandate for their AI roadmap: identify which finance workflows could theoretically run end-to-end without human touch, then sequence investment toward those.",
+    "source_url": "https://www.ey.com/en_sg/insights/tech-sector/ai-in-finance-the-hidden-advantage-for-tech-companies",
+    "paywalled": false,
+    "scores": { "relevance": 8, "novelty": 7, "materiality": 8, "narrative": 7, "total": 30 }
   }
 ]
