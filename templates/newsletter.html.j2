@@ -91,21 +91,12 @@
       line-height: 1.4;
       margin: 0 0 5px 0;
     }
-    .story-meta {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .story-source-link {
-      font-size: 10px;
+    .story h3 a {
       color: #2a5aad;
       text-decoration: none;
-      border-bottom: 1px solid #b0bedc;
-      padding-bottom: 1px;
     }
-    .story-source-link:hover {
-      color: #0c1540;
-      border-bottom-color: #0c1540;
+    .story h3 a:hover {
+      text-decoration: underline;
     }
     .story-tag {
       display: inline-block;
@@ -215,11 +206,8 @@
     {% for section in sections %}{% for story in section.stories %}
     <div class="story">
       <div class="story-headline">
-        <h3>{{ story.headline }}</h3>
-        <div class="story-meta">
-          <span class="story-tag">{{ section.label | replace(section.label[:3], '', 1) | trim }}</span>
-          {% if story.source_url %}<a class="story-source-link" href="{{ story.source_url }}" target="_blank" rel="noopener">Source ↗</a>{% endif %}
-        </div>
+        <h3>{% if story.source_url %}<a href="{{ story.source_url }}" target="_blank" rel="noopener">{{ story.headline }}</a>{% else %}{{ story.headline }}{% endif %}</h3>
+        <div><span class="story-tag">{{ section.label | replace(section.label[:3], '', 1) | trim }}</span></div>
       </div>
       <p>{{ story.body_html | safe }}</p>
     </div>
