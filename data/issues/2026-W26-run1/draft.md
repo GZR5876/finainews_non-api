@@ -1,84 +1,56 @@
-# AI News Briefing: Week of 23 June 2026
+# AI News Briefing: 24 June 2026
 
-*Selected for the CFO of a global port operator. 10 items across finance, agents, physical AI, and foundation models.*
+*Selected for the CFO of a global port operator. 6 items: finance (5) and foundation models (1).*
 
 ---
 
 ## 1. AI in Finance
 
-**KPMG pulled its agentic AI report after hallucinated citations were exposed**
+**Moody's: agentic AI can increase asset manager capacity by 55–65% and cut costs 40%**
 
-> GPTZero found **only 5 of 45 citations** in KPMG's agentic AI report pointed to real sources; KPMG pulled it on June 13, a reminder to verify citations in any AI-generated board paper.
+> BCG's 2026 Global Asset Management Report, cited by Moody's, finds agentic workflows can increase operational capacity by **55–65% and reduce costs by ~40%**; Wolters Kluwer separately finds 44% of finance teams will use agentic AI in 2026. These figures give CFOs a credible external benchmark for modelling the return on agentic AI investment in treasury and FP&A.
 >
-> Source: https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/
-
----
-
-**KPMG deploys Microsoft Agent 365 to govern AI agents across 276,000 staff**
-
-> KPMG is rolling out agent governance infrastructure across its **entire global workforce**, making AI audit controls a board-level requirement rather than a future roadmap item.
->
-> Source: https://news.microsoft.com/source/2026/06/09/kpmg-and-microsoft-scale-trusted-enterprise-ai-agents-globally-through-deployment-of-agent-365-and-copilot/
-
----
-
-**Gartner tells CFOs to build structured finance AI roadmaps**
-
-> **84% of finance teams have AI in place or planned, yet only 7% report high impact** — Gartner's five-phase maturity model gives CFOs a vendor-neutral framework to close that gap.
->
-> Source: https://www.gartner.com/en/newsroom/press-releases/2026-06-08-gartner-says-cfos-need-structured-finance-ai-roadmaps
-
----
-
-**Bottomline launches CFO Suite, an agentic AI platform for treasury and cash flow**
-
-> Bottomline's CFO Suite covers forecasting, AP, AR, and payments as a **modular overlay over existing ERPs** — no replacement required, with auditable human-in-the-loop outputs built in.
->
-> Source: https://www.bottomline.com/newsroom/press-releases/bottomline-unveils-cfo-suite-bring-together-governed-ai-and-end-end-cash-flow-management
+> Source: https://www.moodys.com/web/en/us/insights/ai/from-pilots-to-agents-how-the-second-wave-of-ai-is-transforming-asset-management.html
 
 ---
 
 **Forrester Wave names leaders in AP invoice automation**
 
-> Forrester's Q2 2026 Wave evaluated **15 AP automation vendors**; leading agentic platforms now autonomously triage invoices and surface early-payment discount opportunities — a current benchmark for any CFO re-tendering.
+> Forrester's Q2 2026 Wave evaluated **15 AP automation vendors**; leading agentic platforms now autonomously triage invoices, surface early-payment discount opportunities, and prompt supplier engagement — a current independent benchmark for any CFO re-tendering AP.
 >
 > Source: https://www.forrester.com/blogs/announcing-the-forrester-wave-accounts-payable-invoice-automation-software-q2-2026/
 
 ---
 
-**Uber exhausted its 2026 AI budget in four months, then imposed a $1,500 per-employee monthly cap**
+**EY: reimagine order-to-cash and FP&A first — "design for zero" human intervention**
 
-> Uber burned its entire annual AI tools budget by April, with engineers hitting **$2,000/month** in token spend before a cap was imposed — the first large-scale AI cost governance case study.
+> EY finds AI in finance is under-optimised across most organisations due to siloed data and unclear ownership, and recommends prioritising **order-to-cash (OTC) and FP&A** as the starting point, using a "design for zero" approach that reimagines each process around outcomes achievable without human touch.
 >
-> Source: https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/
+> Source: https://www.ey.com/en_sg/insights/tech-sector/ai-in-finance-the-hidden-advantage-for-tech-companies
 
 ---
 
-## 2. AI Agents & Applications
+**SAP rolls out AI agents across corporate finance**
 
-**Microsoft Copilot Cowork launches with metered per-task pricing**
-
-> Copilot Cowork charges **$0.01 per completed agentic task**, metered at user and department level from day one — no grace period, spend controls must be configured before deployment.
+> SAP's Cash Management Agent claims **up to 70% reduction in manual cash-positioning time**; its Autonomous Close Assistant compresses the financial close from weeks to days by handling journal entries, reconciliation, and error resolution end-to-end. Port operators running SAP should assess the Joule agent roadmap now.
 >
-> Source: https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/
+> Source: https://www.cfodive.com/news/sap-ramps-push-autonomous-finance-agentic-ai/819929/
 
 ---
 
-## 3. Physical AI
+**Bottomline launches CFO Suite, an agentic AI platform for treasury and cash flow**
 
-**APSEZ commits $100M to deploy AI across 15 terminals with disclosed productivity benchmarks**
-
-> Adani Ports committed **$100M** to AI-augmented terminal operations across 15 terminals, targeting 20% crane productivity gain and 91 MMT of additional throughput capacity by 2030 — a peer benchmark for any port automation business case.
+> Bottomline's CFO Suite covers forecasting, AP, AR, and payments as a **modular overlay over existing ERPs** — no replacement required, with auditable human-in-the-loop outputs built in, reducing deployment risk for port operators with multi-bank, multi-currency complexity.
 >
-> Source: https://www.adaniports.com/newsroom/media-releases/apsez-expands-partnership-with-us-based-kaleris-to-accelerate-ai-led-transformation
+> Source: https://www.bottomline.com/newsroom/press-releases/bottomline-unveils-cfo-suite-bring-together-governed-ai-and-end-end-cash-flow-management
 
 ---
 
-## 4. Foundation Models
+## 2. Foundation Models
 
 **US government export control suspended Anthropic model access for foreign nationals overnight**
 
-> A White House directive on June 13 forced Anthropic to cut foreign national access to its newest models **within hours** — enterprises running finance agents on a single provider need a tested fallback architecture.
+> A White House directive on June 13 forced Anthropic to cut foreign national access to its newest models **within hours** — enterprises running finance agents on a single provider need a tested multi-model fallback architecture before this risk materialises.
 >
 > Source: https://www.bbc.com/news/articles/c932g3v3e13o
 
