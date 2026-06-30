@@ -348,7 +348,9 @@ After all categories and tips are scouted:
    Place it in draft.md directly after the italicised dateline, before the first `---`.
 
 3. For each selected **news item** (non-tips), write a newsletter entry following
-   the voice defined in references/voice.md. Hard rules for every item:
+   the voice defined in references/voice.md. **Always read `references/newsletter_example.html`
+   before writing any body copy — this is the canonical output style reference.**
+   Hard rules for every item:
    - **Headline**: Use the `headline` field from candidates.json verbatim. Only
      rewrite it if WebFetch reveals a materially better framing (e.g. a specific
      metric that changes the meaning). Format: subject + verb + object, max 10
