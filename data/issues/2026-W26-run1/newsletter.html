@@ -91,12 +91,21 @@
       line-height: 1.4;
       margin: 0 0 5px 0;
     }
-    .story h3 a {
+    .story-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .story-source-link {
+      font-size: 10px;
       color: #2a5aad;
       text-decoration: none;
+      border-bottom: 1px solid #b0bedc;
+      padding-bottom: 1px;
     }
-    .story h3 a:hover {
-      text-decoration: underline;
+    .story-source-link:hover {
+      color: #0c1540;
+      border-bottom-color: #0c1540;
     }
     .story-tag {
       display: inline-block;
@@ -206,48 +215,66 @@
     
     <div class="story">
       <div class="story-headline">
-        <h3><a href="https://www.moodys.com/web/en/us/insights/ai/from-pilots-to-agents-how-the-second-wave-of-ai-is-transforming-asset-management.html" target="_blank" rel="noopener">Moody's: agentic AI can increase asset manager capacity by 55–65% and cut costs 40%</a></h3>
-        <div><span class="story-tag">AI in Finance</span></div>
+        <h3>Moody's: agentic AI can increase asset manager capacity by 55–65% and cut costs 40%</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://www.moodys.com/web/en/us/insights/ai/from-pilots-to-agents-how-the-second-wave-of-ai-is-transforming-asset-management.html" target="_blank" rel="noopener">Source ↗</a>
+        </div>
       </div>
       <p>BCG finds agentic workflows deliver <strong>55–65% capacity gains and ~40% cost reduction</strong> in finance operations, with 44% of finance teams adopting agentic AI in 2026.</p>
     </div>
     
     <div class="story">
       <div class="story-headline">
-        <h3><a href="https://www.forrester.com/blogs/announcing-the-forrester-wave-accounts-payable-invoice-automation-software-q2-2026/" target="_blank" rel="noopener">Forrester Wave names leaders in AP invoice automation</a></h3>
-        <div><span class="story-tag">AI in Finance</span></div>
+        <h3>Forrester Wave names leaders in AP invoice automation</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://www.forrester.com/blogs/announcing-the-forrester-wave-accounts-payable-invoice-automation-software-q2-2026/" target="_blank" rel="noopener">Source ↗</a>
+        </div>
       </div>
       <p>Forrester's Q2 2026 Wave evaluated <strong>15 AP automation vendors</strong>; leading platforms now autonomously triage invoices and surface early-payment discounts — a current benchmark for CFOs re-tendering AP.</p>
     </div>
     
     <div class="story">
       <div class="story-headline">
-        <h3><a href="https://www.ey.com/en_sg/insights/tech-sector/ai-in-finance-the-hidden-advantage-for-tech-companies" target="_blank" rel="noopener">EY: reimagine order-to-cash and FP&A first — "design for zero" human intervention</a></h3>
-        <div><span class="story-tag">AI in Finance</span></div>
+        <h3>EY: reimagine order-to-cash and FP&A first — "design for zero" human intervention</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://www.ey.com/en_sg/insights/tech-sector/ai-in-finance-the-hidden-advantage-for-tech-companies" target="_blank" rel="noopener">Source ↗</a>
+        </div>
       </div>
       <p>EY recommends prioritising <strong>order-to-cash and FP&A</strong> as the first AI targets, using a "design for zero" approach that reimagines finance processes around outcomes without human touch.</p>
     </div>
     
     <div class="story">
       <div class="story-headline">
-        <h3><a href="https://www.cfodive.com/news/sap-ramps-push-autonomous-finance-agentic-ai/819929/" target="_blank" rel="noopener">SAP rolls out AI agents across corporate finance</a></h3>
-        <div><span class="story-tag">AI in Finance</span></div>
+        <h3>SAP rolls out AI agents across corporate finance</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://www.cfodive.com/news/sap-ramps-push-autonomous-finance-agentic-ai/819929/" target="_blank" rel="noopener">Source ↗</a>
+        </div>
       </div>
       <p>SAP's Cash Management Agent claims <strong>up to 70% reduction in manual cash-positioning time</strong>; its Autonomous Close Agent compresses month-end close from weeks to days.</p>
     </div>
     
     <div class="story">
       <div class="story-headline">
-        <h3><a href="https://www.bottomline.com/newsroom/press-releases/bottomline-unveils-cfo-suite-bring-together-governed-ai-and-end-end-cash-flow-management" target="_blank" rel="noopener">Bottomline launches CFO Suite, an agentic AI platform for treasury and cash flow</a></h3>
-        <div><span class="story-tag">AI in Finance</span></div>
+        <h3>Bottomline launches CFO Suite, an agentic AI platform for treasury and cash flow</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://www.bottomline.com/newsroom/press-releases/bottomline-unveils-cfo-suite-bring-together-governed-ai-and-end-end-cash-flow-management" target="_blank" rel="noopener">Source ↗</a>
+        </div>
       </div>
       <p>Bottomline's CFO Suite covers forecasting, AP, AR, and payments as a <strong>modular overlay over existing ERPs</strong>, with auditable human-in-the-loop controls built in.</p>
     </div>
     
     <div class="story">
       <div class="story-headline">
-        <h3><a href="https://www.bbc.com/news/articles/c932g3v3e13o" target="_blank" rel="noopener">US government export control suspended Anthropic model access for foreign nationals overnight</a></h3>
-        <div><span class="story-tag">Foundation Models</span></div>
+        <h3>US government export control suspended Anthropic model access for foreign nationals overnight</h3>
+        <div class="story-meta">
+          <span class="story-tag">Foundation Models</span>
+          <a class="story-source-link" href="https://www.bbc.com/news/articles/c932g3v3e13o" target="_blank" rel="noopener">Source ↗</a>
+        </div>
       </div>
       <p>A White House directive on June 13 forced Anthropic to cut foreign national access to its newest models <strong>within hours</strong>, with no advance notice to enterprise customers.</p>
     </div>
