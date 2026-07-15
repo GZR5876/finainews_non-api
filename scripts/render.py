@@ -203,7 +203,7 @@ def main():
 
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
     tmpl = env.get_template("newsletter.html.j2")
-    html = tmpl.render(week=week, issue_date=issue_date, sections=sections,
+    html = tmpl.render(week=week, issue_title=week, issue_date=issue_date, sections=sections,
                        digest=digest_html,
                        generated_at=datetime.now().isoformat(timespec="minutes"))
 

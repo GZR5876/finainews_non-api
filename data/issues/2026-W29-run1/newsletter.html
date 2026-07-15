@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Group Finance AI Buzz - {{ issue_title }}</title>
+  <title>Group Finance AI Buzz - 2026-W29-run1</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -198,32 +198,76 @@
         </svg>
       </div>
       <div class="header-text">
-        <h1>Group Finance AI Buzz &mdash; {{ issue_title }}</h1>
-        <div class="issue-date">{{ issue_date }}</div>
+        <h1>Group Finance AI Buzz &mdash; 2026-W29-run1</h1>
+        <div class="issue-date">15 July 2026</div>
       </div>
     </div>
   </div>
 
-  {% if digest %}
+  
   <div class="digest">
     <div class="digest-label">Edition in Brief</div>
-    <p>{{ digest | safe }}</p>
+    <p>Governance now leads this week's AI-in-finance news: Singapore's MAS set runtime safeguards for agentic finance, AI investment held steady near $202M, and liability questions sharpened.</p>
   </div>
-  {% endif %}
+  
 
   <div class="stories">
-    {% for section in sections %}{% for story in section.stories %}
+    
     <div class="story">
       <div class="story-headline">
-        <h3>{{ story.headline }}</h3>
+        <h3>Singapore's MAS proposed AI agent safeguards for finance</h3>
         <div class="story-meta">
-          <span class="story-tag">{{ section.label | replace(section.label[:3], '', 1) | trim }}</span>
-          {% if story.source_url %}<a class="story-source-link" href="{{ story.source_url }}" target="_blank" rel="noopener">Source ↗</a>{% endif %}
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://dig.watch/updates/singapore-governance-framework-ai-agents-finance" target="_blank" rel="noopener">Source ↗</a>
         </div>
       </div>
-      {{ story.body_html | safe }}
+      <p><strong>MAS</strong> released <strong>SAFR</strong>, a runtime safeguard framework requiring AI agents in finance to operate within defined risk limits and mandates.</p>
     </div>
-    {% endfor %}{% endfor %}
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3>Who's liable when AI gets a financial model wrong?</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQY1laRXNBTGg1VkpxMW1hUFh5R29RZ2RabS1qRG9fWVo3bzJPU0VFbURFR0YzOUU4ZnRoekoxdE13a3RJV2J0SG00Y2t6T0tZSnFFajl4a1ZDVmYtSVo5Q3FIYWYzV2YwOU5EYXV4MzUxOU0yQndzaThHVEVidjdsSFJGYkgzNkxWanB1dUR1c3BaQmIxdXFpb25aX3Y1Q2xob19Gdkp3NVBsUlR6OWRaWg" target="_blank" rel="noopener">Source ↗</a>
+        </div>
+      </div>
+      <p><strong>CFO.com</strong> found most finance teams lack a clear accountability framework for financial models built or checked with <strong>AI tools</strong>.</p>
+    </div>
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3>AI investment in finance holds steady, KPMG finds</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://kpmg.com/us/en/media/news/q2-ai-pulse-2026.html" target="_blank" rel="noopener">Source ↗</a>
+        </div>
+      </div>
+      <p><strong>KPMG's</strong> Q2 survey found finance and banking teams plan <strong>$202 million</strong> in AI investment over 12 months, with only <strong>26%</strong> having real-time cost visibility.</p>
+    </div>
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3>FactSet partnered with Google Cloud on AI</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWWJjOVpuOUw5eDEwX0JsbmwtUmlaendIak50WlRSQWRCNGQ3UGJuejl2Z0JUVzZJclZSNnNMUDd3aHM1MWVGZXV3cDhZd1pXcHpJeGRrY1ZPTFFKUVhyMWllV2F5YkFrLTJKdGg5TXE0Z01JOUlFWUl2QzdvSlRCRVo5Z3R0TGxnYTc1aENSNTZoVHl0M1E3Z1VKNDN4YVNRTGZDaXJYVUw3Ums1SDJCNm4zLWl0WnBkQ0dRRVEyME1UZi11ZmNPZlFQbXh4bXREak83c1Z0MlRmZTMtT01qSzU0Sjg1MlF1dk9JT1ZWRENYUQ" target="_blank" rel="noopener">Source ↗</a>
+        </div>
+      </div>
+      <p><strong>FactSet</strong> partnered with <strong>Google Cloud</strong> to embed AI models into its financial data platform, speeding research and analysis workflows for institutional clients.</p>
+    </div>
+    
+    <div class="story">
+      <div class="story-headline">
+        <h3>Gartner predicts finance teams to go all-in on AI talent</h3>
+        <div class="story-meta">
+          <span class="story-tag">AI in Finance</span>
+          <a class="story-source-link" href="https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-predicts-20-percent-of-finance-orgs-will-pivot" target="_blank" rel="noopener">Source ↗</a>
+        </div>
+      </div>
+      <p><strong>Gartner</strong> predicts that by <strong>2028</strong>, one in five finance organizations will redirect all talent investment toward AI and digital skills, sidelining traditional hires.</p>
+    </div>
+    
   </div>
 
   <div class="footer">
