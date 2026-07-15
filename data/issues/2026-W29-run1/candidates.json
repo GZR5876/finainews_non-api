@@ -242,6 +242,17 @@
     "scores": { "relevance": 6, "novelty": 5, "materiality": 5, "narrative": 5, "total": 21 }
   },
   {
+    "id": "finance_023",
+    "category": "finance",
+    "published_date": "2026-07-05",
+    "headline": "Singapore's MAS proposed a governance framework for AI agents in finance",
+    "what": "The Monetary Authority of Singapore released a white paper, Safeguards for Agentic Finance at Runtime (SAFR), co-developed with financial institutions and fintech firms via the BuildFin.ai working group, to govern how autonomous AI agents operate within defined mandates and risk limits.",
+    "so_what": "A Singapore-peer-group regulator has published concrete runtime guardrails for agentic finance, a reference point for any AI agent deployment in the region.",
+    "source_url": "https://dig.watch/updates/singapore-governance-framework-ai-agents-finance",
+    "paywalled": false,
+    "scores": { "relevance": 9, "novelty": 8, "materiality": 7, "narrative": 6, "total": 30 }
+  },
+  {
     "id": "agents_001",
     "category": "agents",
     "published_date": "2026-07-10",
