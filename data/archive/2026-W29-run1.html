@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Group Finance AI Buzz - 2026-W29-run1</title>
+  <title>Group Finance AI Buzz - Issue No.2</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -152,6 +152,103 @@
       color: #333;
     }
 
+    /* ── Section header (used for Sections 01/02/03) ── */
+    .section-block {
+      padding: 26px 36px 8px;
+    }
+    .section-block .section-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #8b1535;
+      margin-bottom: 4px;
+    }
+    .section-block h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0c1540;
+      margin-bottom: 16px;
+    }
+
+    /* ── Glossary grid ── */
+    .glossary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .glossary-card {
+      background: #f5f7fc;
+      border: 1px solid #e3e8f4;
+      border-radius: 3px;
+      padding: 10px 12px;
+    }
+    .glossary-card .term {
+      font-size: 12px;
+      font-weight: 700;
+      color: #0c1540;
+      margin-bottom: 3px;
+    }
+    .glossary-card .term span {
+      font-weight: 400;
+      color: #777;
+    }
+    .glossary-card .def {
+      font-size: 11px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* ── Market players ── */
+    .player-row {
+      display: flex;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .player-row:last-child { border-bottom: none; }
+    .player-row img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .player-info {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 6px 12px;
+      align-content: start;
+    }
+    .player-info .label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #99a3bd;
+      padding-top: 3px;
+    }
+    .player-info .company {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0c1540;
+    }
+    .player-info .product {
+      font-size: 12px;
+      color: #333;
+      line-height: 1.5;
+    }
+    .player-info .product span {
+      font-weight: 400;
+      color: #888;
+    }
+    .player-info .models {
+      font-size: 12px;
+      font-weight: 600;
+      color: #1a2b6e;
+      line-height: 1.5;
+    }
+
     /* ── Footer ── */
     .footer {
       background: #0c1540;
@@ -198,7 +295,7 @@
         </svg>
       </div>
       <div class="header-text">
-        <h1>Group Finance AI Buzz &mdash; 2026-W29-run1</h1>
+        <h1>Group Finance AI Buzz &mdash; Issue No.2</h1>
         <div class="issue-date">15 July 2026</div>
       </div>
     </div>
@@ -207,12 +304,17 @@
   
   <div class="digest">
     <div class="digest-label">Edition in Brief</div>
-    <p>Governance now leads this week's AI-in-finance news: Singapore's MAS set runtime safeguards for agentic finance, AI investment held steady near $202M, and liability questions sharpened.</p>
+    <p>Governance now leads this week's AI-in-finance news: Singapore's MAS set runtime safeguards for agentic finance, AI investment held steady near $202M, and liability questions sharpened. New this issue: a quick-reference AI glossary and market-player primer, appended below for anyone catching up on the basics.</p>
   </div>
   
 
+  <div class="section-block" style="padding-bottom: 0;">
+    <div class="section-label">Section 01</div>
+    <h2 style="margin-bottom: 0;">AI in Finance</h2>
+  </div>
+
   <div class="stories">
-    
+
     <div class="story">
       <div class="story-headline">
         <h3>Singapore's MAS proposed AI agent safeguards for finance</h3>
@@ -268,6 +370,126 @@
       <p><strong>CFO.com</strong> highlighted a chance for finance teams to get ahead by setting clear accountability rules for <strong>AI-assisted</strong> financial models before problems arise.</p>
     </div>
     
+  </div>
+
+  <div class="section-block" style="padding-bottom: 8px;">
+    <div class="section-label">Section 02</div>
+    <h2>The Acronyms, Decoded</h2>
+    <div class="glossary-grid">
+      <div class="glossary-card">
+        <div class="term">LLM</div>
+        <div class="def">Large Language Model - The AI “brain” that enables AI tools to understand and generate human language.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Model</div>
+        <div class="def">A specific implementation of the LLM technology, that uses what it has learned from its training data to understand requests and generate responses.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Instructions</div>
+        <div class="def">A set of rules that tells the AI how to perform the task.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Prompt</div>
+        <div class="def">A specific request that tells the AI what task to perform.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Token</div>
+        <div class="def">The small pieces of text (roughly word fragments) the AI reads and writes. Usage is billed in tokens, like a phone plan counts minutes.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Tools</div>
+        <div class="def">Actions an agent is allowed to take beyond chatting: searching the web, reading files, running calculations, sending emails.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Context Window</div>
+        <div class="def">The AI's working memory: how much text it can keep in mind at once. Past that limit, it starts losing track of earlier material.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">MCP</div>
+        <div class="def">Model Context Protocol — a universal plug (think USB) that lets an AI safely connect to your files, systems, and applications.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Agent</div>
+        <div class="def">An AI that doesn't just answer questions — it takes steps on its own: planning a task, using tools, and working until the job is done.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">AGI</div>
+        <div class="def">Artificial General Intelligence — a future AI as capable as a person at virtually any task. It does not exist yet.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Memory</div>
+        <div class="def">What the AI remembers about you between conversations — preferences, past work — so you don't have to repeat yourself every time.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Knowledge</div>
+        <div class="def">Reference documents you give the AI — policies, reports, manuals — so answers draw on your material, not just its general training.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Hallucination</div>
+        <div class="def">When the AI gives a confident, polished answer that is simply wrong or made up. Always double-check facts and figures.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Grounding</div>
+        <div class="def">Making the AI base its answers on trusted, checkable sources rather than guessing — the main defence against hallucination.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">Skill</div>
+        <div class="def">A pre-packaged how-to that teaches an agent to do one specific task well — like a recipe card it pulls out when needed.</div>
+      </div>
+      <div class="glossary-card">
+        <div class="term">HITL <span>(Human in the Loop)</span></div>
+        <div class="def">A person reviews and approves the AI's work at key checkpoints before anything is final — the AI drafts, a human decides.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block" style="padding-bottom: 10px;">
+    <div class="section-label">Section 03</div>
+    <h2 style="margin-bottom: 6px;">Main Market Players &amp; Their Models</h2>
+    <div class="player-row">
+      <img src="data:image/webp;base64,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" alt="anthropic logo">
+      <div class="player-info">
+        <span class="label">Company</span>
+        <span class="company">Anthropic</span>
+        <span class="label">Product</span>
+        <span class="product">Claude <span>(chat assistant)</span> · Claude Code <span>(coding)</span></span>
+        <span class="label">Models</span>
+        <span class="models">Claude Fable · Claude Opus · Claude Sonnet · Claude Haiku</span>
+      </div>
+    </div>
+    <div class="player-row">
+      <img src="data:image/webp;base64,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" alt="openai logo">
+      <div class="player-info">
+        <span class="label">Company</span>
+        <span class="company">OpenAI</span>
+        <span class="label">Product</span>
+        <span class="product">ChatGPT <span>(chat assistant)</span> · Codex <span>(coding)</span></span>
+        <span class="label">Models</span>
+        <span class="models">GPT · GPT Mini</span>
+      </div>
+    </div>
+    <div class="player-row">
+      <img src="data:image/webp;base64,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" alt="google logo">
+      <div class="player-info">
+        <span class="label">Company</span>
+        <span class="company">Google</span>
+        <span class="label">Product</span>
+        <span class="product">Gemini app <span>(chat assistant)</span> · Vertex AI <span>(enterprise platform)</span></span>
+        <span class="label">Models</span>
+        <span class="models">Gemini Pro · Gemini Flash</span>
+      </div>
+    </div>
+    <div class="player-row">
+      <img src="data:image/webp;base64,UklGRt4DAABXRUJQVlA4WAoAAAAgAAAAWwAAWwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgg8AEAADATAJ0BKlwAXAA+PRqIRCIiIR4/fAAgA8S0AGYq8P831uXj/4E/mT06+gXZT9i8RZ+V/kz/VfeB/VfxN66r+Abhf//+n/0f/otfyveTP9j/cu2e/QDVj+gH4AA4WuG5/GV7UT1FZZpw3mVt2ZIOrz0HD/TMkHsHdiS3aBu6/1H2xogzG32o/kamXxy1mWKwRdUuJdunrnPSIenGfbktFtSOAAD+6moY1Zj46Sf2j+cPQGaZT1FHvaJ4Sz/jE1BdMhx58mIuKLIzrkFnvtYBunTyYk69XXSltkAxGhM5ws7LmFhPtRPxEA8XYDhRpf/sIk+L5Psyh0YzKB/iTTh+XkiOQR3/9+z/0/7p/nclE8uslYBLzKwyqFIofMYqiOEBbh46zsH0J2L2Ifpztb6C6vT6dNfE+I4q7ywby4F0SQR+w8FifU9cVCREqB8xRbAJIFrUbYLkkkZ9LcrFe+AEvKK0sDjWmNymf+bM1NIosulYKrwmZRSLS/kIB1xfDxI5uQMil50NpUUezSzdGHfyfVYTWoWerEL1X0mlCph+b2c2RZ82Ru31atxZroh8orr+6GvJQeh5tC+ClXBnUzBUEF10ee68lWXTS3IFkLnrXN9Dh7eLNmEBLeGzc89YqhqJi8lzmQaJejT+Zq3MvpYgAAA=" alt="microsoft logo">
+      <div class="player-info">
+        <span class="label">Company</span>
+        <span class="company">Microsoft</span>
+        <span class="label">Product</span>
+        <span class="product">Microsoft 365 Copilot <span>(in Office apps)</span> · GitHub Copilot <span>(coding)</span></span>
+        <span class="label">Models</span>
+        <span class="models">MAI · Phi <span>(also runs OpenAI's GPT)</span></span>
+      </div>
+    </div>
   </div>
 
   <div class="footer">

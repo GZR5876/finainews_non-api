@@ -184,6 +184,7 @@ def parse_draft_sections(draft_md: str, selections: list[dict], candidates: dict
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--week", required=True, help="ISO week string, e.g. 2025-W20")
+    parser.add_argument("--title", default=None, help="Issue title, e.g. 'Issue No.2'; defaults to the week string")
     args = parser.parse_args()
     week = args.week
 
@@ -203,7 +204,7 @@ def main():
 
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
     tmpl = env.get_template("newsletter.html.j2")
-    html = tmpl.render(week=week, issue_title=week, issue_date=issue_date, sections=sections,
+    html = tmpl.render(week=week, issue_title=(args.title or week), issue_date=issue_date, sections=sections,
                        digest=digest_html,
                        generated_at=datetime.now().isoformat(timespec="minutes"))
 

@@ -1,6 +1,6 @@
 *Week of 24 June - 15 July 2026*
 
-Governance now leads this week's AI-in-finance news: Singapore's MAS set runtime safeguards for agentic finance, AI investment held steady near $202M, and liability questions sharpened.
+Governance now leads this week's AI-in-finance news: Singapore's MAS set runtime safeguards for agentic finance, AI investment held steady near $202M, and liability questions sharpened. New this issue: a quick-reference AI glossary and market-player primer, appended below for anyone catching up on the basics.
 
 ---
 
