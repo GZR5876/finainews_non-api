@@ -12,11 +12,11 @@ Singapore's MAS proposed AI agent safeguards for finance
 
 Source: https://dig.watch/updates/singapore-governance-framework-ai-agents-finance
 
-Who's liable when AI gets a financial model wrong?
+Gartner predicts finance teams to go all-in on AI talent
 
-**CFO.com** found most finance teams lack a clear accountability framework for financial models built or checked with **AI tools**.
+**Gartner** predicts that by **2028**, one in five finance organizations will redirect all talent investment toward AI and digital skills, sidelining traditional hires.
 
-Source: https://news.google.com/rss/articles/CBMisAFBVV95cUxQY1laRXNBTGg1VkpxMW1hUFh5R29RZ2RabS1qRG9fWVo3bzJPU0VFbURFR0YzOUU4ZnRoekoxdE13a3RJV2J0SG00Y2t6T0tZSnFFajl4a1ZDVmYtSVo5Q3FIYWYzV2YwOU5EYXV4MzUxOU0yQndzaThHVEVidjdsSFJGYkgzNkxWanB1dUR1c3BaQmIxdXFpb25aX3Y1Q2xob19Gdkp3NVBsUlR6OWRaWg
+Source: https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-predicts-20-percent-of-finance-orgs-will-pivot
 
 AI investment in finance holds steady, KPMG finds
 
@@ -30,8 +30,8 @@ FactSet partnered with Google Cloud on AI
 
 Source: https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWWJjOVpuOUw5eDEwX0JsbmwtUmlaendIak50WlRSQWRCNGQ3UGJuejl2Z0JUVzZJclZSNnNMUDd3aHM1MWVGZXV3cDhZd1pXcHpJeGRrY1ZPTFFKUVhyMWllV2F5YkFrLTJKdGg5TXE0Z01JOUlFWUl2QzdvSlRCRVo5Z3R0TGxnYTc1aENSNTZoVHl0M1E3Z1VKNDN4YVNRTGZDaXJYVUw3Ums1SDJCNm4zLWl0WnBkQ0dRRVEyME1UZi11ZmNPZlFQbXh4bXREak83c1Z0MlRmZTMtT01qSzU0Sjg1MlF1dk9JT1ZWRENYUQ
 
-Gartner predicts finance teams to go all-in on AI talent
+Who's liable when AI gets a financial model wrong?
 
-**Gartner** predicts that by **2028**, one in five finance organizations will redirect all talent investment toward AI and digital skills, sidelining traditional hires.
+**CFO.com** highlighted a chance for finance teams to get ahead by setting clear accountability rules for **AI-assisted** financial models before problems arise.
 
-Source: https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-predicts-20-percent-of-finance-orgs-will-pivot
+Source: https://news.google.com/rss/articles/CBMisAFBVV95cUxQY1laRXNBTGg1VkpxMW1hUFh5R29RZ2RabS1qRG9fWVo3bzJPU0VFbURFR0YzOUU4ZnRoekoxdE13a3RJV2J0SG00Y2t6T0tZSnFFajl4a1ZDVmYtSVo5Q3FIYWYzV2YwOU5EYXV4MzUxOU0yQndzaThHVEVidjdsSFJGYkgzNkxWanB1dUR1c3BaQmIxdXFpb25aX3Y1Q2xob19Gdkp3NVBsUlR6OWRaWg
