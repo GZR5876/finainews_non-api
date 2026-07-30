@@ -51,6 +51,210 @@
     }
   },
   {
+    "id": "finance_004",
+    "category": "finance",
+    "published_date": "2026-07-21",
+    "headline": "Survey: finance leaders are outrunning their own AI governance",
+    "what": "Avalara surveyed 1,500+ CFOs and finance leaders across the US, UK, India and Australia: 92% feel career pressure to prove AI agent ROI, only 7% prioritise governance over speed, and 44% are only somewhat confident they could explain an agent's actions to an auditor.",
+    "so_what": "A concrete audit-readiness gap: finance teams deploying agents faster than they can document or defend the decisions those agents make.",
+    "source_url": "https://newsroom.avalara.com/2026-07-21-Avalara-Survey-Finance-Leaders-are-Racing-to-Deploy-AI-Agents-Before-Governance-is-Ready",
+    "paywalled": false,
+    "scores": {
+      "relevance": 8,
+      "novelty": 6,
+      "materiality": 7,
+      "narrative": 7,
+      "total": 28
+    }
+  },
+  {
+    "id": "finance_005",
+    "category": "finance",
+    "published_date": "2026-07-28",
+    "headline": "SAP added a financial close agent to its Q2 release",
+    "what": "SAP's Q2 2026 Business AI release added a Financial Closing Assistant that coordinates posting, accruals and intercompany reconciliation across the close, plus new Expense Automation and Dispute Resolution agents.",
+    "so_what": "Another sign close automation is becoming a standard ERP feature rather than a bolt-on, relevant for SAP shops planning their next close-cycle roadmap.",
+    "source_url": "https://news.sap.com/2026/07/sap-business-ai-release-highlights-q2-2026/",
+    "paywalled": false,
+    "scores": {
+      "relevance": 7,
+      "novelty": 5,
+      "materiality": 6,
+      "narrative": 4,
+      "total": 22
+    }
+  },
+  {
+    "id": "finance_006",
+    "category": "finance",
+    "published_date": "2026-07-27",
+    "headline": "BlackLine says its new AI agents cut close prep time 92%",
+    "what": "BlackLine announced general availability of Verity Prepare, a multi-agent system that autonomously matches transactions and assembles audit-ready reconciliations, with early adopters cutting reconciliation prep time by up to 92%.",
+    "so_what": "A concrete, named efficiency figure for close automation that finance teams evaluating point solutions can benchmark against.",
+    "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333478/0/en/blackline-advances-governed-ai-for-finance-with-general-availability-of-verity-prepare.html",
+    "paywalled": false,
+    "scores": {
+      "relevance": 8,
+      "novelty": 6,
+      "materiality": 8,
+      "narrative": 7,
+      "total": 29
+    }
+  },
+  {
+    "id": "finance_007",
+    "category": "finance",
+    "published_date": "2026-07-28",
+    "headline": "An AI agent now audits fund administrators before investors see errors",
+    "what": "Juniper Square launched Fay, an AI agent that automatically reviews every fund administrator deliverable, cutting financial statement review time roughly 80% for CFOs and controllers overseeing private fund reporting.",
+    "so_what": "A model for using AI as a second-line check on outsourced finance work before it reaches auditors, applicable beyond fund administration to any third-party reporting relationship.",
+    "source_url": "https://www.prnewswire.com/news-releases/juniper-square-launches-new-ai-powered-fund-admin-oversight-agent-for-gps-302835524.html",
+    "paywalled": false,
+    "scores": {
+      "relevance": 7,
+      "novelty": 7,
+      "materiality": 7,
+      "narrative": 7,
+      "total": 28
+    }
+  },
+  {
+    "id": "finance_008",
+    "category": "finance",
+    "published_date": "2026-07-29",
+    "headline": "Fenergo launched an AI platform to automate bank compliance checks",
+    "what": "Fenergo launched Fen-AI, a governed agentic AI platform that automates client onboarding, KYC and ongoing monitoring for financial institutions, logging every decision for regulatory review. Fenergo serves over 40% of the world's top 50 banks.",
+    "so_what": "Shows compliance automation reaching tier-1 bank scale with full audit trails, a governance pattern worth benchmarking for any AI deployment touching regulated processes.",
+    "source_url": "https://fintechnews.sg/134983/regtech/fenergo-fen-ai/",
+    "paywalled": false,
+    "scores": {
+      "relevance": 7,
+      "novelty": 6,
+      "materiality": 6,
+      "narrative": 6,
+      "total": 25
+    }
+  },
+  {
+    "id": "finance_009",
+    "category": "finance",
+    "published_date": "2026-07-13",
+    "headline": "Munich startup Finto raised $3.4M for AI accounts-payable agents",
+    "what": "Finto, a Y Combinator-backed startup based in Munich, raised a $3.4 million seed round to build AI agents that check, code and post invoices directly into SAP, Microsoft Dynamics and DATEV.",
+    "so_what": "A small but telling data point on European AP automation reaching production with named early customers, worth watching for build-vs-buy comparisons against larger vendors.",
+    "source_url": "https://pulse2.com/finto-raises-3-4-million-to-bring-ai-agents-into-enterprise-accounting/amp/",
+    "paywalled": false,
+    "scores": {
+      "relevance": 6,
+      "novelty": 5,
+      "materiality": 5,
+      "narrative": 5,
+      "total": 21
+    }
+  },
+  {
+    "id": "finance_010",
+    "category": "finance",
+    "published_date": "2026-07-10",
+    "headline": "Accounting leaders say autonomous AI agents 'aren't there yet'",
+    "what": "Industry panelists said no accounting close task is currently handled by AI agents start-to-finish without human review, estimating agents reliably cover 75-80% of routine close work while 20-25% still needs human judgment.",
+    "so_what": "A useful reality check against vendor claims of full automation, and a benchmark for what proportion of close work to expect AI to actually own today.",
+    "source_url": "https://finance.yahoo.com/technology/ai/articles/accounting-ai-leaders-autonomous-agents-090000252.html",
+    "paywalled": false,
+    "scores": {
+      "relevance": 8,
+      "novelty": 7,
+      "materiality": 6,
+      "narrative": 8,
+      "total": 29
+    }
+  },
+  {
+    "id": "finance_011",
+    "category": "finance",
+    "published_date": "2026-07-22",
+    "headline": "Bank regulators are building their own AI agents to keep pace",
+    "what": "The UK's FCA said it is exploring agentic AI as a 'first responder' for market surveillance ahead of absorbing 60,000 additional supervised businesses, processing roughly a billion data rows a day to speed up authorisations and enforcement.",
+    "so_what": "Regulators matching industry's AI pace means faster scrutiny of firms' own AI-driven decisions, raising the bar for explainability in finance and compliance systems.",
+    "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/watchdogs-build-their-own-agents-keep-up/",
+    "paywalled": false,
+    "scores": {
+      "relevance": 7,
+      "novelty": 7,
+      "materiality": 6,
+      "narrative": 7,
+      "total": 27
+    }
+  },
+  {
+    "id": "finance_012",
+    "category": "finance",
+    "published_date": "2026-07-29",
+    "headline": "CFOs are hitting a 'cost wall' on AI token spending",
+    "what": "Accenture's chief AI and data officer said enterprises scaling AI are being surprised by token costs once they move past pilots; Accenture's own platforms process 8.7 trillion tokens weekly, and only 23% of C-suite leaders report sustained business value from AI.",
+    "so_what": "A direct warning to budget AI spend by usage-based token economics rather than flat licence costs, and to demand proof of value before scaling further.",
+    "source_url": "https://fortune.com/2026/07/29/cfo-hitting-cost-wall-ai-tokens-accenture/",
+    "paywalled": false,
+    "scores": {
+      "relevance": 8,
+      "novelty": 7,
+      "materiality": 7,
+      "narrative": 7,
+      "total": 29
+    }
+  },
+  {
+    "id": "finance_013",
+    "category": "finance",
+    "published_date": "2026-07-23",
+    "headline": "Bitwave open-sourced infrastructure for AI-native finance teams",
+    "what": "Bitwave launched an open-source, model-agnostic suite (CLI, MCP connector, data/analytics layer and a sandboxed agent environment) letting finance teams run AI agents directly against accounting and blockchain data.",
+    "so_what": "An early example of finance vendors opening infrastructure rather than locking teams into one AI provider, worth watching as a hedge against vendor lock-in.",
+    "source_url": "https://www.globenewswire.com/news-release/2026/07/23/3332090/0/en/bitwave-launches-agentic-finance-initiative-unveils-open-source-infrastructure-for-ai-native-financial-operations.html",
+    "paywalled": false,
+    "scores": {
+      "relevance": 6,
+      "novelty": 6,
+      "materiality": 5,
+      "narrative": 5,
+      "total": 22
+    }
+  },
+  {
+    "id": "finance_014",
+    "category": "finance",
+    "published_date": "2026-07-29",
+    "headline": "Workiva launched three AI agents for financial reporting",
+    "what": "Workiva launched a Tie-Out Agent for report verification, a Benchmarking Agent that compares peers using SEC filings, and a Sustainability Disclosure Agent, backed by an intelligence layer trained on each customer's own filing history.",
+    "so_what": "Extends AI from drafting reports to verifying and benchmarking them, a capability worth asking about in any reporting-platform renewal conversation.",
+    "source_url": "https://www.businesswire.com/news/home/20260729125583/en/Workiva-Launches-Specialized-AI-Agents-and-Intelligence-Layer-to-Advance-High-Stakes-Reporting",
+    "paywalled": false,
+    "scores": {
+      "relevance": 8,
+      "novelty": 6,
+      "materiality": 6,
+      "narrative": 6,
+      "total": 26
+    }
+  },
+  {
+    "id": "finance_015",
+    "category": "finance",
+    "published_date": "2026-07-09",
+    "headline": "Vena listed its AI planning tools on the Acumatica Marketplace",
+    "what": "Vena Solutions made its AI-assisted FP&A platform available on the Acumatica Marketplace, extending distribution of its planning and forecasting Copilot to Acumatica ERP customers.",
+    "so_what": "A minor distribution move, but a marker of AI-FP&A vendors chasing wider ERP-marketplace reach rather than new capability.",
+    "source_url": "https://www.venasolutions.com/newsroom/vena-now-available-on-the-acumatica-marketplace",
+    "paywalled": false,
+    "scores": {
+      "relevance": 6,
+      "novelty": 4,
+      "materiality": 4,
+      "narrative": 4,
+      "total": 18
+    }
+  },
+  {
     "id": "agents_001",
     "category": "agents",
     "published_date": "2026-07-22",
