@@ -372,5 +372,22 @@
       "narrative": 7,
       "total": 28
     }
+  },
+  {
+    "id": "foundation_003",
+    "category": "foundation",
+    "published_date": "2026-07-24",
+    "headline": "Anthropic released Claude Opus 5 at half the cost of Fable 5",
+    "what": "Anthropic launched Claude Opus 5, claiming near-frontier performance at half the price of its Fable 5 flagship, with early enterprise testers reporting 9 percentage points higher accuracy on financial modeling tasks.",
+    "so_what": "A meaningful price/performance jump on a model already used in finance workflows lowers the near-term cost of scaling AI agents, directly relevant to the token-cost pressure CFOs are flagging elsewhere this issue.",
+    "source_url": "https://www.anthropic.com/news/claude-opus-5",
+    "paywalled": false,
+    "scores": {
+      "relevance": 8,
+      "novelty": 8,
+      "materiality": 8,
+      "narrative": 7,
+      "total": 31
+    }
   }
 ]
