@@ -71,17 +71,17 @@
     "id": "finance_005",
     "category": "finance",
     "published_date": "2026-07-28",
-    "headline": "SAP's Project Billing Price Verification Agent cuts discrepancies 75%",
-    "what": "SAP's new Project Billing Price Verification Agent (beta) flags mismatches between contracted prices and billing amounts in S/4HANA Cloud, cutting time to resolve discrepancies and revenue leakage from incorrect billing by up to 75% each; its Expense Automation Agent (GA) separately cuts expense-report completion time up to 30%.",
-    "so_what": "Two of SAP's new Q2 agents ship with specific, testable ROI targets, useful benchmarks for finance teams deciding whether to adopt now or wait.",
+    "headline": "SAP brought five new AI agents to general availability",
+    "what": "SAP's Q2 2026 release moved five agents to general availability: an Expense Automation Agent that drafts trip expense reports, AI-assisted contract creation from prompts in Ariba Contracts, AI-assisted SOW worker-role recommendations in Fieldglass, multi-model invoice data extraction in Ariba Invoicing, and a policy rule generator for Concur Travel.",
+    "so_what": "A broad wave of GA agents across spend, procurement and travel gives finance teams several low-risk starting points to pilot AI without waiting on one flagship rollout.",
     "source_url": "https://news.sap.com/2026/07/sap-business-ai-release-highlights-q2-2026/",
     "paywalled": false,
     "scores": {
       "relevance": 8,
       "novelty": 6,
-      "materiality": 8,
-      "narrative": 8,
-      "total": 30
+      "materiality": 7,
+      "narrative": 7,
+      "total": 28
     }
   },
   {
