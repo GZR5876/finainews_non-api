@@ -6,12 +6,6 @@ AI agents crossed from pilot to general availability across banking and ERP this
 
 ## 1. AI in Finance
 
-DBS made its virtual assistant fully agentic in Singapore
-
-DBS's corporate assistant **DBS Joy** is now **fully agentic** in Singapore, part of Gen AI tools reaching **10 million customers** across three markets.
-
-Source: https://www.dbs.com/newsroom/DBS_Gen_AI_enabled_virtual_assistants_reach_10_million_customers_and_go_agentic
-
 SAP brought five new AI agents to general availability
 
 **SAP** moved **five new agents** to general availability, covering expense reports, contract drafting, SOW staffing, invoice extraction, and travel policy rules.
@@ -23,6 +17,12 @@ BlackLine's new AI agents cut reconciliation prep time 92%
 **BlackLine's** new **Verity Prepare** agents automate reconciliation prep, with early adopters cutting prep time by up to **92%** ahead of general release.
 
 Source: https://www.globenewswire.com/news-release/2026/07/27/3333478/0/en/blackline-advances-governed-ai-for-finance-with-general-availability-of-verity-prepare.html
+
+DBS made its virtual assistant fully agentic in Singapore
+
+DBS's corporate assistant **DBS Joy** is now **fully agentic** in Singapore, part of Gen AI tools reaching **10 million customers** across three markets.
+
+Source: https://www.dbs.com/newsroom/DBS_Gen_AI_enabled_virtual_assistants_reach_10_million_customers_and_go_agentic
 
 Munich startup Finto raised $3.4M for AI accounts-payable agents
 
