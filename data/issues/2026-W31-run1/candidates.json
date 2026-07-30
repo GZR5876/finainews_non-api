@@ -289,6 +289,23 @@
     }
   },
   {
+    "id": "agents_003",
+    "category": "agents",
+    "published_date": "2026-07-09",
+    "headline": "Microsoft made GPT-5.6 the default model in 365 Copilot",
+    "what": "OpenAI and Microsoft announced GPT-5.6 is now the preferred model behind Microsoft 365 Copilot across Word, Excel, PowerPoint, Chat and Cowork, accessed via the OpenAI API, offering stronger performance per dollar on everyday drafting and analysis tasks.",
+    "so_what": "Any organisation on Microsoft 365 Copilot inherits this model upgrade automatically, worth noting when budgeting token costs or benchmarking Copilot's output quality against other AI tools already in use.",
+    "source_url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
+    "paywalled": false,
+    "scores": {
+      "relevance": 7,
+      "novelty": 6,
+      "materiality": 6,
+      "narrative": 5,
+      "total": 24
+    }
+  },
+  {
     "id": "physical_001",
     "category": "physical",
     "published_date": "2026-07-21",
