@@ -2,23 +2,11 @@
 
 *Covering 27 July to 17 August 2026*
 
-EY urges CFOs to fix data foundations before scaling AI, while Deloitte, KPMG, Fiserv, and Microsoft all deepened their AI governance, partnerships, and product consolidation this fortnight.
+Deloitte and KPMG deepened AI governance and OpenAI ties, Fiserv pushed agentic receivables automation, workflow cleanup unlocked major time savings for finance teams, and Microsoft consolidated its Copilot apps.
 
 ---
 
 ## 1. AI in Finance
-
-What CFOs should fix before scaling AI in finance
-
-**FloQast's CEO** says most finance teams should fix workflows and data quality before scaling AI, citing **13,000 hours saved** through automated documentation alone.
-
-Source: https://www.ey.com/en_us/media/podcasts/better-finance/2026/07/season-9-episode-1-what-cfo-should-fix-before-scaling-ai-finance
-
-Fiserv and Stuut partner to bring agentic AI to enterprise receivables
-
-**Fiserv** partnered with Stuut to deploy AI agents that handle collections, cash application, and invoice disputes, targeting **more than $2 billion** in automated B2B invoices.
-
-Source: https://investors.fiserv.com/news-releases/news-release-details/fiserv-and-stuut-partner-bring-agentic-ai-enterprise-receivables
 
 Deloitte rolls out AI controls and assurance offering for enterprises
 
@@ -31,6 +19,18 @@ KPMG and OpenAI form strategic alliance for AI-native enterprise workflows
 KPMG became an **OpenAI Elite Partner**, its highest partnership tier, covering government software modernization, cybersecurity, and an AI-native supply chain platform for its own operations.
 
 Source: https://kpmg.com/us/en/media/news/kpmg-openai-strategic-alliance.html
+
+Fiserv and Stuut partner to bring agentic AI to enterprise receivables
+
+**Fiserv** partnered with Stuut to deploy AI agents that handle collections, cash application, and invoice disputes, targeting **more than $2 billion** in automated B2B invoices.
+
+Source: https://investors.fiserv.com/news-releases/news-release-details/fiserv-and-stuut-partner-bring-agentic-ai-enterprise-receivables
+
+Automating workflow documentation saves finance teams 13,000 hours
+
+**FloQast's CEO** says finance teams that clean up workflows and data before scaling AI can save **up to 13,000 hours a year** through automation.
+
+Source: https://www.ey.com/en_us/media/podcasts/better-finance/2026/07/season-9-episode-1-what-cfo-should-fix-before-scaling-ai-finance
 
 ---
 
