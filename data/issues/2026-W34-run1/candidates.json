@@ -165,6 +165,28 @@
     "scores": { "relevance": 6, "novelty": 6, "materiality": 7, "narrative": 5, "total": 24 }
   },
   {
+    "id": "finance_016",
+    "category": "finance",
+    "published_date": "2026-08-13",
+    "headline": "Deloitte rolls out AI controls and assurance offering for enterprises",
+    "what": "Deloitte expanded its AI Controls and Assurance services to help organizations govern, scale, and oversee AI systems, combining advisory and assurance functions across the AI lifecycle including governance framework development, risk management, and internal audit.",
+    "so_what": "Audit and internal-controls teams evaluating third-party oversight support now have a Big-4 option built specifically for AI governance gaps.",
+    "source_url": "https://www.internationalaccountingbulletin.com/news/deloitte-rolls-out-new-ai-controls-and-assurance-offering-for-enterprise-use/?cf-view",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 6, "materiality": 8, "narrative": 5, "total": 26 }
+  },
+  {
+    "id": "finance_017",
+    "category": "finance",
+    "published_date": "2026-07-21",
+    "headline": "KPMG and OpenAI form strategic alliance for AI-native enterprise workflows",
+    "what": "KPMG became an OpenAI Elite Partner, the network's highest tier, with the alliance covering government-software modernization, participation in OpenAI's Daybreak Cyber Partner Program, and an AI-native supply chain platform for KPMG's own operations. (date outside the 2026-07-27 to 2026-08-17 news period: published July 21, six days before period start; added at user's explicit request)",
+    "so_what": "A Big-4 firm's alliance tier signals which advisory partner might move fastest on AI-native tooling for finance and government clients.",
+    "source_url": "https://kpmg.com/us/en/media/news/kpmg-openai-strategic-alliance.html",
+    "paywalled": false,
+    "scores": { "relevance": 7, "novelty": 6, "materiality": 8, "narrative": 5, "total": 26 }
+  },
+  {
     "id": "agents_001",
     "category": "agents",
     "published_date": "2026-07-30",
@@ -196,6 +218,17 @@
     "source_url": "https://www.theregister.com/security/2026/08/06/openai-reveals-its-rogue-agent-swarm-went-a-little-bit-borg-ahead-of-hugging-face-hack/5283741",
     "paywalled": false,
     "scores": { "relevance": 7, "novelty": 6, "materiality": 7, "narrative": 6, "total": 26 }
+  },
+  {
+    "id": "agents_004",
+    "category": "agents",
+    "published_date": "2026-08-14",
+    "headline": "Microsoft merges Copilot and Microsoft 365 Copilot into one app, retires three features",
+    "what": "Microsoft is merging its consumer Copilot and Microsoft 365 Copilot apps into a single unified app supporting personal, work, and school accounts, while retiring Podcasts, Group Chat, and Deep Research features starting August 18.",
+    "so_what": "Finance teams using Microsoft 365 Copilot should audit which of the retiring features, especially Deep Research, their workflows depend on before the August 18 cutover.",
+    "source_url": "https://www.zdnet.com/article/microsoft-to-merge-copilot-and-copilot-365-into-one-unified-app-retiring-features/",
+    "paywalled": false,
+    "scores": { "relevance": 6, "novelty": 6, "materiality": 6, "narrative": 5, "total": 23 }
   },
   {
     "id": "foundation_001",
