@@ -32,7 +32,7 @@ Fifteen curated AI newsletters and research publications are swept before any ca
 | Sequoia | Technology investment signals |
 | Menlo Ventures | State of AI in Business |
 
-A **broad news sweep** (3 unrestricted recency queries; 1 in simple mode) runs alongside the digest sweep to catch major-outlet stories outside the curated source list — the "Google News" view of the week. Every item must trace back to a primary source (vendor newsroom, regulator, or major outlet); SEO aggregators and content farms are discarded.
+A **broad news sweep** runs alongside the digest sweep to catch major-outlet stories outside the curated source list. It has two parts: a live **Google News RSS feed** (`scripts/fetch_google_news_rss.py --query "finance AI"`, all modes) that returns real headlines with verified publication dates straight from `news.google.com/rss/search`, plus 2 unrestricted WebSearch queries in full scout mode (0 in simple mode, since the RSS feed alone covers it). Every item must trace back to a primary source (vendor newsroom, regulator, or major outlet); SEO aggregators and content farms are discarded.
 
 ### Category Source Files (19 files across 4 categories)
 
@@ -93,14 +93,14 @@ All queries include an `after:{period_start}` date filter to restrict results to
 
 ### Simple Scout — All Queries
 
-**Digest sweep + broad news sweep (5 queries)**
+**Digest sweep (4 queries) + Google News RSS feed (1 fetch, no WebSearch queries in simple mode)**
 
 ```
 site:therundown.ai AI finance agents enterprise [month] [year] after:{period_start}
 site:a16z.com AI finance enterprise agents [year] after:{period_start}
 site:mckinsey.com AI finance enterprise agents [year] after:{period_start}
 site:tldr.tech AI finance agents models [month] [year] after:{period_start}
-finance AI news after:{period_start}
+python scripts/fetch_google_news_rss.py --query "finance AI" --after {period_start} --limit 20
 ```
 
 **AI in Finance (11 queries)**
@@ -142,7 +142,7 @@ finance AI news after:{period_start}
 |---|---|
 | `sources_tips_youtube.md` | site:youtube.com AI finance automation tutorial walkthrough CFO agents how-to [year] after:{period_start} |
 
-**Total: 24 queries** (4 digest + 1 broad news + 19 category)
+**Total: 24 queries** (4 digest + 1 broad news RSS fetch + 19 category)
 
 ---
 

@@ -82,20 +82,30 @@ Digests to sweep:
 
 ### Broad news sweep (run together with the digest sweep)
 
-Unrestricted recency queries (no `site:` filter) to catch major-outlet stories
-that the curated source list misses — the "Google News" view of the week.
+Combines a live Google News RSS feed with unrestricted WebSearch queries
+(no `site:` filter) to catch major-outlet stories that the curated source
+list misses.
 
-**Full scout mode (3 queries):**
+**Google News RSS (run first, all modes):**
 ```
-finance AI news after:{period_start}
+python scripts/fetch_google_news_rss.py --query "finance AI" --after {period_start} --limit 20
+```
+This hits the real `news.google.com/rss/search` feed and returns each item's
+actual publication date in the `published` field (`YYYY-MM-DD`) — use it as
+`published_date` directly; skip the date-verification follow-up search for
+these items, since the date did not come from a snippet guess. Write
+`what`/`so_what` from the `title` field only (no article snippet is
+available from the feed). Use each item's `source` field for the
+source-quality rule below.
+
+**WebSearch queries — full scout mode (2 queries):**
+```
 CFO AI agents adoption news [year] after:{period_start}
 AI tax treasury customs automation news [year] after:{period_start}
 ```
 
-**Simple scout mode (1 query):**
-```
-finance AI news after:{period_start}
-```
+**WebSearch queries — simple scout mode:** none. The RSS feed alone covers
+simple mode's broad sweep.
 
 **Source-quality rule (applies to all scout results, broad sweep especially):**
 never record an item whose only source is an SEO content farm, listicle
