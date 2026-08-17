@@ -14,10 +14,9 @@
 must be finance-related.** Score finance items with a +1 bonus on materiality.
 
 Category order in the output:
-1. AI in Finance (target 3+ items per issue)
+1. AI in Finance (target 3+ items per issue; at least 15 candidates in the pool)
 2. AI Agents & Applications
-3. Physical AI
-4. Foundation Models
+3. Foundation Models
 
 ## What they care about (AI relevance filters)
 

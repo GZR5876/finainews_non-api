@@ -34,8 +34,7 @@ Write as a trusted adviser who respects the reader's time.
 ```
 ## 1. AI in Finance
 ## 2. AI Agents & Applications
-## 3. Physical AI
-## 4. Foundation Models
+## 3. Foundation Models
 ```
 
 ## Example item (Finance AI)

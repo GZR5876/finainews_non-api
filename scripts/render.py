@@ -30,8 +30,7 @@ DATA = ROOT / "data"
 SECTION_MAP = {
     "finance":    "1. AI in Finance",
     "agents":     "2. AI Agents & Applications",
-    "physical":   "3. Physical AI",
-    "foundation": "4. Foundation Models",
+    "foundation": "3. Foundation Models",
     "tips":       "Tip of the Week",
 }
 

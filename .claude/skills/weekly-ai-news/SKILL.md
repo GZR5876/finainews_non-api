@@ -85,19 +85,16 @@ Digests to sweep:
 Unrestricted recency queries (no `site:` filter) to catch major-outlet stories
 that the curated source list misses — the "Google News" view of the week.
 
-**Full scout mode (5 queries):**
+**Full scout mode (3 queries):**
 ```
 finance AI news after:{period_start}
 CFO AI agents adoption news [year] after:{period_start}
 AI tax treasury customs automation news [year] after:{period_start}
-port terminal AI automation news [year] after:{period_start}
-humanoid robot deployment news [year] after:{period_start}
 ```
 
-**Simple scout mode (2 queries):**
+**Simple scout mode (1 query):**
 ```
 finance AI news after:{period_start}
-humanoid robot deployment news [year] after:{period_start}
 ```
 
 **Source-quality rule (applies to all scout results, broad sweep especially):**
@@ -108,8 +105,8 @@ Bloomberg, FT, CNBC, or trade press already in references/) — and cite that
 instead. If no primary source can be found, discard the item. Broad-sweep items
 must also pass the date-verification rule before entering the pool.
 
-Pull any finance-relevant or port-relevant items found into the candidate pool
-before proceeding to per-category source searches.
+Pull any finance-relevant items found into the candidate pool before proceeding
+to per-category source searches.
 
 ### Step 1b: Category scout (sequential, one category at a time)
 
@@ -145,7 +142,13 @@ Work through the four categories below. For each:
 6. Drop items below threshold:
    - **Full scout mode**: drop any item where Relevance < 7 or total score < 28.
    - **Simple scout mode**: drop any item where Relevance < 6 or total score < 24.
-7. Keep top 5-8 items per category. Record each as a JSON object:
+7. Keep candidates per category:
+   - **finance**: keep every item that clears the threshold, not just the top
+     scorers -- do not cap at 8. Target at least 15 finance candidates in the
+     pool (across all 11 finance source files) so the newsletter selection has
+     real choice; if fewer than 15 clear the threshold, keep all that do.
+   - **agents, foundation**: keep top 5-8 items per category.
+   Record each as a JSON object:
    ```json
    {
      "id": "{category}_{NNN}",
@@ -174,7 +177,7 @@ Work through the four categories below. For each:
 
 Categories and source files (scout order -- finance goes first in both scout and output):
 
-**`finance`** (target 3+ items, 50% of total):
+**`finance`** (target at least 15 candidates in the pool; ~50% of the final newsletter):
 - references/sources_finance_highpri.md
 - references/sources_finance_media.md
 - references/sources_finance_close.md
@@ -192,12 +195,6 @@ Categories and source files (scout order -- finance goes first in both scout and
 - references/sources_agents_frameworks.md
 - references/sources_agents_enterprise.md
 - references/sources_agents_bigfour.md
-
-**`physical`** (humanoid robotics is the priority focus):
-- references/sources_physical_humanoid.md
-- references/sources_physical_operators.md
-- references/sources_physical_maritime.md
-- references/sources_physical_media.md
 
 **`foundation`**:
 - references/sources_foundation_primary.md
@@ -234,14 +231,13 @@ way as other candidates (Relevance < 7 or total < 28 → drop).
 ### Step 1d: Write candidates.json
 
 Write all candidates (news + tips) to `data/issues/{run_folder}/candidates.json` as
-a JSON array, ordered: finance items first, then agents, physical, foundation, tips.
+a JSON array, ordered: finance items first, then agents, foundation, tips.
 
 Then print a **query count report**:
 ```
 Scout complete — queries run:
   finance (11 files)   : N
   agents (4 files)     : N
-  physical (4 files)   : N
   foundation (3 files) : N
   tips (1 file)        : N
   TOTAL                : N
@@ -313,8 +309,8 @@ After all categories and tips are scouted:
    Path('data/issues/{week}/candidates.html').write_text(html)
    "
    ```
-   The template renders 5 sections in order: AI in Finance, AI Agents &
-   Applications, Physical AI, Foundation Models, Tips & How-To.
+   The template renders 4 sections in order: AI in Finance, AI Agents &
+   Applications, Foundation Models, Tips & How-To.
 
 2. Print a summary table: id | category | headline | total score.
 
@@ -375,8 +371,7 @@ After all categories and tips are scouted:
    ```
    ## 1. AI in Finance
    ## 2. AI Agents & Applications
-   ## 3. Physical AI
-   ## 4. Foundation Models
+   ## 3. Foundation Models
    ```
    Omit any section with no selected items. Separate items within a section
    with a single blank line. Separate sections with `---`.

@@ -32,11 +32,11 @@ Fifteen curated AI newsletters and research publications are swept before any ca
 | Sequoia | Technology investment signals |
 | Menlo Ventures | State of AI in Business |
 
-A **broad news sweep** (5 unrestricted recency queries; 2 in simple mode) runs alongside the digest sweep to catch major-outlet stories outside the curated source list — the "Google News" view of the week. Every item must trace back to a primary source (vendor newsroom, regulator, or major outlet); SEO aggregators and content farms are discarded.
+A **broad news sweep** (3 unrestricted recency queries; 1 in simple mode) runs alongside the digest sweep to catch major-outlet stories outside the curated source list — the "Google News" view of the week. Every item must trace back to a primary source (vendor newsroom, regulator, or major outlet); SEO aggregators and content farms are discarded.
 
-### Category Source Files (23 files across 5 categories)
+### Category Source Files (19 files across 4 categories)
 
-After the digest sweep, the agent works through 23 source files grouped by category. Finance is always searched first and accounts for ~50% of the final newsletter.
+After the digest sweep, the agent works through 19 source files grouped by category. Finance is always searched first and accounts for ~50% of the final newsletter; the finance category keeps every candidate that clears threshold (target at least 15 in the pool) rather than being capped at 5-8 like the other categories.
 
 **AI in Finance (11 files)**
 
@@ -62,15 +62,6 @@ After the digest sweep, the agent works through 23 source files grouped by categ
 | `sources_agents_frameworks.md` | Agent frameworks and infrastructure |
 | `sources_agents_enterprise.md` | Enterprise software with AI agents |
 | `sources_agents_bigfour.md` | Big-4 AI agent announcements |
-
-**Physical AI (4 files — humanoid robotics is the priority focus)**
-
-| File | Coverage |
-|---|---|
-| `sources_physical_humanoid.md` | Humanoid robotics makers: Figure, Boston Dynamics, Agility, Apptronik, Tesla, Unitree |
-| `sources_physical_operators.md` | Port operator newsrooms |
-| `sources_physical_maritime.md` | Port and maritime media |
-| `sources_physical_media.md` | Robotics and automation media |
 
 **Foundation Models (3 files)**
 
@@ -102,7 +93,7 @@ All queries include an `after:{period_start}` date filter to restrict results to
 
 ### Simple Scout — All Queries
 
-**Digest sweep + broad news sweep (6 queries)**
+**Digest sweep + broad news sweep (5 queries)**
 
 ```
 site:therundown.ai AI finance agents enterprise [month] [year] after:{period_start}
@@ -110,7 +101,6 @@ site:a16z.com AI finance enterprise agents [year] after:{period_start}
 site:mckinsey.com AI finance enterprise agents [year] after:{period_start}
 site:tldr.tech AI finance agents models [month] [year] after:{period_start}
 finance AI news after:{period_start}
-humanoid robot deployment news [year] after:{period_start}
 ```
 
 **AI in Finance (11 queries)**
@@ -138,15 +128,6 @@ humanoid robot deployment news [year] after:{period_start}
 | `sources_agents_enterprise.md` | AI agents enterprise software production deployment Salesforce Agentforce SAP Workday Microsoft named outcome [year] after:{period_start} |
 | `sources_agents_bigfour.md` | AI agents enterprise finance Big-4 KPMG Deloitte PwC EY client deployment outcome [year] after:{period_start} |
 
-**Physical AI (4 queries)**
-
-| Source File | Query |
-|---|---|
-| `sources_physical_humanoid.md` | humanoid robot production deployment pricing logistics warehouse Figure Apptronik Agility Tesla Optimus [year] after:{period_start} |
-| `sources_physical_operators.md` | AI automation robotics port terminal AGV crane capex productivity deployment [year] after:{period_start} |
-| `sources_physical_maritime.md` | AI automation port maritime robotics AGV terminal throughput deployment named [year] after:{period_start} |
-| `sources_physical_media.md` | humanoid robot logistics warehouse industrial deployment production Boston Dynamics Figure Unitree [year] after:{period_start} |
-
 **Foundation Models (3 queries)**
 
 | Source File | Query |
@@ -161,7 +142,7 @@ humanoid robot deployment news [year] after:{period_start}
 |---|---|
 | `sources_tips_youtube.md` | site:youtube.com AI finance automation tutorial walkthrough CFO agents how-to [year] after:{period_start} |
 
-**Total: 29 queries** (4 digest + 2 broad news + 23 category)
+**Total: 24 queries** (4 digest + 1 broad news + 19 category)
 
 ---
 

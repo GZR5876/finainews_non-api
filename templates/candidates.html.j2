@@ -37,9 +37,8 @@
   {% for category, label in [
       ('finance',    '1. AI in Finance'),
       ('agents',     '2. AI Agents &amp; Applications'),
-      ('physical',   '3. Physical AI'),
-      ('foundation', '4. Foundation Models'),
-      ('tips',       '5. Tips &amp; How-To')
+      ('foundation', '3. Foundation Models'),
+      ('tips',       '4. Tips &amp; How-To')
   ] %}
   {% set cat_items = items | selectattr('category', 'equalto', category) | list %}
   {% if cat_items %}
