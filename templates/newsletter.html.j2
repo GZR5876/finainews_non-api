@@ -132,26 +132,6 @@
     }
 
 
-    /* ── Digest ── */
-    .digest {
-      padding: 24px 36px;
-      background: #f0f3fa;
-      border-bottom: 2px solid #c4a8b8;
-    }
-    .digest .digest-label {
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: #8b1535;
-      margin-bottom: 10px;
-    }
-    .digest p {
-      font-size: 12px;
-      line-height: 1.75;
-      color: #333;
-    }
-
     /* ── Footer ── */
     .footer {
       background: #0c1540;
@@ -203,13 +183,6 @@
       </div>
     </div>
   </div>
-
-  {% if digest %}
-  <div class="digest">
-    <div class="digest-label">Edition in Brief</div>
-    <p>{{ digest | safe }}</p>
-  </div>
-  {% endif %}
 
   <div class="stories">
     {% for section in sections %}{% for story in section.stories %}

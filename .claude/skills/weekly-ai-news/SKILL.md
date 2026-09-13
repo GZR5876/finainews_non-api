@@ -15,8 +15,13 @@ description: Generates the weekly AI news executive summary for a port-operator
   - If the user's message contains "ignore history", "skip history", "force rescan", or similar → set `{ignore_history} = true`. Inform the user: "History deduplication disabled — all URLs will be treated as new."
   - Otherwise → `{ignore_history} = false` (default).
 - Determine the **scout mode**:
-  - If the user says "simple scout", "quick scout", or similar → **simple scout mode** (`{simple_scout} = true`). Inform the user: "Simple scout enabled — one broad query per source file, relaxed thresholds (Relevance ≥ 6, total ≥ 24)."
+  - If the user says "simple scout", "quick scout", or similar → **simple scout mode** (`{simple_scout} = true`). Inform the user: "Simple scout enabled — one broad query per source file."
   - Otherwise → **full scout mode** (`{simple_scout} = false`, default).
+- Determine the **tip mode**:
+  - If the user's message contains "include a tip", "add a tip", "tip of the week", or similar → **tips enabled** (`{include_tips} = true`).
+  - Otherwise → `{include_tips} = false` (default) and skip Step 1c entirely. Across every
+    run so far, a scouted tip has never once been selected into a final newsletter, so
+    it's no longer part of the default scout.
 - Ask the user for the **news period** if not specified (default: last 7 days).
   Accept natural language such as "last 14 days", "May 5-12", or "since May 1".
   Derive a concrete date range: {period_start} to {period_end} (YYYY-MM-DD).
@@ -169,15 +174,12 @@ Work through the four categories below. For each:
      for 6 months"), consequence ("AI agent approved a duplicate $2M payment"), or first-ever
      production deployment at scale. Scores low for vendor press releases, generic capability claims,
      and incremental product updates with no human or financial drama.
-6. Drop items below threshold:
-   - **Full scout mode**: drop any item where Relevance < 7 or total score < 28.
-   - **Simple scout mode**: drop any item where Relevance < 6 or total score < 24.
+6. There is no relevance/total-score threshold for dropping items -- every
+   surviving (not-SEEN, in-period) candidate gets scored and ranked.
 7. Keep candidates per category:
-   - **finance**: keep every item that clears the threshold, not just the top
-     scorers -- do not cap at 8. Target at least 15 finance candidates in the
-     pool (across all 11 finance source files) so the newsletter selection has
-     real choice; if fewer than 15 clear the threshold, keep all that do.
-   - **agents, foundation**: keep top 5-8 items per category.
+   - Rank every scored item in a category by total score, highest first.
+   - Keep the **top 15** per category (finance, agents, foundation). If a
+     category has fewer than 15 candidates, keep all of them.
    Record each as a JSON object:
    ```json
    {
@@ -207,7 +209,7 @@ Work through the four categories below. For each:
 
 Categories and source files (scout order -- finance goes first in both scout and output):
 
-**`finance`** (target at least 15 candidates in the pool; ~50% of the final newsletter):
+**`finance`** (top 15 candidates by score; ~50% of the final newsletter):
 - references/sources_finance_highpri.md
 - references/sources_finance_media.md
 - references/sources_finance_close.md
@@ -241,13 +243,14 @@ enterprise software vendors (e.g. SAP, Workday, Salesforce, ServiceNow, Oracle)
 shipping AI features are never `foundation` — only foundation-model providers
 (OpenAI, Anthropic, Google/Gemini, Meta, Mistral, xAI, DeepSeek, Cohere) belong there.
 
-### Step 1c: Tips scout (run after category scout)
+### Step 1c: Tips scout (optional -- only run if `{include_tips} = true`)
+
+Skip this step entirely unless the user asked for a tip this run (see Setup).
 
 Read each tips source file below. Append `after:{period_start}` to every query.
 - **Full scout mode**: run every `search:` query in the file.
 - **Simple scout mode**: run only the `simple_query:` from the file.
 Read and complete one file at a time before moving to the next. No source may be skipped.
-Target **3-5 tip candidates** per run so the user has meaningful choice.
 
 Tips source files:
 - references/sources_tips_youtube.md
@@ -255,8 +258,8 @@ Tips source files:
 Pick videos/articles with clearly instructional titles ("How to...", "Demo:",
 "Walkthrough", "Step-by-step"). Avoid opinion pieces or news summaries.
 
-Record tips as `tips_NNN` with `"category": "tips"`. Score and filter the same
-way as other candidates (Relevance < 7 or total < 28 → drop).
+Record tips as `tips_NNN` with `"category": "tips"`. Score the same way as other
+candidates, then keep the top 15 (or all of them, if fewer than 15 are found).
 
 ### Step 1d: Write candidates.json
 
@@ -269,7 +272,7 @@ Scout complete — queries run:
   finance (11 files)   : N
   agents (4 files)     : N
   foundation (3 files) : N
-  tips (1 file)        : N
+  tips (1 file)        : N (skipped -- not requested this run, if {include_tips} = false)
   TOTAL                : N
 Candidates found: N (before history filter), M kept
 ```
@@ -375,11 +378,6 @@ After all categories and tips are scouted:
      `published_date` in candidates.json, and flag any item that falls outside
      the news period to the user before drafting.
 
-3. Write a **digest paragraph** (~25 words, no bullet points) that goes between
-   the dateline and the first section. One or two sentences: the dominant theme
-   this week and the single most material signal for a port CFO.
-   Place it in draft.md directly after the italicised dateline, before the first `---`.
-
 3. For each selected **news item** (non-tips), write a newsletter entry following
    the voice defined in references/voice.md. **Always read `references/newsletter_example.html`
    before writing any body copy — this is the canonical output style reference.**
@@ -393,12 +391,11 @@ After all categories and tips are scouted:
      down to its single most important fact. If WebFetch retrieved full content,
      use any new specifics (named clients, exact metrics) to sharpen the `what`
      before compressing. No CFO action or watch item in the body.
-     Bold only the 2-4 key words that carry the most weight (the metric, the
+     Bold only the 1-4 key words that carry the most weight (the metric, the
      actor, the scale) using `**...**` inline.
    - **Plain language**: write for a senior finance executive, not a technologist.
-     At most 1-2 numbers per item — pick the one that carries the story. At most
-     one vendor or product name in the body; drop platform, module, or tool names
-     unless the story is about them. Translate technical terms into everyday words
+     At most 1-2 numbers per item — pick the one that carries the story.
+     Translate technical terms into everyday words
      ("ready-made AI assistants", not "skills, connectors and plugins"). One idea
      per sentence; never stack facts.
    - `Source: {url}` on its own line after the sentence.
@@ -426,8 +423,12 @@ After all categories and tips are scouted:
 
 ## Phase 4: Render & archive
 
-1. Run `python scripts/render.py --week {week}` -- produces newsletter.html and
-   newsletter.pdf in data/issues/{week}/.
+1. Ask the user for this issue's number if they haven't already given one (e.g.
+   "Issue No.5") -- the skill does not track or auto-increment this, the user
+   supplies it each run. Run `python scripts/render.py --week {week} --title
+   "Issue No.{N}"` -- produces newsletter.html and newsletter.pdf in
+   data/issues/{week}/. If the user has no issue number to give, omit `--title`
+   and render.py falls back to the week string.
 2. Copy (or instruct the user to copy) `data/issues/{week}/newsletter.html` into
    `data/archive/` so future runs detect these URLs as already published.
    The file is automatically picked up by check_history.py on the next scout.
