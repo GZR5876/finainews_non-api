@@ -12,7 +12,7 @@ The agent searches across two tiers of sources every run.
 
 ### Digest Sweep (run first)
 
-Fifteen curated AI newsletters and research publications are swept before any category search begins. These surface high-signal items quickly.
+Fifteen curated AI newsletters and research publications are swept before any category search begins, by navigating to each site directly with the Chrome browser tool and reading the page (`get_page_text`) rather than guessing from search snippets. Most of these sites 403 a raw `WebFetch`, but a real browser tab isn't bot-blocked, so this reads the actual current issue. Full scout mode falls back to a `site:` WebSearch query for the three sites that have one (The Rundown, TLDR, Ben's Bites) if the browser attempt fails; simple scout mode just skips a failed site.
 
 | Source | Focus |
 |---|---|
@@ -32,7 +32,11 @@ Fifteen curated AI newsletters and research publications are swept before any ca
 | Sequoia | Technology investment signals |
 | Menlo Ventures | State of AI in Business |
 
+Simple scout mode visits only the 4 highest-signal sites (The Rundown, a16z, McKinsey QuantumBlack, TLDR).
+
 A **broad news sweep** runs alongside the digest sweep to catch major-outlet stories outside the curated source list. It has two parts: a live **Google News RSS feed** (`scripts/fetch_google_news_rss.py --query "finance AI"`, all modes) that returns real headlines with verified publication dates straight from `news.google.com/rss/search`, plus 2 unrestricted WebSearch queries in full scout mode (0 in simple mode, since the RSS feed alone covers it). Every item must trace back to a primary source (vendor newsroom, regulator, or major outlet); SEO aggregators and content farms are discarded.
+
+The feed's `link` field is a Google News redirect stub, not the article URL — it's a client-side JS app with no server-side redirect, so it can't be resolved by `WebFetch` or a plain HTTP client, and would defeat `check_history.py`'s exact-URL dedup if stored as-is (every fresh fetch of the same story gets a different stub). Before scoring, each surviving candidate's link is opened in a browser tab and replaced with the resolved URL.
 
 ### Category Source Files (19 files across 4 categories)
 
@@ -81,7 +85,7 @@ After the digest sweep, the agent works through 19 source files grouped by categ
 
 | | Full Scout | Simple Scout |
 |---|---|---|
-| Digest sweep queries | 8 | 4 |
+| Digest sweep | 15 sites, browser navigation | 4 sites, browser navigation |
 | Queries per source file | All `search:` entries (multiple site-specific) | 1 broad `simple_query:` per file |
 | Minimum relevance score | 7 | 6 |
 | Minimum total score | 28 | 24 |
@@ -93,13 +97,13 @@ All queries include an `after:{period_start}` date filter to restrict results to
 
 ### Simple Scout — All Queries
 
-**Digest sweep (4 queries) + Google News RSS feed (1 fetch, no WebSearch queries in simple mode)**
+**Digest sweep (4 sites via browser navigation, no fallback query) + Google News RSS feed (1 fetch, no WebSearch queries in simple mode)**
 
 ```
-site:therundown.ai AI finance agents enterprise [month] [year] after:{period_start}
-site:a16z.com AI finance enterprise agents [year] after:{period_start}
-site:mckinsey.com AI finance enterprise agents [year] after:{period_start}
-site:tldr.tech AI finance agents models [month] [year] after:{period_start}
+navigate: https://www.therundown.ai
+navigate: https://a16z.com
+navigate: https://www.mckinsey.com/capabilities/quantumblack/our-insights
+navigate: https://tldr.tech/ai
 python scripts/fetch_google_news_rss.py --query "finance AI" --after {period_start} --limit 20
 ```
 
@@ -142,7 +146,7 @@ python scripts/fetch_google_news_rss.py --query "finance AI" --after {period_sta
 |---|---|
 | `sources_tips_youtube.md` | site:youtube.com AI finance automation tutorial walkthrough CFO agents how-to [year] after:{period_start} |
 
-**Total: 24 queries** (4 digest + 1 broad news RSS fetch + 19 category)
+**Total: 19 WebSearch queries + 4 browser navigations + 1 broad news RSS fetch**
 
 ---
 
@@ -162,7 +166,7 @@ In **automated mode** this phase is skipped: the agent selects the top-scoring 5
 
 ### Phase 3 — Polish
 
-For each selected item the agent attempts to fetch the full article (`WebFetch`). If successful, new specifics (named clients, exact metrics) are used to sharpen the write-up. Each story is written as:
+For each selected item the agent attempts to fetch the full article (`WebFetch`). If that 403s, it retries once with a real browser tab (`navigate` + `get_page_text`) before falling back to the candidates.json summary — a normal Chrome session often isn't bot-blocked where `WebFetch` is. The browser fallback is never used against a detected paywall, only against a bot block. If successful, new specifics (named clients, exact metrics) are used to sharpen the write-up. Each story is written as:
 
 - **Headline** — verbatim from `candidates.json` (rewritten only if WebFetch reveals a materially better framing)
 - **Body** — one sentence, ≤25 words, compressing the key fact; 2–4 key words bolded

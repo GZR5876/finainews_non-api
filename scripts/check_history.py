@@ -14,22 +14,30 @@ Prints "SEEN (filename)" if the URL was found, "NEW" otherwise.
 import argparse
 import re
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 ROOT = Path(__file__).parent.parent
 ARCHIVE_DIR = ROOT / "data" / "archive"
 ISSUES_DIR = ROOT / "data" / "issues"
+
+# Tracking params to strip before comparing URLs, so campaign-tagged
+# variants of the same article aren't treated as new stories.
+_TRACKING_PARAMS = {
+    "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
+    "ref", "referrer", "source", "fbclid", "gclid", "mc_cid", "mc_eid",
+}
 
 # Match any href value in an <a> tag
 _HREF_RE = re.compile(r'href=["\']([^"\']+)["\']', re.IGNORECASE)
 
 
 def extract_urls(html_text: str) -> set[str]:
-    """Return all href URLs found in an HTML file, normalised (trailing slash stripped)."""
+    """Return all href URLs found in an HTML file, normalised (see `normalise`)."""
     urls = set()
     for m in _HREF_RE.finditer(html_text):
-        url = m.group(1).strip().rstrip("/")
+        url = m.group(1).strip()
         if url.startswith("http"):
-            urls.add(url)
+            urls.add(normalise(url))
     return urls
 
 
@@ -59,7 +67,11 @@ def build_seen_index() -> dict[str, str]:
 
 
 def normalise(url: str) -> str:
-    return url.strip().rstrip("/")
+    url = url.strip().rstrip("/")
+    parts = urlsplit(url)
+    kept_qs = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
+               if k.lower() not in _TRACKING_PARAMS]
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(kept_qs), ""))
 
 
 def main():

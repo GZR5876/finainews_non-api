@@ -37,48 +37,54 @@ description: Generates the weekly AI news executive summary for a port-operator
 
 ### Step 1a: Digest sweep (run first, before per-category sources)
 
-Search the following weekly AI digests for items published in the last 7 days.
-**Important:** These sites block WebFetch with 403. Use WebSearch with
-site-specific queries instead -- do NOT try to WebFetch their homepages.
+Read these weekly AI digests directly via browser navigation instead of
+guessing from search snippets. Most of these sites 403 a raw `WebFetch`, but
+a real Chrome tab is not bot-blocked, so this reads the actual current issue
+instead of whatever Google happened to index of it.
 
-Search patterns to use — append `after:{period_start}` to every query before issuing.
+**Procedure:**
+1. If the `mcp__claude-in-chrome__*` tools aren't loaded yet this session, load
+   them once: `ToolSearch("select:mcp__claude-in-chrome__tabs_create_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__get_page_text,mcp__claude-in-chrome__tabs_close_mcp")`.
+2. Open one tab and reuse it for every site in the list below (`navigate` to
+   the next URL rather than opening a new tab each time); close the tab once
+   the sweep is done.
+3. For each site, navigate to it and call `get_page_text`. Scan for items
+   dated within {period_start}..{period_end}. For anything finance/agents/
+   foundation-relevant, follow the item's own link to its primary source
+   (per the source-quality rule below) and record that as `source_url` --
+   don't cite the digest page itself.
+4. **Fallback:** if a site fails to load, sits behind a login/paywall wall, or
+   `get_page_text` returns no usable content after one retry, fall back to the
+   `site:` WebSearch query for that source in full scout mode (listed below);
+   in simple scout mode, just skip the site and move on.
 
-**Full scout mode** (all 8 queries):
-```
-site:therundown.ai AI finance agents enterprise [current month] [year] after:{period_start}
-site:bensbites.com AI finance enterprise agents [current month] [year] after:{period_start}
-site:tldr.tech AI finance agents models [current month] [year] after:{period_start}
-site:a16z.com AI finance enterprise agents [year] after:{period_start}
-site:mckinsey.com AI finance enterprise agents [year] after:{period_start}
-site:bain.com AI finance enterprise agents [year] after:{period_start}
-site:sequoiacap.com AI finance enterprise [year] after:{period_start}
-site:menlovc.com AI finance enterprise [year] after:{period_start}
-```
+**Full scout mode** — visit all 15 sites:
+- https://www.therundown.ai — fallback: `site:therundown.ai AI finance agents enterprise [month] [year] after:{period_start}`
+- https://tldr.tech/ai — fallback: `site:tldr.tech AI finance agents models [month] [year] after:{period_start}`
+- https://bensbites.com — fallback: `site:bensbites.com AI finance enterprise agents [month] [year] after:{period_start}`
+- https://superhuman.ai — Enterprise productivity
+- https://press.airstreet.com — AI industry analysis
+- https://jack-clark.net — Import AI (Jack Clark), research + reflection
+- https://www.ben-evans.com — Benedict Evans, strategic framing
+- https://www.oneusefulthing.org — Ethan Mollick, executive-forwardable
+- https://www.interconnects.ai — Nathan Lambert, model/research signal
+- https://www.latent.space — enterprise AI deployment economics
+- https://a16z.com — fallback: `site:a16z.com AI finance enterprise agents [year] after:{period_start}`
+- https://www.mckinsey.com/capabilities/quantumblack/our-insights — fallback: `site:mckinsey.com AI finance enterprise agents [year] after:{period_start}`
+- https://www.bain.com/insights/ — fallback: `site:bain.com AI finance enterprise agents [year] after:{period_start}`
+- https://www.sequoiacap.com/perspective/ — fallback: `site:sequoiacap.com AI finance enterprise [year] after:{period_start}`
+- https://menlovc.com/perspective/ — fallback: `site:menlovc.com AI finance enterprise [year] after:{period_start}`
 
-**Simple scout mode** (4 queries only):
-```
-site:therundown.ai AI finance agents enterprise [current month] [year] after:{period_start}
-site:a16z.com AI finance enterprise agents [year] after:{period_start}
-site:mckinsey.com AI finance enterprise agents [year] after:{period_start}
-site:tldr.tech AI finance agents models [current month] [year] after:{period_start}
-```
+**Simple scout mode** — visit only the 4 highest-signal sites, no fallback:
+- https://www.therundown.ai
+- https://a16z.com
+- https://www.mckinsey.com/capabilities/quantumblack/our-insights
+- https://tldr.tech/ai
 
-Digests to sweep:
-- The Rundown AI (therundown.ai)
-- TLDR AI (tldr.tech/ai)
-- Ben's Bites (bensbites.com)
-- Superhuman AI (superhuman.ai)
-- Air Street Press (press.airstreet.com)
-- Import AI (jack-clark.net) -- Jack Clark, weekly, research + reflection
-- Benedict Evans (ben-evans.com) -- weekly, strategic framing
-- One Useful Thing (oneusefulthing.org) -- Ethan Mollick, executive-forwardable
-- Interconnects (interconnects.ai) -- Nathan Lambert, model/research signal
-- Latent Space (latent.space) -- enterprise AI deployment economics
-- a16z (a16z.com) -- VC portfolio + AI commentary
-- McKinsey QuantumBlack (mckinsey.com/quantumblack)
-- Bain (bain.com) -- AI insights
-- Sequoia (sequoiacap.com)
-- Menlo Ventures (menlovc.com) -- State of AI in Business
+Note: earlier versions of this skill only ever queried 8 of these 15 sites in
+full scout mode (Superhuman, Air Street Press, Import AI, Benedict Evans, One
+Useful Thing, Interconnects, and Latent Space had no query at all). Direct
+navigation closes that gap at no extra query cost.
 
 ### Broad news sweep (run together with the digest sweep)
 
@@ -97,6 +103,20 @@ these items, since the date did not come from a snippet guess. Write
 `what`/`so_what` from the `title` field only (no article snippet is
 available from the feed). Use each item's `source` field for the
 source-quality rule below.
+
+**Resolve real article URLs before recording (all modes):** the feed's `link`
+field is a Google News redirect stub
+(`news.google.com/rss/articles/...`) -- it returns HTTP 200 on a client-side
+JS app with no server-side redirect, so `WebFetch` or a plain HTTP client
+cannot resolve it, and `check_history.py`'s exact-URL match will never catch a
+repeat story if the stub is stored instead of the real link. First skim the
+`title` fields and drop titles that are obviously irrelevant, then for each
+remaining candidate: navigate to its `link` in a browser tab (load the
+`mcp__claude-in-chrome__*` tools per Step 1a if not already loaded) and read
+the tab's resolved URL once the redirect settles (e.g. `location.href` via
+`javascript_tool`, or the current tab URL from `tabs_context_mcp`). Use that
+resolved URL as `source_url` -- never the raw stub -- before running the
+history check or scoring.
 
 **WebSearch queries — full scout mode (2 queries):**
 ```
@@ -340,9 +360,16 @@ After all categories and tips are scouted:
 2. For each selected item, attempt `WebFetch` on its `source_url` to get full
    article content. Three outcomes:
    - **Full content retrieved**: use it to improve or verify `what` and `so_what`.
-   - **403 / bot-blocked**: write from the `what` and `so_what` already in candidates.json.
+   - **403 / bot-blocked**: retry once with a real browser tab before giving up --
+     load the `mcp__claude-in-chrome__*` tools per Step 1a if not already loaded,
+     `navigate` to `source_url`, and call `get_page_text`. A normal Chrome session
+     often isn't blocked where `WebFetch` is. If the browser attempt also fails
+     or the content is genuinely unavailable (login wall, CAPTCHA), write from
+     the `what` and `so_what` already in candidates.json instead.
    - **Paywalled** (`"paywalled": true` or paywall detected): write from candidates.json
-     content only; do not invent details beyond what the teaser provides.
+     content only; do not invent details beyond what the teaser provides. Do not
+     attempt the browser fallback here -- it would only be bypassing a paywall,
+     not working around a bot block.
    - **WebFetch blocked by network policy**: verify each selected item's
      publication date with a targeted WebSearch instead. Correct
      `published_date` in candidates.json, and flag any item that falls outside
