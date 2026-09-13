@@ -2,8 +2,6 @@
 
 *Covering 27 July to 17 August 2026*
 
-Deloitte and KPMG deepened AI governance and OpenAI ties, Fiserv pushed agentic receivables automation, workflow cleanup unlocked major time savings for finance teams, and Microsoft consolidated its Copilot apps.
-
 ---
 
 ## 1. AI in Finance
@@ -26,7 +24,7 @@ Fiserv and Stuut partner to bring agentic AI to enterprise receivables
 
 Source: https://investors.fiserv.com/news-releases/news-release-details/fiserv-and-stuut-partner-bring-agentic-ai-enterprise-receivables
 
-Automating workflow documentation saves finance teams 13,000 hours
+Automating workflow documentation gets finance teams AI-ready
 
 **FloQast's CEO** says finance teams that clean up workflows and data before scaling AI can save **up to 13,000 hours a year** through automation.
 

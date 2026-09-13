@@ -184,6 +184,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--week", required=True, help="ISO week string, e.g. 2025-W20")
     parser.add_argument("--title", default=None, help="Issue title, e.g. 'Issue No.2'; defaults to the week string")
+    parser.add_argument("--date", default=None, help="Issue date, e.g. '18 August 2026'; defaults to today's date")
     args = parser.parse_args()
     week = args.week
 
@@ -199,7 +200,7 @@ def main():
     digest_html = re.sub(r"^\s*<p>", "", digest_html).strip()
     digest_html = re.sub(r"</p>\s*$", "", digest_html).strip()
 
-    issue_date = date.today().strftime("%d %B %Y")
+    issue_date = args.date or date.today().strftime("%d %B %Y")
 
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
     tmpl = env.get_template("newsletter.html.j2")
