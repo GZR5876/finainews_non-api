@@ -24,7 +24,7 @@ Gartner says CFOs should judge AI agent pilots by **governance readiness**, not 
 
 Source: https://www.gartner.com/en/newsroom/new/pr-q-a-new-vis-template/2026-08-20-gartner-says-cfos-mus-pilot-governance-first-before-scaling-ai-agents
 
-Deloitte: 54% of CFOs now own AI capital allocation
+AI forces finance leaders to take on tech responsibilities
 
 Deloitte surveyed **1,434 finance leaders** across 26 countries; **54%** now own cross-enterprise AI and technology capital-allocation decisions outside traditional finance scope.
 
@@ -34,8 +34,8 @@ Source: https://www.cfobrew.com/stories/ai-forces-finance-leaders-to-take-on-tec
 
 ## 3. Foundation Models
 
-OpenAI's new GPT-6 Astra rarely exceeds its authorized scope
+OpenAI's GPT-6 Astra triples Claude's score on reasoning test
 
-OpenAI's new **GPT-6 Astra** model stayed within its authorized task scope in testing **100% of the time**, versus 52% for its predecessor.
+OpenAI launched **GPT-6 Astra**, scoring **99.9%** on the ARC-AGI-3 reasoning benchmark versus 7.8% for predecessor GPT-5.6 Sol and 30.2% for Claude Opus 5.
 
 Source: https://openai.com/index/gpt-6-astra/
