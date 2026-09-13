@@ -34,8 +34,8 @@ Source: https://www.cfobrew.com/stories/ai-forces-finance-leaders-to-take-on-tec
 
 ## 3. Foundation Models
 
-OpenAI's GPT-6 Astra triples Claude's score on reasoning test
+OpenAI's GPT-6 Astra nearly matches human problem-solving skills
 
-OpenAI launched **GPT-6 Astra**, scoring **99.9%** on the ARC-AGI-3 reasoning benchmark versus 7.8% for predecessor GPT-5.6 Sol and 30.2% for Claude Opus 5.
+OpenAI's new **GPT-6 Astra** model scored **99.9%** on a test of novel problem-solving, matching human-level performance and far outscoring its predecessor and Claude.
 
 Source: https://openai.com/index/gpt-6-astra/
