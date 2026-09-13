@@ -34,7 +34,7 @@ Source: https://www.cfobrew.com/stories/ai-forces-finance-leaders-to-take-on-tec
 
 ## 3. Foundation Models
 
-OpenAI's GPT-6 Astra nearly matches human problem-solving skills
+OpenAI launched GPT-6 Astra, nearing human problem-solving skills
 
 OpenAI's new **GPT-6 Astra** model scored **99.9%** on a test of novel problem-solving, matching human-level performance and far outscoring its predecessor and Claude.
 
